@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Formularios – Empresa y diseño de modelos de negocio — 2.º Bachillerato</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../ejercicios/index.html">Apéndices</a></li><li class="breadcrumb-item"><a href="../ejercicios/formularios.html">Formularios y plantillas</a></li><li class="breadcrumb-item"><a href="../ejercicios/formularios.html">Formularios</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Empresa y diseño de modelos de negocio — 2.º Bachillerato</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Presentación</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../estructura-tema-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Empresa y sistema económico</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modelos2_no_ph.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Modelos de negocio</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../marketing_1_no_ph.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Marketing</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../inversiones_1_no_ph.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Inversión y financiación</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../almacen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Gestión del almacén e inventarios</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contabilidad_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Contabilidad</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../RRHH.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Gestión de Recursos Humanos</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Apéndices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ejercicios/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Presentación</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Bloque 1 · Producción y costes</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ejercicios/b1_costes_umbral.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Costes y umbral de rentabilidad</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ejercicios/b1_producir_o_comprar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Producir o comprar</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ejercicios/b1_productividad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Productividad</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Bloque 2 · Gestión del almacén</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ejercicios/b2_wilson.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Modelo de Wilson (gestión de stocks)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ejercicios/b2_pmm.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Período Medio de Maduración (PMM)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ejercicios/b2_fifo_pmp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">Valoración de existencias: FIFO y PMP</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">Bloque 3 · Inversión y financiación</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ejercicios/b3_payback_van_tir.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">G</span>&nbsp; <span class="chapter-title">Selección de inversiones: Pay-back y VAN</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ejercicios/b3_fuentes_financiacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">H</span>&nbsp; <span class="chapter-title">Fuentes de financiación</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">Bloque 4 · Contabilidad y ratios</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ejercicios/b4_balance_pyg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">I</span>&nbsp; <span class="chapter-title">Balance de situación y cuenta de resultados</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ejercicios/b4_ratios.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">J</span>&nbsp; <span class="chapter-title">Ratios financieros</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+ <span class="menu-text">Bloque 5 · Empresa y marco jurídico</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ejercicios/b5_formas_juridicas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">K</span>&nbsp; <span class="chapter-title">Formas jurídicas y estructura empresarial</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ejercicios/b5_verdadero_falso.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">L</span>&nbsp; <span class="chapter-title">Conceptos de empresa: verdadero o falso</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Formularios y plantillas</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ejercicios/formularios.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Formularios</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ejercicios/plantillas_ratios.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Plantillas de comentario de ratios</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ejercicios/examenes_completos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Exámenes completos</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#bloque-1-producción-y-costes" id="toc-bloque-1-producción-y-costes" class="nav-link active" data-scroll-target="#bloque-1-producción-y-costes">Bloque 1 · Producción y costes</a>
+  <ul class="collapse">
+  <li><a href="#costes-y-umbral-de-rentabilidad" id="toc-costes-y-umbral-de-rentabilidad" class="nav-link" data-scroll-target="#costes-y-umbral-de-rentabilidad">Costes y umbral de rentabilidad</a></li>
+  <li><a href="#producir-o-comprar" id="toc-producir-o-comprar" class="nav-link" data-scroll-target="#producir-o-comprar">Producir o comprar</a></li>
+  <li><a href="#productividad" id="toc-productividad" class="nav-link" data-scroll-target="#productividad">Productividad</a></li>
+  </ul></li>
+  <li><a href="#bloque-2-gestión-del-almacén" id="toc-bloque-2-gestión-del-almacén" class="nav-link" data-scroll-target="#bloque-2-gestión-del-almacén">Bloque 2 · Gestión del almacén</a>
+  <ul class="collapse">
+  <li><a href="#modelo-de-wilson-cep-eoq" id="toc-modelo-de-wilson-cep-eoq" class="nav-link" data-scroll-target="#modelo-de-wilson-cep-eoq">Modelo de Wilson (CEP / EOQ)</a></li>
+  <li><a href="#período-medio-de-maduración" id="toc-período-medio-de-maduración" class="nav-link" data-scroll-target="#período-medio-de-maduración">Período Medio de Maduración</a></li>
+  <li><a href="#fifo-y-pmp" id="toc-fifo-y-pmp" class="nav-link" data-scroll-target="#fifo-y-pmp">FIFO y PMP</a></li>
+  </ul></li>
+  <li><a href="#bloque-3-inversión-y-financiación" id="toc-bloque-3-inversión-y-financiación" class="nav-link" data-scroll-target="#bloque-3-inversión-y-financiación">Bloque 3 · Inversión y financiación</a>
+  <ul class="collapse">
+  <li><a href="#pay-back" id="toc-pay-back" class="nav-link" data-scroll-target="#pay-back">Pay-back</a></li>
+  <li><a href="#van" id="toc-van" class="nav-link" data-scroll-target="#van">VAN</a></li>
+  </ul></li>
+  <li><a href="#bloque-4-contabilidad-y-ratios" id="toc-bloque-4-contabilidad-y-ratios" class="nav-link" data-scroll-target="#bloque-4-contabilidad-y-ratios">Bloque 4 · Contabilidad y ratios</a>
+  <ul class="collapse">
+  <li><a href="#balance" id="toc-balance" class="nav-link" data-scroll-target="#balance">Balance</a></li>
+  <li><a href="#cuenta-de-resultados" id="toc-cuenta-de-resultados" class="nav-link" data-scroll-target="#cuenta-de-resultados">Cuenta de resultados</a></li>
+  <li><a href="#ratios-financieros" id="toc-ratios-financieros" class="nav-link" data-scroll-target="#ratios-financieros">Ratios financieros</a></li>
+  </ul></li>
+  <li><a href="#notas-generales-para-el-examen" id="toc-notas-generales-para-el-examen" class="nav-link" data-scroll-target="#notas-generales-para-el-examen">Notas generales para el examen</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../ejercicios/index.html">Apéndices</a></li><li class="breadcrumb-item"><a href="../ejercicios/formularios.html">Formularios y plantillas</a></li><li class="breadcrumb-item"><a href="../ejercicios/formularios.html">Formularios</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Formularios</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Este apéndice reúne todos los formularios del cuaderno en una sola página. Está pensado para consulta rápida mientras se resuelven ejercicios.</p>
+<hr>
+<section id="bloque-1-producción-y-costes" class="level2">
+<h2 class="anchored" data-anchor-id="bloque-1-producción-y-costes">Bloque 1 · Producción y costes</h2>
+<section id="costes-y-umbral-de-rentabilidad" class="level3">
+<h3 class="anchored" data-anchor-id="costes-y-umbral-de-rentabilidad">Costes y umbral de rentabilidad</h3>
+<p><span class="math display">\[CT = CF + CV \qquad CV = CVu \times Q\]</span></p>
+<p><span class="math display">\[Q^* = \frac{CF}{P - CVu} \qquad \text{(umbral de rentabilidad)}\]</span></p>
+<p><span class="math display">\[B = IT - CT = (P \times Q) - CF - (CVu \times Q)\]</span></p>
+</section>
+<section id="producir-o-comprar" class="level3">
+<h3 class="anchored" data-anchor-id="producir-o-comprar">Producir o comprar</h3>
+<p><span class="math display">\[C_{\text{fab}} = CF + CVu \times Q \qquad C_{\text{comp}} = P_c \times Q\]</span></p>
+<p><span class="math display">\[Q^*_{\text{indiferencia}} = \frac{CF}{P_c - CVu} \qquad P_{max} = \frac{CF + CVu \times Q}{Q}\]</span></p>
+</section>
+<section id="productividad" class="level3">
+<h3 class="anchored" data-anchor-id="productividad">Productividad</h3>
+<p><span class="math display">\[\text{Productividad factor} = \frac{\text{Producción}}{\text{Unidades del factor}}\]</span></p>
+<p><span class="math display">\[PG = \frac{\sum Q_i \times P_i}{\sum F_j \times C_j} \qquad IPG = \frac{PG_1}{PG_0} \qquad TVPG = (IPG - 1) \times 100\]</span></p>
+<hr>
+</section>
+</section>
+<section id="bloque-2-gestión-del-almacén" class="level2">
+<h2 class="anchored" data-anchor-id="bloque-2-gestión-del-almacén">Bloque 2 · Gestión del almacén</h2>
+<section id="modelo-de-wilson-cep-eoq" class="level3">
+<h3 class="anchored" data-anchor-id="modelo-de-wilson-cep-eoq">Modelo de Wilson (CEP / EOQ)</h3>
+<p><span class="math display">\[Q^* = \sqrt{\frac{2 \cdot s \cdot D}{g}} \qquad N = \frac{D}{Q} \qquad T = \frac{360}{N}\]</span></p>
+<p><span class="math display">\[PP = ss + (d \times t) \qquad S_m = \frac{Q}{2} + ss \qquad IR = \frac{D}{S_m}\]</span></p>
+<p><span class="math display">\[CT = s \cdot N + g \cdot \left(\frac{Q}{2} + ss\right)\]</span></p>
+<p><strong>Ruptura de stock:</strong> ocurre si retraso (días) <span class="math inline">\(\times\ d &gt; ss\)</span>. Días que aguanta el <span class="math inline">\(ss\)</span>: <span class="math inline">\(ss / d\)</span>.</p>
+</section>
+<section id="período-medio-de-maduración" class="level3">
+<h3 class="anchored" data-anchor-id="período-medio-de-maduración">Período Medio de Maduración</h3>
+<p><span class="math display">\[PM_i = \frac{\text{días del año}}{n_i}\]</span></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Subperíodo</th>
+<th style="text-align: left;">Índice <span class="math inline">\(n_i\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Almacenamiento MP (<span class="math inline">\(PM_A\)</span>)</td>
+<td style="text-align: left;">Consumo anual MP / Saldo medio MP</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Fabricación (<span class="math inline">\(PM_F\)</span>)</td>
+<td style="text-align: left;">Coste anual producción / Saldo medio productos en curso</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Venta (<span class="math inline">\(PM_V\)</span>)</td>
+<td style="text-align: left;">Coste anual ventas / Saldo medio productos terminados</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Cobro (<span class="math inline">\(PM_C\)</span>)</td>
+<td style="text-align: left;">Ventas anuales (precio venta) / Saldo medio clientes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Pago (<span class="math inline">\(PM_P\)</span>)</td>
+<td style="text-align: left;">Compras anuales / Saldo medio proveedores</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[PMMe = PM_A + PM_F + PM_V + PM_C \qquad PMMf = PMMe - PM_P\]</span></p>
+</section>
+<section id="fifo-y-pmp" class="level3">
+<h3 class="anchored" data-anchor-id="fifo-y-pmp">FIFO y PMP</h3>
+<p><strong>FIFO:</strong> las salidas se valoran al precio del lote más antiguo.</p>
+<p><strong>PMP:</strong> recalcular en cada entrada:</p>
+<p><span class="math display">\[PMP = \frac{\text{Valor total en existencias}}{\text{Unidades totales en existencias}}\]</span></p>
+<hr>
+</section>
+</section>
+<section id="bloque-3-inversión-y-financiación" class="level2">
+<h2 class="anchored" data-anchor-id="bloque-3-inversión-y-financiación">Bloque 3 · Inversión y financiación</h2>
+<section id="pay-back" class="level3">
+<h3 class="anchored" data-anchor-id="pay-back">Pay-back</h3>
+<p>Sumar flujos acumulados hasta igualar <span class="math inline">\(D_0\)</span>. Meses del año parcial:</p>
+<p><span class="math display">\[\text{Meses} = \frac{\text{Cantidad pendiente}}{F_{\text{año parcial}}} \times 12\]</span></p>
+</section>
+<section id="van" class="level3">
+<h3 class="anchored" data-anchor-id="van">VAN</h3>
+<p><span class="math display">\[k = i + g + (i \times g) \qquad \text{(fórmula de Fisher)}\]</span></p>
+<p><span class="math display">\[VAN = -D_0 + \frac{F_1}{(1+k)^1} + \frac{F_2}{(1+k)^2} + \cdots + \frac{F_n}{(1+k)^n}\]</span></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">VAN</th>
+<th style="text-align: left;">Decisión</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(&gt; 0\)</span></td>
+<td style="text-align: left;">Aceptar</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(= 0\)</span></td>
+<td style="text-align: left;">Indiferente</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(&lt; 0\)</span></td>
+<td style="text-align: left;">Rechazar</td>
+</tr>
+</tbody>
+</table>
+<p>Entre proyectos aceptables: elegir el de <strong>mayor VAN</strong>.</p>
+<hr>
+</section>
+</section>
+<section id="bloque-4-contabilidad-y-ratios" class="level2">
+<h2 class="anchored" data-anchor-id="bloque-4-contabilidad-y-ratios">Bloque 4 · Contabilidad y ratios</h2>
+<section id="balance" class="level3">
+<h3 class="anchored" data-anchor-id="balance">Balance</h3>
+<p><span class="math display">\[\text{Activo} = \text{Patrimonio Neto} + \text{Pasivo}\]</span></p>
+<p><span class="math display">\[B = \text{Total Activo} - \text{Capital} - \text{Reservas} - PNC - PC\]</span></p>
+<p><span class="math display">\[FM = AC - PC = (PN + PNC) - ANC\]</span></p>
+</section>
+<section id="cuenta-de-resultados" class="level3">
+<h3 class="anchored" data-anchor-id="cuenta-de-resultados">Cuenta de resultados</h3>
+<p><span class="math display">\[BAII = \text{Ingresos explotación} - \text{Gastos explotación}\]</span></p>
+<p><span class="math display">\[BAI = BAII + \text{Resultado financiero}\]</span></p>
+<p><span class="math display">\[\text{Resultado} = BAI - \text{Impuestos}\]</span></p>
+<p><span class="math display">\[EBITDA = BAII + \text{Amortizaciones}\]</span></p>
+</section>
+<section id="ratios-financieros" class="level3">
+<h3 class="anchored" data-anchor-id="ratios-financieros">Ratios financieros</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Ratio</th>
+<th style="text-align: left;">Fórmula</th>
+<th style="text-align: center;">Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Inmovilizado</td>
+<td style="text-align: left;"><span class="math inline">\(ANC / (PN + PNC)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(&lt; 1\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Endeudamiento</td>
+<td style="text-align: left;"><span class="math inline">\((PNC + PC) / PN\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0{,}5 - 1{,}2\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Liquidez</td>
+<td style="text-align: left;"><span class="math inline">\(AC / PC\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(&gt; 1\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Garantía</td>
+<td style="text-align: left;"><span class="math inline">\(\text{Activo} / (PNC + PC)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(&gt; 1\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Tesorería</td>
+<td style="text-align: left;"><span class="math inline">\((AC - \text{Exist.}) / PC\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(&gt; 1\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Autonomía financiera</td>
+<td style="text-align: left;"><span class="math inline">\(PN / (PNC + PC)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(&gt; 1\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="notas-generales-para-el-examen" class="level2">
+<h2 class="anchored" data-anchor-id="notas-generales-para-el-examen">Notas generales para el examen</h2>
+<div class="callout callout-style-default callout-warning callout-titled" title="Recordatorios críticos">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Recordatorios críticos
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><strong>Año comercial:</strong> 360 días salvo que el enunciado indique 365.</li>
+<li><strong>Fisher:</strong> nunca sumes <span class="math inline">\(i + g\)</span> directamente; usa <span class="math inline">\(k = i + g + i \times g\)</span>.</li>
+<li><strong>Valor residual:</strong> se suma al flujo del <strong>último año</strong>, no se trata aparte.</li>
+<li><strong>Pagos fraccionados de inversión:</strong> el desembolso inicial es solo el primer pago; los siguientes restan del flujo del año en que se realizan.</li>
+<li><strong>Amortización acumulada:</strong> va en el <strong>activo</strong> con signo negativo, nunca en el pasivo.</li>
+<li><strong>Capital social por diferencia:</strong> si no se da, calcular al final: <span class="math inline">\(\text{Capital} = \text{Total Activo} - \text{Reservas} - PNC - PC\)</span>.</li>
+<li><strong>Precios de venta en FIFO/PMP:</strong> no se usan en la ficha de almacén; solo sirven para calcular el beneficio.</li>
+<li><strong>Endeudamiento:</strong> el único ratio con rango (0,5–1,2); criticar también si es demasiado bajo.</li>
+<li><strong>Inmovilizado y FM:</strong> siempre coherentes. Si inmovilizado &gt; 1 → FM &lt; 0, y viceversa.</li>
+<li><strong>PMP con almacén a cero:</strong> si las existencias llegan a cero, el PMP se reinicia con la siguiente entrada.</li>
+</ol>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

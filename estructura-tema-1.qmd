@@ -1,0 +1,12 @@
+---
+title: "Empresa y sistema económico"
+format:
+  html:
+    include-in-header:
+      text: |
+        <meta http-equiv="refresh" content="0; url=empresa.html">
+---
+
+# Empresa y sistema económico
+
+Este capítulo se conserva como página HTML independiente. Si no se abre automáticamente, consulta el [tema 1](empresa.html).

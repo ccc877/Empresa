@@ -1,0 +1,91 @@
+project:
+  type: book
+  output-dir: .
+
+lang: es
+
+book:
+  title: "Empresa y diseño de modelos de negocio — 2.º Bachillerato"
+  author: "Guillermo"
+  date: today
+  page-navigation: false
+  sidebar:
+    contents:
+      - index.qmd
+      - text: "1 Empresa y sistema económico"
+        href: empresa.html
+      - modelos2_no_ph.qmd
+      - marketing_1_no_ph.qmd
+      - inversiones_1_no_ph.qmd
+      - almacen.qmd
+      - contabilidad_2.qmd
+      - RRHH.qmd
+      - section: "Anexo · Ejercicios resueltos y formularios"
+        contents:
+          - ejercicios/index.qmd
+          - ejercicios/b1_costes_umbral.qmd
+          - ejercicios/b1_producir_o_comprar.qmd
+          - ejercicios/b1_productividad.qmd
+          - ejercicios/b2_wilson.qmd
+          - ejercicios/b2_pmm.qmd
+          - ejercicios/b2_fifo_pmp.qmd
+          - ejercicios/b3_payback_van_tir.qmd
+          - ejercicios/b3_fuentes_financiacion.qmd
+          - ejercicios/b4_balance_pyg.qmd
+          - ejercicios/b4_ratios.qmd
+          - ejercicios/b5_formas_juridicas.qmd
+          - ejercicios/b5_verdadero_falso.qmd
+          - ejercicios/formularios.qmd
+          - ejercicios/plantillas_ratios.qmd
+          - ejercicios/examenes_completos.qmd
+  chapters:
+    - index.qmd
+    - estructura-tema-1.qmd
+    - modelos2_no_ph.qmd
+    - marketing_1_no_ph.qmd
+    - inversiones_1_no_ph.qmd
+    - almacen.qmd
+    - contabilidad_2.qmd
+    - RRHH.qmd
+  appendices:
+    - ejercicios/index.qmd
+    - part: "Bloque 1 · Producción y costes"
+      chapters:
+        - ejercicios/b1_costes_umbral.qmd
+        - ejercicios/b1_producir_o_comprar.qmd
+        - ejercicios/b1_productividad.qmd
+    - part: "Bloque 2 · Gestión del almacén"
+      chapters:
+        - ejercicios/b2_wilson.qmd
+        - ejercicios/b2_pmm.qmd
+        - ejercicios/b2_fifo_pmp.qmd
+    - part: "Bloque 3 · Inversión y financiación"
+      chapters:
+        - ejercicios/b3_payback_van_tir.qmd
+        - ejercicios/b3_fuentes_financiacion.qmd
+    - part: "Bloque 4 · Contabilidad y ratios"
+      chapters:
+        - ejercicios/b4_balance_pyg.qmd
+        - ejercicios/b4_ratios.qmd
+    - part: "Bloque 5 · Empresa y marco jurídico"
+      chapters:
+        - ejercicios/b5_formas_juridicas.qmd
+        - ejercicios/b5_verdadero_falso.qmd
+    - part: "Formularios y plantillas"
+      chapters:
+        - ejercicios/formularios.qmd
+        - ejercicios/plantillas_ratios.qmd
+        - ejercicios/examenes_completos.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    number-depth: 2
+
+execute:
+  echo: false
+  warning: false
+  freeze: auto
