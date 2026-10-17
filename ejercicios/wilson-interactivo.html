@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modelo de Wilson</title>
+<style>
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0;padding:16px;background:#fff;color:#111}
+  .wrap{max-width:900px;margin:0 auto}
+  h1{font-size:1.15rem;margin:0 0 10px}
+  .ctrl{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:10px}
+  .ctrl label{display:flex;flex-direction:column;font-size:.85rem;gap:2px}
+  .ctrl input[type=range]{width:200px}
+  canvas{width:100%;height:auto;aspect-ratio:16/10;display:block;border:1px solid #ddd;border-radius:6px}
+  .res{font-size:.9rem;margin-top:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Modelo de Wilson: Q* minimiza el coste de inventarios</h1>
+  <div class="ctrl">
+    <label>D (demanda anual): <b id="vD"></b><input id="D" type="range" min="200" max="10000" step="100" value="2000"></label>
+    <label>s (coste de pedido, €): <b id="vs"></b><input id="s" type="range" min="10" max="500" step="10" value="100"></label>
+    <label>g (almacenamiento, €/ud·año): <b id="vg"></b><input id="g" type="range" min="1" max="40" step="1" value="10"></label>
+    <label>SS (stock de seguridad): <b id="vSS"></b><input id="SS" type="range" min="0" max="300" step="10" value="0"></label>
+  </div>
+  <canvas id="c" width="1600" height="1000"></canvas>
+  <div class="res" id="res"></div>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const cv = $('c'), ctx = cv.getContext('2d');
+
+// Colores como en la imagen original
+const COL = { total:'#e60000', alm:'#00b0f0', ped:'#ed7d31', eje:'#000', guia:'#9b30ff' };
+
+function draw(){
+  const D = +$('D').value, s = +$('s').value, g = +$('g').value, SS = +$('SS').value;
+  $('vD').textContent = D; $('vs').textContent = s; $('vg').textContent = g; $('vSS').textContent = SS;
+
+  const Qs = Math.sqrt(2*s*D/g);
+  const Cs = Math.sqrt(2*s*D*g);
+  const ss = g*SS;                       // coste constante del stock de seguridad
+
+  const Cped = Q => s*D/Q;
+  const Calm = Q => g*Q/2 + ss;
+  const Ctot = Q => Cped(Q) + Calm(Q);
+
+  const W = cv.width, H = cv.height;
+  const m = {l:110, r:60, t:50, b:110};
+  const pw = W-m.l-m.r, ph = H-m.t-m.b;
+  const Qmax = 2.4*Qs;
+  const Ymax = 2.3*(Cs/2*2 + ss) ;       // escala vertical
+  const X = q => m.l + q/Qmax*pw;
+  const Y = c => m.t + ph - c/Ymax*ph;
+
+  ctx.clearRect(0,0,W,H);
+  ctx.fillStyle = '#fff'; ctx.fillRect(0,0,W,H);
+  ctx.font = '28px system-ui, sans-serif';
+
+  // Ejes con flechas
+  ctx.strokeStyle = COL.eje; ctx.lineWidth = 6; ctx.lineCap = 'round';
+  ctx.beginPath(); ctx.moveTo(m.l, m.t-10); ctx.lineTo(m.l, m.t+ph); ctx.lineTo(W-m.r+20, m.t+ph); ctx.stroke();
+  ctx.fillStyle = COL.eje;
+  ctx.beginPath(); ctx.moveTo(m.l, m.t-30); ctx.lineTo(m.l-12, m.t); ctx.lineTo(m.l+12, m.t); ctx.fill();
+  ctx.beginPath(); ctx.moveTo(W-m.r+40, m.t+ph); ctx.lineTo(W-m.r+10, m.t+ph-12); ctx.lineTo(W-m.r+10, m.t+ph+12); ctx.fill();
+
+  ctx.font = 'bold 34px system-ui, sans-serif';
+  ctx.fillText('COSTES', m.l+20, m.t+10);
+  ctx.fillText('Unidades por pedido', W-m.r-380, m.t+ph+70);
+
+  // Curvas (recortadas al área de dibujo)
+  ctx.save();
+  ctx.beginPath(); ctx.rect(m.l, m.t, pw, ph); ctx.clip();
+  ctx.lineWidth = 6; ctx.lineJoin = 'round';
+
+  const curve = (f, color, q0) => {
+    ctx.strokeStyle = color; ctx.beginPath();
+    const n = 400;
+    for(let i=0;i<=n;i++){
+      const q = q0 + (Qmax-q0)*i/n;
+      const x = X(q), y = Y(f(q));
+      i ? ctx.lineTo(x,y) : ctx.moveTo(x,y);
+    }
+    ctx.stroke();
+  };
+  curve(Cped, COL.ped, 0.05*Qs);
+  curve(Calm, COL.alm, 0);
+  curve(Ctot, COL.total, 0.05*Qs);
+  ctx.restore();
+
+  // Línea guía punteada en Q*
+  ctx.setLineDash([22,14]); ctx.strokeStyle = COL.guia; ctx.lineWidth = 5;
+  ctx.beginPath(); ctx.moveTo(X(Qs), Y(Ctot(Qs))); ctx.lineTo(X(Qs), m.t+ph); ctx.stroke();
+  ctx.setLineDash([]);
+
+  // Puntos: mínimo del coste total (rojo) y cruce pedido/almacén (negro)
+  const dot = (x,y,c) => { ctx.fillStyle=c; ctx.beginPath(); ctx.arc(x,y,16,0,Math.PI*2); ctx.fill(); };
+  dot(X(Qs), Y(Ctot(Qs)), '#f00');
+  dot(X(Qs), Y(Cped(Qs)), '#000');
+
+  // Etiqueta Q*
+  ctx.fillStyle = '#000'; ctx.font = 'bold 44px system-ui, sans-serif';
+  ctx.textAlign = 'center'; ctx.fillText('Q*', X(Qs), m.t+ph+50); ctx.textAlign = 'left';
+
+  // Etiquetas de curvas
+  ctx.font = 'bold 40px system-ui, sans-serif';
+  ctx.fillStyle = COL.total; ctx.fillText('coste total inventarios', X(1.25*Qs), Y(Ctot(1.25*Qs))-45);
+  ctx.fillStyle = COL.alm;   ctx.fillText('coste de almacenamiento', X(1.75*Qs), Y(Calm(1.75*Qs))+70);
+  ctx.fillStyle = COL.ped;   ctx.fillText('coste de pedido', X(1.45*Qs), Y(Cped(1.45*Qs))-25);
+
+  // Resultados
+  $('res').innerHTML =
+    `<b>Q*</b> = √(2·${s}·${D}/${g}) = <b>${Qs.toFixed(1)}</b> ud &nbsp;|&nbsp; ` +
+    `pedidos/año = <b>${(D/Qs).toFixed(2)}</b> &nbsp;|&nbsp; ` +
+    `C<sub>pedido</sub> = C<sub>alm. (sin SS)</sub> = <b>${(Cs/2).toFixed(0)} €</b> &nbsp;|&nbsp; ` +
+    `C* (sin SS) = <b>${Cs.toFixed(0)} €</b>` +
+    (SS>0 ? ` &nbsp;|&nbsp; con SS: C* = <b>${(Cs+ss).toFixed(0)} €</b> (Q* no cambia)` : '');
+}
+
+['D','s','g','SS'].forEach(id => $(id).addEventListener('input', draw));
+draw();
+</script>
+</body>
+</html>

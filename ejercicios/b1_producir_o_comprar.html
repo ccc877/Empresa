@@ -372,6 +372,7 @@ window.Quarto = {
   <li><a href="#ejercicios-resueltos" id="toc-ejercicios-resueltos" class="nav-link" data-scroll-target="#ejercicios-resueltos"><span class="header-section-number">B.1</span> Ejercicios resueltos</a>
   <ul class="collapse">
   <li><a href="#ehu-2022-extraordinaria-empresa-de-camisas-proveedor-de-india" id="toc-ehu-2022-extraordinaria-empresa-de-camisas-proveedor-de-india" class="nav-link" data-scroll-target="#ehu-2022-extraordinaria-empresa-de-camisas-proveedor-de-india">EHU 2022 Extraordinaria — Empresa de camisas (proveedor de India)</a></li>
+  <li><a href="#ehu-2024-extraordinaria-bollar-s.-l.-maletas" id="toc-ehu-2024-extraordinaria-bollar-s.-l.-maletas" class="nav-link" data-scroll-target="#ehu-2024-extraordinaria-bollar-s.-l.-maletas">EHU 2024 Extraordinaria — BOLLAR S. L. (maletas)</a></li>
   </ul></li>
   <li><a href="#ejercicios-propuestos" id="toc-ejercicios-propuestos" class="nav-link" data-scroll-target="#ejercicios-propuestos"><span class="header-section-number">B.2</span> Ejercicios propuestos</a></li>
   </ul>
@@ -529,7 +530,7 @@ window.Quarto = {
   <!-- Zona compra (izq. del cruce, C_comp < C_fab): triángulo entre origen y cruce -->
   <polygon points="70,290 70,273 432,104 432,104" fill="#d5edcc" opacity="0.55"></polygon>
   <!-- Zona producción (der. del cruce) -->
-  <polygon points="432,104 530,67 530,82 432,104" fill="#dce8f5" opacity="0.6"></polygon>
+  <polygon points="433,104 530,59 530,55" fill="#dce8f5" opacity="0.6"></polygon>
   <!-- Ejes -->
   <line x1="70" y1="20" x2="70" y2="300" stroke="#333" stroke-width="2"></line>
   <line x1="60" y1="290" x2="560" y2="290" stroke="#333" stroke-width="2"></line>
@@ -540,11 +541,11 @@ window.Quarto = {
   <!-- y(1318800) = 290-(1318800/1400000)*260 = 290-244.9 = 45 -->
   <!-- x(30000) = 70+(30000/30000)*490 = 560 → uso 530 con Q=28500 -->
   <!-- y(28500): CF_fab=88800+41*28500=88800+1168500=1257300 → 290-(1257300/1400000)*260=290-233.4=56.6≈57 -->
-  <line x1="70" y1="274" x2="530" y2="57" stroke="#e15759" stroke-width="2"></line>
+  <line x1="70" y1="274" x2="530" y2="59" stroke="#e15759" stroke-width="2"></line>
   <text x="535" y="54" fill="#e15759" font-size="10">C fab</text>
   <!-- C_comp: nace en origen (70,290), pendiente 45 -->
   <!-- y(28500)=290-(28500*45/1400000)*260=290-(1282500/1400000)*260=290-238.2=51.8≈52 -->
-  <line x1="70" y1="290" x2="530" y2="52" stroke="#4e79a7" stroke-width="2"></line>
+  <line x1="70" y1="290" x2="530" y2="55" stroke="#4e79a7" stroke-width="2"></line>
   <text x="535" y="49" fill="#4e79a7" font-size="10">C comp</text>
   <!-- CF horizontal -->
   <line x1="70" y1="274" x2="250" y2="274" stroke="#aaa" stroke-width="1" stroke-dasharray="4,3"></line>
@@ -576,6 +577,72 @@ window.Quarto = {
 </div>
 <hr>
 </section>
+<section id="ehu-2024-extraordinaria-bollar-s.-l.-maletas" class="level3">
+<h3 class="anchored" data-anchor-id="ehu-2024-extraordinaria-bollar-s.-l.-maletas">EHU 2024 Extraordinaria — BOLLAR S. L. (maletas)</h3>
+<blockquote class="blockquote">
+<p><em>BOLLAR se plantea renovar su maquinaria para fabricar maletas a un coste variable de 8 € por unidad o comprarlas ya fabricadas a un proveedor chino por 12 € cada una. Para una producción de 10.000 maletas:</em><br>
+a) Calcula el precio máximo de la maquinaria para que fabricar no resulte más caro que comprar.<br>
+b) Si la maquinaria cuesta ese máximo y el coste de producción baja un 25 %, calcula el precio máximo por maleta que podría cobrar el proveedor para que comprar no resulte más caro que fabricar.<br>
+c) Representa gráficamente la comparación del apartado b).</p>
+</blockquote>
+<div class="callout callout-style-default callout-tip callout-titled" title="Solución comentada">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Solución comentada
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>a) Precio máximo de la maquinaria</strong></p>
+<p>Comprar las 10.000 maletas costaría:</p>
+<p><span class="math display">\[C_{compra}=10.000\times12=120.000\ €\]</span></p>
+<p>Fabricarlas antes de incluir la maquinaria costaría:</p>
+<p><span class="math display">\[C_{fabricación\ variable}=10.000\times8=80.000\ €\]</span></p>
+<p>La diferencia es el máximo que se puede pagar por la maquinaria:</p>
+<p><span class="math display">\[CF_{máximo}=120.000-80.000=\mathbf{40.000\ €}\]</span></p>
+<p><strong>b) Precio máximo del proveedor</strong></p>
+<p>La reducción del 25 % deja el coste variable unitario en:</p>
+<p><span class="math display">\[CVu'=8\times(1-0{,}25)=\mathbf{6\ €/maleta}\]</span></p>
+<p>Con maquinaria de 40.000 €, fabricar 10.000 maletas cuesta <span class="math inline">\(40.000+(6\times10.000)=100.000\)</span> €. El precio de compra que iguala ese coste es:</p>
+<p><span class="math display">\[P_{max}=\frac{40.000+(6\times10.000)}{10.000}=\mathbf{10\ €/maleta}\]</span></p>
+<p>A 10 € las alternativas cuestan lo mismo. Por debajo de ese precio conviene comprar; por encima, fabricar.</p>
+<p><strong>c) Representación gráfica</strong></p>
+<p>Las rectas que se comparan son <span class="math inline">\(C_{compra}=10Q\)</span> y <span class="math inline">\(C_{fabricación}=40.000+6Q\)</span>. Se cruzan en 10.000 unidades y 100.000 €.</p>
+<figure style="margin:1.5em auto;max-width:600px;" class="figure">
+<svg viewbox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;font-family:sans-serif;font-size:11px;">
+  <rect x="0" y="0" width="600" height="360" fill="#fafafa" rx="4"></rect>
+  <!-- Zonas entre las rectas: comprar es más barato a la izquierda; fabricar, a la derecha. -->
+  <polygon points="70,290 70,221 437,119" fill="#dce8f5" opacity="0.55"></polygon>
+  <polygon points="437,119 510,98 510,84" fill="#d5edcc" opacity="0.6"></polygon>
+  <!-- Ejes: Q de 0 a 12.000 unidades; costes de 0 a 140.000 €. -->
+  <line x1="70" y1="40" x2="70" y2="300" stroke="#333" stroke-width="2"></line>
+  <line x1="60" y1="290" x2="520" y2="290" stroke="#333" stroke-width="2"></line>
+  <text x="300" y="330" text-anchor="middle" fill="#555">Cantidad (Q)</text>
+  <text x="20" y="165" text-anchor="middle" fill="#555" transform="rotate(-90,20,165)">Costes (€)</text>
+  <!-- Fabricar: 40.000 + 6Q -->
+  <line x1="70" y1="221" x2="510" y2="98" stroke="#e15759" stroke-width="2.5"></line>
+  <text x="516" y="101" fill="#b23b3d" font-size="10">C fab</text>
+  <!-- Comprar: 10Q -->
+  <line x1="70" y1="290" x2="510" y2="84" stroke="#4e79a7" stroke-width="2.5"></line>
+  <text x="516" y="86" fill="#365f8a" font-size="10">C comp</text>
+  <!-- Punto de indiferencia: Q=10.000; coste=100.000 €. -->
+  <line x1="437" y1="119" x2="437" y2="290" stroke="#555" stroke-dasharray="4,3"></line>
+  <line x1="70" y1="119" x2="437" y2="119" stroke="#555" stroke-dasharray="4,3"></line>
+  <circle cx="437" cy="119" r="4" fill="#333"></circle>
+  <text x="437" y="307" text-anchor="middle" fill="#333" font-weight="bold">10.000</text>
+  <text x="62" y="123" text-anchor="end" fill="#333">100.000 €</text>
+  <text x="430" y="108" text-anchor="end" fill="#333" font-size="10">Indiferencia</text>
+  <text x="170" y="238" text-anchor="middle" fill="#365f8a" font-size="10" font-weight="bold">Comprar es más barato</text>
+  <text x="470" y="265" text-anchor="middle" fill="#2d6a27" font-size="10" font-weight="bold">Fabricar si Q &gt; 10.000</text>
+</svg>
+<figcaption style="text-align:center;font-size:0.85em;color:#555;margin-top:0.3em">Punto de indiferencia entre comprar y fabricar las maletas</figcaption>
+</figure>
+</div>
+</div>
+<hr>
+</section>
 </section>
 <section id="ejercicios-propuestos" class="level2" data-number="B.2">
 <h2 data-number="B.2" class="anchored" data-anchor-id="ejercicios-propuestos"><span class="header-section-number">B.2</span> Ejercicios propuestos</h2>
@@ -596,7 +663,7 @@ window.Quarto = {
 <li>Si la empresa prevé producir 6.000 unidades, ¿qué decisión debe tomar y cuánto se ahorra?</li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled" title="Solución">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -605,7 +672,7 @@ window.Quarto = {
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ol type="a">
 <li><span class="math inline">\(CV = 200.000 - 56.000 = 144.000\)</span> €; <span class="math inline">\(CVu = 144.000 / 8.000 = 18\)</span> €</li>
@@ -635,7 +702,7 @@ window.Quarto = {
 <li>Si necesitara 400.000 unidades, ¿cuál es la mejor decisión? Calcula los costes de cada alternativa.</li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled" title="Solución">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -644,7 +711,7 @@ window.Quarto = {
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><strong>Datos:</strong> - <span class="math inline">\(P_c = 11\)</span> €/ud (precio de compra en Malasia) - <span class="math inline">\(CF = 650.000 + 300.000 + 450.000 + 200.000 = 1.600.000\)</span> € - <span class="math inline">\(CVu = 4 + 1{,}50 + 0{,}50 = 6\)</span> €/ud</p>
 <p><strong>a) Punto de indiferencia:</strong> <span class="math display">\[Q^* = \frac{CF}{P_c - CVu} = \frac{1.600.000}{11 - 6} = \frac{1.600.000}{5} = \mathbf{320.000\ \text{unidades}}\]</span></p>

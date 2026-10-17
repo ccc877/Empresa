@@ -41,7 +41,7 @@ El modelo trabaja con dos categorías de costes que evolucionan en sentidos opue
 
 - **Coste de almacenamiento** ($g$): recoge los gastos derivados de mantener las existencias en el almacén —alquiler del espacio, seguros, pérdidas por obsolescencia, mermas y el coste financiero del capital inmovilizado—. Este coste crece con el nivel medio de inventario: cuanto mayor sea $Q$, mayor será el stock medio $(Q/2 + ss)$ y, por tanto, mayores serán los costes de posesión.
 
-La clave del modelo está en que ambos costes se comportan de forma inversa: reducir $Q$ abarata el almacenamiento pero encarece el pedido, y aumentar $Q$ hace lo contrario. El Modelo de Wilson busca el valor de $Q$ que **minimiza la suma de ambos costes**, que es precisamente el punto en que el coste de pedido y el coste de almacenamiento se igualan.
+La clave del modelo está en que ambos costes se comportan de forma inversa: reducir $Q$ abarata el almacenamiento pero encarece el pedido, y aumentar $Q$ hace lo contrario. El Modelo de Wilson busca el valor de $Q$ que **minimiza la suma de ambos costes**. En el punto óptimo se igualan el coste de pedido y el componente variable del coste de almacenamiento; el coste del stock de seguridad, si existe, es constante y no altera ese óptimo.
 
 ### Fórmulas operativas
 
@@ -56,7 +56,7 @@ $$
 A partir de $Q^*$ se obtienen:
 
 $$
-N = \frac{D}{Q} \quad \text{(número de pedidos al año)}
+N = \frac{D}{Q^*} \quad \text{(número de pedidos al año)}
 $$
 
 $$
@@ -79,7 +79,7 @@ $d$ y $t$ deben estar expresados en la **misma unidad de tiempo**. Si $t$ es en 
 **Stock medio ($S_m$) e Índice de Rotación ($IR$):**
 
 $$
-S_m = \frac{Q}{2} + ss \qquad \longrightarrow \qquad IR = \frac{D}{S_m} \quad \text{(veces/año)}
+S_m = \frac{Q^*}{2} + ss \qquad \longrightarrow \qquad IR = \frac{D}{S_m} \quad \text{(veces/año)}
 $$
 
 #### C. Coste total de gestión (CG)
@@ -87,10 +87,26 @@ $$
 El coste total que el modelo minimiza es la suma del coste de pedido y el coste de almacenamiento:
 
 $$
-CT = \underbrace{s \cdot N}_{\text{Coste pedido}} + \underbrace{g \cdot \left(\frac{Q}{2} + ss\right)}_{\text{Coste almacenamiento}}
+CT = \underbrace{s \cdot N}_{\text{Coste pedido}} + \underbrace{g \cdot \left(\frac{Q^*}{2} + ss\right)}_{\text{Coste almacenamiento}}
 $$
 
-En el punto óptimo $Q^*$, el coste de pedido y el coste de almacenamiento se igualan.
+En el punto óptimo $Q^*$, el coste de pedido se iguala al componente variable del coste de almacenamiento, $gQ^*/2$. Si hay stock de seguridad, su coste adicional $g\,ss$ no forma parte de esa igualdad.
+
+### De dónde sale la fórmula de $Q^*$
+
+Si se pide una cantidad $Q$ cada vez, se realizan $D/Q$ pedidos al año. Por tanto, el coste anual de pedido es $sD/Q$. Sin stock de seguridad, el inventario medio es $Q/2$ y su coste anual de almacenamiento es $gQ/2$. En la cantidad óptima, ambos componentes variables se igualan:
+
+$$
+\frac{sD}{Q^*} = \frac{gQ^*}{2}
+\quad\Longrightarrow\quad
+2sD = g(Q^*)^2
+\quad\Longrightarrow\quad
+Q^* = \sqrt{\frac{2sD}{g}}
+$$
+
+Si se mantiene un stock de seguridad, se añade $g\,ss$ al coste anual de almacenamiento. Como ese importe no depende de $Q$, no cambia la cantidad óptima; sí debe incluirse al calcular el coste total real.
+
+El coste de compra también puede sumarse al gasto anual completo: si $p$ es el precio por unidad, es $pD$. Cuando el precio es constante y no hay descuentos por volumen, este gasto no depende de $Q$ y no afecta al cálculo de la cantidad óptima.
 
 ### Conceptos clave del modelo
 
@@ -114,6 +130,27 @@ Si existe **stock de seguridad**, el inventario nunca baja de $ss$ unidades: la 
 3. **Ruptura de stock**: ocurre si el retraso del proveedor (en días) $\times\, d > ss$.
 4. **Gráfica de dientes de sierra**: si hay stock de seguridad, el eje Y **empieza en $ss$** (no en 0).
 :::
+
+---
+
+## El periodo medio de maduración económico y financiero
+
+El **periodo medio de maduración económico (PMMe)** mide el tiempo que transcurre desde que la empresa invierte dinero en las materias primas hasta que lo recupera al cobrar la venta del producto. En una empresa industrial, el ciclo comprende cuatro fases:
+
+1. **Almacenamiento de materias primas ($PM_A$):** desde su compra hasta que entran en producción.
+2. **Fabricación ($PM_F$):** desde el inicio de la producción hasta que el producto está terminado.
+3. **Venta ($PM_V$):** desde que el producto terminado queda almacenado hasta que se vende.
+4. **Cobro ($PM_C$):** desde la venta hasta que el cliente paga.
+
+Por tanto:
+
+$$PMMe = PM_A + PM_F + PM_V + PM_C$$
+
+Si los proveedores permiten aplazar el pago, hay que tener en cuenta una quinta fase: el **periodo medio de pago ($PM_P$)**, es decir, los días que pasan desde la compra de las materias primas hasta que se pagan. El **periodo medio de maduración financiero (PMMf)** comienza cuando la empresa paga y termina cuando cobra; por eso se resta el plazo financiado por los proveedores:
+
+$$PMMf = PMMe - PM_P$$
+
+Un PMMf positivo indica cuántos días debe financiar la empresa por sí misma o mediante financiación ajena. Si es negativo, cobra sus ventas antes de pagar a los proveedores. En una empresa comercial, que no transforma materias primas, el ciclo económico se simplifica a almacenamiento de mercaderías y cobro: $PMMe_{comercial} = PM_A + PM_C$.
 
 ---
 
@@ -222,6 +259,7 @@ para Empresa y Diseño de Modelos de Negocio (2.º Bach.):
 Bloque B.3 - Función productiva y aprovisionamiento:
   - Gestión de inventarios: Punto de pedido, JIT ✓
   - Modelo de Wilson (CEP / EOQ) con fórmulas completas ✓
+  - Periodos de maduración económico y financiero ✓
   - Sistema JIT ✓
   - Sistema ABC (Principio de Pareto) ✓
 

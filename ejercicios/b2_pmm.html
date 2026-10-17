@@ -373,6 +373,7 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#ehu-2019-extraordinaria-empresa-con-rotaciones-dadas" id="toc-ehu-2019-extraordinaria-empresa-con-rotaciones-dadas" class="nav-link" data-scroll-target="#ehu-2019-extraordinaria-empresa-con-rotaciones-dadas">EHU 2019 Extraordinaria — Empresa con rotaciones dadas</a></li>
   <li><a href="#ehu-2025-extraordinaria-empresa-con-saldos-medios" id="toc-ehu-2025-extraordinaria-empresa-con-saldos-medios" class="nav-link" data-scroll-target="#ehu-2025-extraordinaria-empresa-con-saldos-medios">EHU 2025 Extraordinaria — Empresa con saldos medios</a></li>
+  <li><a href="#econosublime-empresa-comercial-ejercicio-2" id="toc-econosublime-empresa-comercial-ejercicio-2" class="nav-link" data-scroll-target="#econosublime-empresa-comercial-ejercicio-2">EconoSublime — Empresa comercial (ejercicio 2)</a></li>
   </ul></li>
   <li><a href="#ejercicios-propuestos" id="toc-ejercicios-propuestos" class="nav-link" data-scroll-target="#ejercicios-propuestos"><span class="header-section-number">E.2</span> Ejercicios propuestos</a></li>
   </ul>
@@ -430,7 +431,7 @@ window.Quarto = {
 <tr class="odd">
 <td style="text-align: center;"><span class="math inline">\(PM_A\)</span></td>
 <td style="text-align: left;">Período medio de almacenamiento</td>
-<td style="text-align: left;">Días que la materia prima permanece en el almacén antes de entrar en producción</td>
+<td style="text-align: left;">Días que la materia prima o las mercaderías permanecen en el almacén antes de pasar a producción o venderse</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><span class="math inline">\(PM_F\)</span></td>
@@ -513,6 +514,7 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
+<p>En una empresa comercial, el índice de almacenamiento se calcula con el consumo anual de mercaderías y el saldo medio de existencias. No hay fases de fabricación ni de almacenamiento de productos terminados.</p>
 <p><strong>PMM Económico y Financiero</strong></p>
 <p><span class="math display">\[PMMe = PM_A + PM_F + PM_V + PM_C\]</span></p>
 <p><span class="math display">\[PMMf = PMMe - PM_P\]</span></p>
@@ -626,6 +628,37 @@ window.Quarto = {
 </div>
 <hr>
 </section>
+<section id="econosublime-empresa-comercial-ejercicio-2" class="level3">
+<h3 class="anchored" data-anchor-id="econosublime-empresa-comercial-ejercicio-2">EconoSublime — Empresa comercial (ejercicio 2)</h3>
+<blockquote class="blockquote">
+<p><em>Una empresa comercial consume mercaderías por valor de 12.000 € al año y mantiene un saldo medio de existencias de 2.000 €. Sus ventas anuales ascienden a 30.000 €, el saldo medio de clientes es de 1.000 € y el de proveedores, de 3.000 €. Para calcular el plazo de pago, se consideran los 12.000 € como compras anuales a crédito. Usa un año comercial de 360 días.</em></p>
+<p>Calcula el PMM económico y el financiero e interpreta el resultado.</p>
+</blockquote>
+<p><em>Adaptación y resolución del <a href="https://www.econosublime.com/2019/12/ejercicio-resuelto-periodo-medio-maduracion/">ejercicio comercial 2 de EconoSublime</a>, con redacción propia.</em></p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Solución comentada">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Solución comentada
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Como se trata de una empresa comercial, no hay fases de fabricación ni de almacenamiento de productos terminados. El ciclo económico incluye almacenamiento de mercaderías y cobro.</p>
+<p><strong>Periodo medio de almacenamiento</strong></p>
+<p><span class="math display">\[n_A = \frac{12.000}{2.000}=6\ veces\qquad PM_A=\frac{360}{6}=\mathbf{60\ días}\]</span></p>
+<p><strong>Periodo medio de cobro</strong></p>
+<p><span class="math display">\[n_C = \frac{30.000}{1.000}=30\ veces\qquad PM_C=\frac{360}{30}=\mathbf{12\ días}\]</span></p>
+<p><span class="math display">\[PMMe_{comercial}=PM_A+PM_C=60+12=\mathbf{72\ días}\]</span></p>
+<p><strong>Periodo medio de pago</strong></p>
+<p><span class="math display">\[n_P=\frac{12.000}{3.000}=4\ veces\qquad PM_P=\frac{360}{4}=\mathbf{90\ días}\]</span></p>
+<p><span class="math display">\[PMMf=PMMe-PM_P=72-90=\mathbf{-18\ días}\]</span></p>
+<p>El PMMf negativo significa que la empresa cobra, en promedio, 18 días antes de pagar a sus proveedores. Durante ese intervalo, el crédito comercial de los proveedores financia el ciclo.</p>
+</div>
+</div>
+<hr>
+</section>
 </section>
 <section id="ejercicios-propuestos" class="level2" data-number="E.2">
 <h2 data-number="E.2" class="anchored" data-anchor-id="ejercicios-propuestos"><span class="header-section-number">E.2</span> Ejercicios propuestos</h2>
@@ -652,7 +685,7 @@ window.Quarto = {
 <li>Interpreta el resultado del PMMf.</li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled" title="Solución">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -661,7 +694,7 @@ window.Quarto = {
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(PM_A = 360/9 = 40\)</span> días; <span class="math inline">\(PM_F = 40\)</span> días; <span class="math inline">\(PM_V = 360/6 = 60\)</span> días; <span class="math inline">\(PM_C = 360/8 = 45\)</span> días</p>
 <p><span class="math inline">\(PMMe = 40 + 40 + 60 + 45 = \mathbf{185\ \text{días}}\)</span></p>
@@ -695,7 +728,7 @@ window.Quarto = {
 <li>Calcula el PMMf e interprétalo.</li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled" title="Solución">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -704,7 +737,7 @@ window.Quarto = {
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(n_A = 36.000/3.000 = 12\)</span>; <span class="math inline">\(PM_A = 30\)</span> días</p>
 <p><span class="math inline">\(n_F = 54.000/4.500 = 12\)</span>; <span class="math inline">\(PM_F = 30\)</span> días</p>

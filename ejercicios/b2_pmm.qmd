@@ -8,7 +8,7 @@
 
 | Símbolo | Nombre completo | Significado |
 |:---:|:---|:---|
-| $PM_A$ | Período medio de almacenamiento | Días que la materia prima permanece en el almacén antes de entrar en producción |
+| $PM_A$ | Período medio de almacenamiento | Días que la materia prima o las mercaderías permanecen en el almacén antes de pasar a producción o venderse |
 | $PM_F$ | Período medio de fabricación | Días que tarda la empresa en transformar la MP en producto terminado |
 | $PM_V$ | Período medio de venta | Días que el producto terminado permanece en el almacén antes de venderse |
 | $PM_C$ | Período medio de cobro | Días que tarda la empresa en cobrar a sus clientes tras la venta |
@@ -30,6 +30,8 @@ $$PM_i = \frac{\text{días del año}}{n_i}$$
 | $PM_V$ | $n_V = \dfrac{\text{Coste anual de ventas}}{\text{Saldo medio productos terminados}}$ | A precio de coste |
 | $PM_C$ | $n_C = \dfrac{\text{Ventas anuales}}{\text{Saldo medio de clientes}}$ | A precio de **venta** |
 | $PM_P$ | $n_P = \dfrac{\text{Compras anuales a crédito}}{\text{Saldo medio de proveedores}}$ | A precio de coste |
+
+En una empresa comercial, el índice de almacenamiento se calcula con el consumo anual de mercaderías y el saldo medio de existencias. No hay fases de fabricación ni de almacenamiento de productos terminados.
 
 **PMM Económico y Financiero**
 
@@ -133,6 +135,40 @@ Desde que la empresa paga las materias primas a sus proveedores hasta que cobra 
 ::: {.callout-warning title="Atención a las valoraciones"}
 Fíjate en que $n_V$ usa el **coste** de ventas (45.000 €) y el saldo medio de productos terminados también **a coste** (3.750 €), mientras que $n_C$ usa las **ventas a precio de venta** (75.000 €) y el saldo de clientes también **a precio de venta** (1.500 €). Mezclar ambas valoraciones es el error más penalizado en este tema.
 :::
+
+:::
+
+---
+
+### EconoSublime — Empresa comercial (ejercicio 2)
+
+> *Una empresa comercial consume mercaderías por valor de 12.000 € al año y mantiene un saldo medio de existencias de 2.000 €. Sus ventas anuales ascienden a 30.000 €, el saldo medio de clientes es de 1.000 € y el de proveedores, de 3.000 €. Para calcular el plazo de pago, se consideran los 12.000 € como compras anuales a crédito. Usa un año comercial de 360 días.*
+>
+> Calcula el PMM económico y el financiero e interpreta el resultado.
+
+*Adaptación y resolución del [ejercicio comercial 2 de EconoSublime](https://www.econosublime.com/2019/12/ejercicio-resuelto-periodo-medio-maduracion/), con redacción propia.*
+
+::: {.callout-tip title="Solución comentada"}
+
+Como se trata de una empresa comercial, no hay fases de fabricación ni de almacenamiento de productos terminados. El ciclo económico incluye almacenamiento de mercaderías y cobro.
+
+**Periodo medio de almacenamiento**
+
+$$n_A = \frac{12.000}{2.000}=6\ veces\qquad PM_A=\frac{360}{6}=\mathbf{60\ días}$$
+
+**Periodo medio de cobro**
+
+$$n_C = \frac{30.000}{1.000}=30\ veces\qquad PM_C=\frac{360}{30}=\mathbf{12\ días}$$
+
+$$PMMe_{comercial}=PM_A+PM_C=60+12=\mathbf{72\ días}$$
+
+**Periodo medio de pago**
+
+$$n_P=\frac{12.000}{3.000}=4\ veces\qquad PM_P=\frac{360}{4}=\mathbf{90\ días}$$
+
+$$PMMf=PMMe-PM_P=72-90=\mathbf{-18\ días}$$
+
+El PMMf negativo significa que la empresa cobra, en promedio, 18 días antes de pagar a sus proveedores. Durante ese intervalo, el crédito comercial de los proveedores financia el ciclo.
 
 :::
 

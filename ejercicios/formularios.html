@@ -446,6 +446,8 @@ window.Quarto = {
 <p><span class="math display">\[Q^* = \sqrt{\frac{2 \cdot s \cdot D}{g}} \qquad N = \frac{D}{Q} \qquad T = \frac{360}{N}\]</span></p>
 <p><span class="math display">\[PP = ss + (d \times t) \qquad S_m = \frac{Q}{2} + ss \qquad IR = \frac{D}{S_m}\]</span></p>
 <p><span class="math display">\[CT = s \cdot N + g \cdot \left(\frac{Q}{2} + ss\right)\]</span></p>
+<p>En el pedido óptimo, <span class="math inline">\(sD/Q^* = gQ^*/2\)</span>, de donde <span class="math inline">\(Q^* = \sqrt{2sD/g}\)</span>. El coste del stock de seguridad, <span class="math inline">\(g\,ss\)</span>, se añade al coste total, pero no altera la cantidad óptima.</p>
+<p>Si también se calcula el gasto anual de compra, se añade <span class="math inline">\(pD\)</span>, donde <span class="math inline">\(p\)</span> es el precio por unidad. Si el precio no depende del tamaño del pedido, <span class="math inline">\(pD\)</span> es constante y no cambia la cantidad óptima; por eso se excluye al aplicar la fórmula de Wilson.</p>
 <p><strong>Ruptura de stock:</strong> ocurre si retraso (días) <span class="math inline">\(\times\ d &gt; ss\)</span>. Días que aguanta el <span class="math inline">\(ss\)</span>: <span class="math inline">\(ss / d\)</span>.</p>
 </section>
 <section id="período-medio-de-maduración" class="level3">
@@ -486,6 +488,8 @@ window.Quarto = {
 </tbody>
 </table>
 <p><span class="math display">\[PMMe = PM_A + PM_F + PM_V + PM_C \qquad PMMf = PMMe - PM_P\]</span></p>
+<p>En empresas comerciales: <span class="math inline">\(PMMe = PM_A + PM_C\)</span>, porque no existe fase de fabricación ni de almacenamiento de productos terminados.</p>
+<p>En una empresa comercial, <span class="math inline">\(n_A = \text{consumo anual de mercaderías}/\text{saldo medio de mercaderías}\)</span>; en la fase de pago se usan las compras anuales a crédito.</p>
 </section>
 <section id="fifo-y-pmp" class="level3">
 <h3 class="anchored" data-anchor-id="fifo-y-pmp">FIFO y PMP</h3>

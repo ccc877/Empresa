@@ -259,6 +259,43 @@ $$Q^* = \frac{32.000}{15 - 2{,}6} = \frac{32.000}{12{,}4} = \mathbf{2.580{,}6 \a
 
 ---
 
+### EHU 2024 Ordinaria — HELTZU (coste por componente electrónico)
+
+> *HELTZU fabrica componentes electrónicos en cajas de 100. Para producir 45.000 componentes necesita 81.000 unidades de materia prima, a 3,40 € cada una, y paga 1.200 € de portes. La envoltura cuesta 1,70 € por componente y cada caja de 100 cuesta 6 €. Además, paga 5.000 € de alquiler, 56.000 € en sueldos y otros costes fijos, y unos costes indirectos equivalentes al 12 % de 2.345.000 €. Calcula el coste de producción por componente.*
+
+*EHU, [EAU 2024 ordinaria, pregunta 2](https://www.ehu.eus/documents/d/unibertsitaterako-sarbidea/empresa-y-diseno-de-modelos-de-negocio).*
+
+::: {.callout-tip title="Solución comentada"}
+
+**Costes fijos**
+
+Alquiler + sueldos y otros costes fijos: 5.000 € + 56.000 € = **61.000 €**
+
+**Costes variables**
+
+- Materia prima: 81.000 unidades × 3,40 €/unidad = **275.400 €**
+- Portes: **1.200 €**
+- Envoltura: 45.000 componentes × 1,70 €/componente = **76.500 €**
+- Cajas: (45.000 / 100) × 6 €/caja = 450 cajas × 6 € = **2.700 €**
+
+Costes variables totales: 275.400 € + 1.200 € + 76.500 € + 2.700 € = **355.800 €**
+
+**Costes indirectos**
+
+El 12 % de 2.345.000 €: 0,12 × 2.345.000 € = **281.400 €**
+
+**Coste total y coste unitario**
+
+Coste total: 61.000 € + 355.800 € + 281.400 € = **698.200 €**
+
+Coste por componente: 698.200 € / 45.000 componentes = **15,5155… €/componente**.
+
+Con redondeo habitual a céntimos, el coste es **15,52 €/componente**. El solucionario oficial publica **15,51 €**, aparentemente truncando el resultado. El precio de venta de 35 € que figura en el examen no interviene en el cálculo del coste.
+
+:::
+
+---
+
 ## Ejercicios propuestos
 
 ::: {.callout-important title="Propuesto 1 — EHU 2022 Ordinaria · Restaurante ONDO JAN"}
