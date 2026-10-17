@@ -45,10 +45,10 @@ Problema para resolver de forma autónoma.
 | Año | Ordinaria | Extraordinaria |
 |:---:|:---|:---|
 | 2019 | — | PMM |
-| 2021 | — | Fuentes de financiación |
-| 2022 | Inversiones (NORBERA), Wilson (PEREIRA) | Producir o comprar (camisas) |
-| 2023 | Inversiones (GAUTZA) | — |
-| 2024 | Costes (HELTZU), Balance y ratios (GAI SAI), FIFO y PMP (EDIMO) | Producir o comprar (BOLLAR), FIFO y PMP (PERTUERO) |
+| 2021 | — | Inversiones (ALPHA), fuentes de financiación |
+| 2022 | Inversiones (NORBERA), Wilson (PEREIRA) | Inversiones (ITSUKI), producir o comprar (camisas) |
+| 2023 | Inversiones (GAUTZO) | — |
+| 2024 | Costes (HELTZU), Balance y ratios (GAI SAI), FIFO y PMP (EDIMO) | Inversiones (ELURKETA), producir o comprar (BOLLAR), FIFO y PMP (PERTUERO) |
 | 2025 | PMM | Balance y ratios (EHUNTZE) |
 
 ### Ejercicios de otras comunidades
@@ -69,8 +69,11 @@ Problema para resolver de forma autónoma.
 | PETUKA | Costes dos productos | Examen interno | B1 · Costes |
 | Empresa camisas | Producir o comprar | EHU 2022 Ext. | B1 · Producir o comprar |
 | BOLLAR S. L. | Producir o comprar | EHU 2024 Ext. | B1 · Producir o comprar |
+| ALPHA, BETA y GAMMA | Pay-back y VAN | EHU 2021 Ext. | B3 · Inversiones |
 | NORBERA | Pay-back y VAN | EHU 2022 Ord. | B3 · Inversiones |
-| GAUTZA | Pay-back y VAN (pagos fraccionados) | EHU 2023 Ord. | B3 · Inversiones |
+| ITSUKI | Pay-back y VAN | EHU 2022 Ext. | B3 · Inversiones |
+| GAUTZO | Pay-back y VAN (pagos fraccionados) | EHU 2023 Ord. | B3 · Inversiones |
+| ELURKETA | Pay-back y VAN (costes incrementales y venta de activos) | EHU 2024 Ext. | B3 · Inversiones |
 | PEREIRA | Modelo de Wilson | EHU 2022 Ord. | B2 · Wilson |
 | KOTINA S.L. | Modelo de Wilson | Examen interno 2024/25 | B2 · Wilson |
 | Empresa de alarmas | Modelo de Wilson con stock de seguridad | ABAU Galicia 2019 | B2 · Wilson |

@@ -63,6 +63,140 @@ Entre varios proyectos aceptables, se elige el de **mayor VAN**.
 
 ## Ejercicios resueltos
 
+### EHU 2021 Extraordinaria — Proyectos Alpha, Beta y Gamma
+
+> **PREGUNTA 4. Puntuación máxima: 2 puntos.**
+>
+> En el cuadro siguiente aparecen los datos correspondientes a tres proyectos de inversión diferentes que una empresa está estudiando para poner en marcha aquel que le resulte más interesante:
+>
+> | Proyecto de inversión | Desembolso inicial | Primer año | Segundo año | Tercer año | Cuarto año | Quinto año |
+> |:---|---:|---:|---:|---:|---:|---:|
+> | Alpha | 10.000 € | 0 € | 0 € | 6.000 € | 6.000 € | 8.000 € |
+> | Beta | 20.000 € | 3.000 € | 4.000 € | 5.000 € | 6.000 € | 8.000 € |
+> | Gamma | 16.000 € | 4.000 € | 5.000 € | 8.000 € | 3.000 € | 3.000 € |
+>
+> Teniendo en cuenta que la tasa de inflación anual es del 3 % y que la rentabilidad mínima que se quiere conseguir es del 2 %, calcule:
+>
+> a) ¿Qué proyecto es el más conveniente según el criterio del plazo de recuperación (Pay-back)? Justifique su respuesta.
+>
+> b) ¿Qué proyecto se debería elegir según el criterio del Valor Actual Neto?
+>
+> c) ¿Cuál de los dos criterios (Valor Actual Neto o plazo de recuperación) es el más adecuado? ¿Por qué?
+
+::: {.callout-tip title="Solución oficial comentada"}
+
+La tasa de descuento se calcula con la fórmula de Fisher:
+
+$$k = i + g + (i \times g) = 0{,}02 + 0{,}03 + (0{,}02 \times 0{,}03) = 0{,}0506$$
+
+La solución oficial redondea esta tasa al 5 % y publica los valores siguientes. Se conservan aquí sus resultados tal como aparecen en el solucionario.
+
+**a) Plazo de recuperación (Pay-back)**
+
+Si la inversión se recupera durante un año, se calcula la parte de ese año mediante:
+
+$$PB = (t-1) + \frac{\text{importe pendiente al inicio del año }t}{F_t}$$
+
+- **Alpha:** al final del tercer año quedan 4.000 € por recuperar; $4.000/6.000 \times 12 = 8$ meses. Pay-back: **3 años y 8 meses**.
+- **Beta:** al final del cuarto año quedan 2.000 € por recuperar; $2.000/8.000 \times 12 = 3$ meses. Pay-back: **4 años y 3 meses**.
+- **Gamma:** al final del segundo año quedan 7.000 € por recuperar; $7.000/8.000 \times 12 = 10{,}5$ meses. Pay-back: **2 años y 10,5 meses**.
+
+Según el Pay-back, se elige **Gamma**, porque recupera antes la inversión.
+
+**b) Valor Actual Neto**
+
+La fórmula general es:
+
+$$VAN = -D_0 + \sum_{t=1}^{n}\frac{F_t}{(1+k)^t}$$
+
+Aplicada a cada proyecto, la solución oficial obtiene:
+
+| Proyecto | Valor actual de los flujos | VAN | Decisión |
+|:---|---:|---:|:---|
+| Alpha | 16.349 € | 6.349 € | Aceptable |
+| Beta | 21.967 € | 1.967 € | Aceptable |
+| Gamma | 20.043 € | 4.043 € | Aceptable |
+
+Los tres proyectos son aceptables porque su VAN es positivo. Según este criterio se elige **Alpha**, que presenta el VAN mayor.
+
+**c) Comparación de criterios**
+
+El VAN es más adecuado porque actualiza los flujos y tiene en cuenta la pérdida de valor del dinero, además de considerar todos los flujos de la vida del proyecto. El Pay-back no actualiza los flujos y deja de tener en cuenta los que se reciben después de recuperar la inversión.
+
+:::
+
+---
+
+### EHU 2022 Extraordinaria — Pescadería ITSUKI
+
+> **PREGUNTA 6. Puntuación máxima: 2 puntos.**
+>
+> La pescadería ITSUKI está obligada a tomar una decisión entre dos proyectos de inversión diferentes con el objetivo de hacer crecer su negocio.
+>
+> **La primera inversión** consiste en la instalación de una nevera industrial para enfriar todo el pescado que adquiera. Esto supone un frigorífico de 180.000 euros y unos costes de instalación de 25.000 euros, que pagaría al inicio de la inversión.
+>
+> En los próximos tres años se prevé una venta anual de 31.000 kg de pescado, con precios de venta de 14 €, 15 € y 18 € por kilo, respectivamente. El coste de cada kilo de pescado, una vez acordado con los proveedores, será de 7 €, 7,5 € y 10 € cada año. También tendrá que contratar a dos trabajadores para realizar tareas diarias y el coste anual total de los dos será de 74.000 euros.
+>
+> **La segunda inversión** consiste en comprar una pecera para almacenar marisco. En el momento inicial requiere desembolsar 50.000 euros, y al final del primer año un desembolso de 15.000 €. La inversión tiene una duración de tres años y los flujos que obtendría son 30.500 €, 44.500 € y 68.000 €, respectivamente. Debido a la facilidad con la que se ensucia este recipiente, se realizarán anualmente labores de limpieza y mantenimiento que ascienden a 1.000 € anuales. Finalmente, después de 3 años se venderá y se estima que tendrá un valor residual de 5.000 €.
+>
+> Teniendo en cuenta que la tasa de inflación anual será del 3 % y que quiere obtenerse un 5 % de rentabilidad mínima:
+>
+> a) ¿Qué proyecto se debería elegir según el criterio del Valor Actual Neto? Justifique su respuesta.
+>
+> b) ¿Qué proyecto es el más conveniente según el criterio del plazo de recuperación (Pay-back)? Justifique su respuesta.
+>
+> c) ¿Cuál de los dos criterios (Valor Actual Neto o plazo de recuperación) es el más adecuado? ¿Por qué?
+
+::: {.callout-tip title="Resolución propia a partir del enunciado"}
+
+El archivo facilitado contiene el enunciado, pero no la solución oficial. Esta resolución se ha elaborado a partir de los datos del ejercicio.
+
+**Flujos netos de caja**
+
+La fórmula general es $F_t = \text{cobros}_t - \text{pagos}_t$; al flujo final se suma el valor residual y los pagos de inversión se imputan al año en que se realizan.
+
+*Proyecto 1 — nevera industrial:*
+
+$$D_0 = 180.000 + 25.000 = 205.000\text{ €}$$
+$$F_t = 31.000\times(\text{precio por kg}_t - \text{coste por kg}_t) - 74.000$$
+$$F_1 = 143.000\text{ €};\quad F_2 = 158.500\text{ €};\quad F_3 = 174.000\text{ €}$$
+
+*Proyecto 2 — pecera:*
+
+$$D_0 = 50.000\text{ €}$$
+$$F_1 = 30.500 - 1.000 - 15.000 = 14.500\text{ €}$$
+$$F_2 = 44.500 - 1.000 = 43.500\text{ €}$$
+$$F_3 = 68.000 - 1.000 + 5.000 = 72.000\text{ €}$$
+
+**a) VAN**
+
+$$k = i + g + (i\times g) = 0{,}05 + 0{,}03 + (0{,}05\times0{,}03) = 0{,}0815$$
+
+$$VAN = -D_0 + \sum_{t=1}^{n}\frac{F_t}{(1+k)^t}$$
+
+$$VAN_1 = -205.000 + \frac{143.000}{1{,}0815} + \frac{158.500}{1{,}0815^2} + \frac{174.000}{1{,}0815^3} = 200.288{,}16\text{ €}$$
+
+$$VAN_2 = -50.000 + \frac{14.500}{1{,}0815} + \frac{43.500}{1{,}0815^2} + \frac{72.000}{1{,}0815^3} = 57.516{,}60\text{ €}$$
+
+Ambos VAN son positivos, por lo que los dos proyectos son aceptables. Se elige el **proyecto 1**, que genera el VAN más alto.
+
+**b) Pay-back**
+
+$$PB = (t-1) + \frac{\text{importe pendiente al inicio del año }t}{F_t}$$
+
+- Proyecto 1: tras el primer año quedan $205.000 - 143.000 = 62.000$ € por recuperar. Se recupera durante el segundo año: $62.000/158.500 \times 12 = 4{,}7$ meses. **1 año y 4,7 meses**.
+- Proyecto 2: después del primer año quedan $50.000 - 14.500 = 35.500$ €; $35.500/43.500 \times 12 = 9{,}8$ meses. **1 año y 9,8 meses**.
+
+El Pay-back también favorece al **proyecto 1**, que recupera antes la inversión.
+
+**c) Criterio más adecuado**
+
+El VAN es más completo: actualiza los flujos para tener en cuenta el valor temporal del dinero e incluye todos los flujos de caja de la vida del proyecto. El Pay-back solo mide cuánto se tarda en recuperar el desembolso y no considera los flujos posteriores.
+
+:::
+
+---
+
 ### EHU 2022 Ordinaria — Empresa NORBERA (proyectos A y B)
 
 > *La empresa NORBERA evalúa dos proyectos de inversión. Inflación: 2 %. Rentabilidad mínima: 7 %.*
@@ -157,21 +291,35 @@ El **VAN es superior al Pay-back** por dos razones:
 
 ---
 
-### EHU 2023 Ordinaria — Empresa GAUTZA (pagos fraccionados)
+### EHU 2023 Ordinaria — Empresa GAUTZO (pagos fraccionados)
 
-> *La empresa GAUTZA elige entre dos máquinas. Inflación: 5,9 %. Rentabilidad mínima: 3 %.*
+> La empresa GAUTZO quiere adquirir una máquina para la ampliación de su negocio en los próximos años y debe elegir entre dos opciones de inversión, la A y la B.
 >
-> **Proyecto A** — Máquina: 105.000 € pagados en tres tercios iguales (al comprar, fin año 1 y fin año 2). Vida útil: 4 años. Cobros: 40.000 / 50.000 / 60.000 / 46.000 €. Pagos producción: 5.000 / 10.000 / 15.000 / 7.000 €. Valor residual: 2.000 €.
+> **INVERSIÓN A**
 >
-> **Proyecto B** — Máquina: 110.000 € (mitad al comprar, mitad fin año 1). Mantenimiento: 300 €/año. Flujos netos (sin compra ni mantenimiento): 20.000 / 25.000 / 35.000 €. Vida útil: 3 años. Valor residual: 20.000 €.
+> El proyecto de inversión tiene una vida útil de 4 años. La máquina cuesta 105.000 €, y se paga un tercio en el momento de la compra. Otro tercio se pagará a finales del primer año, y el tercer pago, el último tercio, a finales del segundo año.
 >
-> a) Pay-back. *(0,75 p)*
-> b) VAN. *(1 p)*
-> c) ¿Qué criterio es más adecuado? *(0,25 p)*
+> Esta inversión le permitiría cobrar 40.000, 50.000, 60.000 y 46.000 euros respectivamente en los cuatro años de vida útil, por la venta de los productos que quiere fabricar con la nueva máquina. Los costes de producción que habría que pagar cada año serían de 5.000, 10.000, 15.000 y 7.000 euros, respectivamente. Al finalizar la vida útil de la inversión se prevé cobrar 2.000 € por su venta.
+>
+> **INVERSIÓN B**
+>
+> La duración de esta inversión es de 3 años y supone una inversión de 110.000 €. La mitad del precio de la máquina se paga en el momento de la compra y el resto, al final del primer año.
+>
+> Se contrataría el mantenimiento de esta máquina, abonando por ello 300 € al final de cada año de funcionamiento. Los flujos netos de caja que ofrecería esta inversión (sin incluir los gastos de compra y mantenimiento de la máquina) serían de 20.000, 25.000 y 35.000 euros, respectivamente, durante los tres años de funcionamiento. A finales del tercer año se prevé vender la máquina por 20.000 €.
+>
+> Teniendo en cuenta que la tasa de inflación anual estimada es del 5,9 % y que quiere obtenerse un 3 % de rentabilidad mínima:
+>
+> a) ¿Qué proyecto es el más conveniente según el criterio del plazo de recuperación (Pay-back)? Justifique su respuesta. *(0,75 puntos)*
+> b) ¿Qué proyecto se debería elegir según el criterio del Valor Actual Neto (VAN)? *(1 punto)*
+> c) ¿Cuál de los dos criterios (Valor Actual Neto o Plazo de Recuperación) es el más adecuado? ¿Por qué? *(0,25 puntos)*
 
 ::: {.callout-tip title="Solución comentada"}
 
 **Paso 0 — Flujos de caja (con cuidado con los pagos fraccionados)**
+
+La fórmula general para construir cada flujo anual es:
+
+$$F_t = \text{Cobros}_t - \text{Pagos de explotación}_t - \text{Pagos de inversión}_t + \text{Valor residual}_t$$
 
 Cada tercio de la máquina A: $105.000 / 3 = 35.000$ €.
 Cada mitad de la máquina B: $110.000 / 2 = 55.000$ €.
@@ -197,6 +345,12 @@ En el año 1, el pago del segundo plazo de la máquina (55.000 €) supera con c
 
 **a) Pay-back**
 
+Si la inversión se recupera durante el año $t$, el plazo se calcula como:
+
+$$PB = (t-1) + \frac{\text{Importe pendiente al inicio del año } t}{F_t}$$
+
+La parte fraccionaria del año puede convertirse a meses multiplicándola por 12.
+
 *Proyecto A ($D_0 = 35.000$ €):*
 
 - Año 1: $F_1 = 0$. Pendiente: 35.000 €.
@@ -219,7 +373,13 @@ Según el Pay-back, **se debe elegir el Proyecto A**. El B es inviable porque no
 
 Tasa de descuento por Fisher:
 
+$$k = (1+i)(1+g)-1$$
+
 $$k = 0{,}03 + 0{,}059 + (0{,}03 \times 0{,}059) = 0{,}089 + 0{,}00177 = \mathbf{0{,}09077}$$
+
+La expresión general del Valor Actual Neto es:
+
+$$VAN = -D_0 + \sum_{t=1}^{n}\frac{F_t}{(1+k)^t}$$
 
 $$VAN_A = -35.000 + \frac{0}{1{,}09077} + \frac{5.000}{1{,}09077^2} + \frac{45.000}{1{,}09077^3} + \frac{41.000}{1{,}09077^4} = \mathbf{32.840{,}69\ \text{€}}$$
 
@@ -239,12 +399,66 @@ El **VAN** es superior porque es un método dinámico: actualiza los flujos teni
 
 ---
 
-## Ejercicios propuestos
+### EHU 2024 Extraordinaria — Empresa ELURKETA
 
-::: {.callout-important title="Propuesto 1 — EHU (enunciado pendiente)"}
-*(Añade aquí un ejercicio real de inversiones de EHU cuando lo tengas disponible.)*
-:::
+> **PREGUNTA 4. Puntuación máxima: 2 puntos.**
+>
+> La empresa ELURKETA produce ruedas de nieve. Debido al cambio climático tiene que adecuar las características de las ruedas. Para ello tiene dos opciones de inversión:
+>
+> * **Primera opción:** Adecuar los bienes de capital con una inversión inicial de 10.000 €. La inversión tendría una duración de 3 años. En estos años tendría unos flujos netos de 4.000 €, 6.000 € y 8.000 €, respectivamente.
+> * **Segunda opción:** Vender sus bienes de capital iniciales por 10.500 € y realizar una inversión inicial de 26.000 € en la compra de nuevos bienes. Esta inversión tendría una duración de 4 años, teniendo cada año unos ingresos de 6.000 €, 6.000 €, 20.000 € y 16.000 €, respectivamente. Respecto a los costes totales, el primer año serían de 5.000 €, incrementándose cada año un 12 %.
+>
+> Teniendo en cuenta que la tasa de inflación anual será del 8 % y que quiere obtenerse un 10 % de rentabilidad mínima:
+>
+> a) ¿Qué proyecto se debería elegir según el criterio del Valor Actual Neto?
+>
+> b) ¿Qué proyecto es el más conveniente según el criterio del plazo de recuperación (Pay-back)? Justifique su respuesta.
+>
+> c) ¿Cuál de los dos criterios (Valor Actual Neto o plazo de recuperación) es el más adecuado? ¿Por qué?
 
-::: {.callout-important title="Propuesto 2 — Con pago fraccionado (formato EHU)"}
-*(Introduce aquí el enunciado cuando lo tengas disponible)*
+::: {.callout-tip title="Solución oficial comentada"}
+
+**a) Valor Actual Neto**
+
+La fórmula general es:
+
+$$VAN = -D_0 + \sum_{t=1}^{n}\frac{F_t}{(1+k)^t}$$
+
+La tasa de descuento por Fisher es:
+
+$$k = i + g + (i \times g) = 0{,}10 + 0{,}08 + (0{,}10 \times 0{,}08) = 0{,}188$$
+
+*Proyecto A:*
+
+$$D_0 = 10.000\text{ €};\quad F_1=4.000\text{ €};\quad F_2=6.000\text{ €};\quad F_3=8.000\text{ €}$$
+
+$$VAN_A = -10.000 + \frac{4.000}{1{,}188} + \frac{6.000}{1{,}188^2} + \frac{8.000}{1{,}188^3} = 2.389{,}61\text{ €}$$
+
+El VAN es positivo: el proyecto A es aceptable.
+
+*Proyecto B:*
+
+$$D_0 = 26.000 - 10.500 = 15.500\text{ €}$$
+$$F_1 = 6.000 - 5.000 = 1.000\text{ €};\quad F_2 = 6.000 - (5.000\times1{,}12) = 400\text{ €}$$
+$$F_3 = 20.000 - (5.600\times1{,}12) = 13.728\text{ €};\quad F_4 = 16.000 - (6.272\times1{,}12) = 8.975{,}36\text{ €}$$
+
+$$VAN_B = -15.500 + \frac{1.000}{1{,}188} + \frac{400}{1{,}188^2} + \frac{13.728}{1{,}188^3} + \frac{8.975{,}36}{1{,}188^4} = -1.681{,}26\text{ €}$$
+
+El VAN de B es negativo, así que se rechaza. Según este criterio se elige **A**.
+
+**b) Plazo de recuperación**
+
+Si se recupera la inversión durante el año $t$:
+
+$$PB = (t-1) + \frac{\text{importe pendiente al inicio del año }t}{F_t}$$
+
+- Proyecto A: se recuperan 4.000 € el primer año y 6.000 € el segundo. **Pay-back: 2 años.**
+- Proyecto B: quedan 14.500 € tras el primer año, 14.100 € tras el segundo y 372 € tras el tercero. Con el flujo del cuarto año: $372/8.975{,}36\times12 \approx 0{,}5$ meses. **Pay-back: 3 años y aproximadamente medio mes.**
+
+El Pay-back también favorece al **proyecto A**, que recupera antes la inversión.
+
+**c) Criterio más adecuado**
+
+El VAN es más adecuado porque actualiza todos los flujos al presente y tiene en cuenta el valor temporal del dinero; además, considera los flujos de toda la vida de la inversión. El Pay-back no descuenta los flujos y omite los que se producen después de recuperar el desembolso.
+
 :::
