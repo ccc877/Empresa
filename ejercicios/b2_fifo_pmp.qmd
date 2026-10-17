@@ -1,5 +1,11 @@
 # Valoración de existencias: FIFO y PMP
 
+::: {.callout-note title="Ficha de almacén imprimible"}
+
+Descarga la [ficha de almacén en PDF](ficha-almacen.pdf) para registrar las entradas, salidas y existencias al resolver ejercicios por FIFO y PMP.
+
+:::
+
 ## Formulario {.unnumbered}
 
 ::: {.callout-note title="Formulario — FIFO y PMP"}

@@ -48,24 +48,36 @@ Problema para resolver de forma autónoma.
 | 2021 | — | Fuentes de financiación |
 | 2022 | Inversiones (NORBERA), Wilson (PEREIRA) | Producir o comprar (camisas) |
 | 2023 | Inversiones (GAUTZA) | — |
-| 2024 | Balance y ratios (GAI SAI), FIFO y PMP (EDIMO) | FIFO y PMP (PERTUERO) |
+| 2024 | Costes (HELTZU), Balance y ratios (GAI SAI), FIFO y PMP (EDIMO) | Producir o comprar (BOLLAR), FIFO y PMP (PERTUERO) |
 | 2025 | PMM | Balance y ratios (EHUNTZE) |
+
+### Ejercicios de otras comunidades
+
+| Año | Comunidad | Contenido |
+|:---:|:---|:---|
+| 2019 | Galicia | Modelo de Wilson con stock de seguridad |
+| 2020 | Galicia | Modelo de Wilson (ICE S. A.) |
 
 ## Índice de ejercicios por empresa
 
 | Empresa | Tema | Convocatoria | Capítulo |
 |:---|:---|:---:|:---|
 | AMETS | Costes y umbral de rentabilidad | EHU 2025 Ext. | B1 · Costes |
+| HELTZU | Coste por componente electrónico | EHU 2024 Ord. | B1 · Costes |
 | ONDO JAN | Costes y umbral de rentabilidad (propuesto) | EHU 2022 Ord. | B1 · Costes |
 | Empresa anónima | Costes con datos indirectos (propuesto) | EHU 2023 Ext. | B1 · Costes |
 | PETUKA | Costes dos productos | Examen interno | B1 · Costes |
 | Empresa camisas | Producir o comprar | EHU 2022 Ext. | B1 · Producir o comprar |
+| BOLLAR S. L. | Producir o comprar | EHU 2024 Ext. | B1 · Producir o comprar |
 | NORBERA | Pay-back y VAN | EHU 2022 Ord. | B3 · Inversiones |
 | GAUTZA | Pay-back y VAN (pagos fraccionados) | EHU 2023 Ord. | B3 · Inversiones |
 | PEREIRA | Modelo de Wilson | EHU 2022 Ord. | B2 · Wilson |
 | KOTINA S.L. | Modelo de Wilson | Examen interno 2024/25 | B2 · Wilson |
+| Empresa de alarmas | Modelo de Wilson con stock de seguridad | ABAU Galicia 2019 | B2 · Wilson |
+| ICE S. A. | Modelo de Wilson | ABAU Galicia 2020 | B2 · Wilson |
 | Empresa anónima | PMM (rotaciones dadas) | EHU 2019 Ext. | B2 · PMM |
 | Empresa anónima | PMM (saldos medios) | EHU 2025 Ext. | B2 · PMM |
+| Empresa comercial | PMM económico y financiero comercial | EconoSublime, ejercicio 2 | B2 · PMM |
 | EDIMO | FIFO y PMP | EHU 2024 Ord. | B2 · FIFO y PMP |
 | PERTUERO S.A. | FIFO y PMP | EHU 2024 Ext. | B2 · FIFO y PMP |
 | GAI SAI S.A. | Balance y ratios | EHU 2024 Ord. | B4 · Balance / Ratios |

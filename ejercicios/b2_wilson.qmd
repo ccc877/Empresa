@@ -13,6 +13,7 @@
 | $Q^*$ | Cantidad económica de pedido (CEP) | Volumen de pedido que minimiza el coste total de gestión |
 | $s$ | Coste de pedido | Coste fijo por cada pedido realizado (gestión, transporte, recepción…) |
 | $g$ | Coste de almacenaje unitario anual | Coste de mantener una unidad en el almacén durante un año (espacio, seguros, obsolescencia…) |
+| $p$ | Precio de compra unitario | Precio pagado por cada unidad adquirida |
 | $ss$ | Stock de seguridad | Reserva mínima permanente para cubrir imprevistos (retrasos, picos de demanda) |
 | $t$ | Plazo de entrega | Días que tarda el proveedor desde que se lanza el pedido hasta que llega |
 | $d$ | Demanda diaria | Unidades consumidas por día ($D/360$) |
@@ -40,6 +41,26 @@ $$CT = \underbrace{s \cdot N}_{\text{coste pedido}} + \underbrace{g \cdot \left(
 Ocurre si el retraso adicional (días) $\times\ d > ss$.
 
 Días que aguanta el $ss$: $\ ss / d$
+
+**De dónde sale la fórmula de $Q^*$**
+
+El coste anual de pedido es $sD/Q$ y, sin contar el stock de seguridad, el coste anual de almacenamiento es $gQ/2$. En el mínimo, ambos componentes variables se igualan:
+
+$$\frac{sD}{Q^*} = \frac{gQ^*}{2}
+\quad\Longrightarrow\quad
+2sD = g(Q^*)^2
+\quad\Longrightarrow\quad
+Q^* = \sqrt{\frac{2sD}{g}}$$
+
+El coste del stock de seguridad ($g\,ss$) se suma al coste total, pero no modifica $Q^*$ porque es independiente del tamaño del pedido.
+
+Si también se calcula el gasto anual de compra, se añade $pD$, donde $p$ es el precio por unidad. Si el precio no depende del tamaño del pedido, $pD$ es constante y no cambia la cantidad óptima; por eso se excluye al aplicar la fórmula de Wilson.
+
+:::
+
+::: {.callout-note title="Explora el modelo interactivo de Wilson" collapse="true"}
+
+<iframe src="wilson-interactivo.html" title="Modelo interactivo de Wilson" width="100%" height="820" loading="lazy" sandbox="allow-scripts" style="border: 0; max-width: 100%;"></iframe>
 
 :::
 
@@ -182,6 +203,76 @@ Compara los dos ejercicios: en PEREIRA el $ss$ aguanta 2,5 días y el retraso es
 
 ---
 
+### ABAU Galicia 2019 — Dispositivos de alarma
+
+> *Una empresa comercial prevé vender 2.000 dispositivos al año. Cada pedido cuesta 2 € y almacenar una unidad cuesta 5 € al año. Además, mantiene un stock de seguridad de 60 dispositivos.*
+>
+> a) Calcula el volumen óptimo de pedido.<br>
+> b) Calcula el coste anual de pedido y el de almacenamiento, incluido el stock de seguridad.<br>
+> c) Explica para qué sirve calcular la cantidad óptima.
+
+*Ejercicio adaptado de [EconoSublime, modelos de Wilson de la ABAU de Galicia](https://www.econosublime.com/2020/03/ejercicios-modelo-de-wilson-abau-galicia.html).*
+
+::: {.callout-tip title="Solución comentada"}
+
+Datos: $D=2.000$ dispositivos/año, $s=2$ €/pedido, $g=5$ €/dispositivo·año y $ss=60$ dispositivos.
+
+**a) Cantidad óptima**
+
+$$Q^* = \sqrt{\frac{2sD}{g}} = \sqrt{\frac{2\cdot2\cdot2.000}{5}} = \mathbf{40\ dispositivos}$$
+
+**b) Costes anuales**
+
+$$N = \frac{D}{Q^*} = \frac{2.000}{40} = 50\ pedidos$$
+
+$$C_{pedido} = sN = 2\cdot50 = \mathbf{100\ €}$$
+
+El stock medio es $Q^*/2+ss=20+60=80$ dispositivos. Por tanto:
+
+$$C_{almacenamiento} = g\left(\frac{Q^*}{2}+ss\right)=5\cdot80=\mathbf{400\ €}$$
+
+De esos 400 €, 100 € corresponden al stock cíclico ($gQ^*/2$) y 300 € al stock de seguridad ($g\,ss$). Se comprueba así que, en el óptimo, se igualan los costes de pedido y de almacenamiento variables; el coste del stock de seguridad se añade aparte.
+
+**c) Finalidad**
+
+La cantidad óptima equilibra los pedidos y el almacenamiento para minimizar su coste anual conjunto. Pedidos pequeños reducen el inventario medio, pero obligan a pedir más veces; pedidos grandes reducen la frecuencia, pero elevan el coste de mantener existencias.
+
+:::
+
+---
+
+### ABAU Galicia 2020 — ICE S. A. (motores eléctricos)
+
+> *ICE S. A. necesita 281.250 motores al año. Mantener un motor almacenado cuesta 0,50 € al año y realizar cada pedido cuesta 800 €.*
+>
+> a) Calcula el volumen óptimo de pedido.<br>
+> b) Determina el número teórico de pedidos al año y el tiempo entre pedidos, usando un año comercial de 360 días.<br>
+> c) Interpreta los resultados.
+
+*Ejercicio adaptado de [EconoSublime, modelos de Wilson de la ABAU de Galicia](https://www.econosublime.com/2020/03/ejercicios-modelo-de-wilson-abau-galicia.html).*
+
+::: {.callout-tip title="Solución comentada"}
+
+Datos: $D=281.250$ motores/año, $s=800$ €/pedido y $g=0{,}50$ €/motor·año.
+
+**a) Cantidad óptima**
+
+$$Q^* = \sqrt{\frac{2sD}{g}} = \sqrt{\frac{2\cdot800\cdot281.250}{0{,}50}} = \sqrt{900.000.000} = \mathbf{30.000\ motores}$$
+
+**b) Frecuencia y tiempo entre pedidos**
+
+$$N = \frac{D}{Q^*} = \frac{281.250}{30.000} = \mathbf{9{,}375\ pedidos/año}$$
+
+$$T = \frac{360}{N} = \frac{360}{9{,}375} = \mathbf{38{,}4\ días}$$
+
+**c) Interpretación**
+
+El modelo indica un lote óptimo de 30.000 motores y un intervalo medio de 38,4 días entre pedidos. Los 9,375 pedidos son una frecuencia teórica anual; en la planificación real se ajustaría el último pedido a la demanda efectiva.
+
+:::
+
+---
+
 ## Ejercicios propuestos
 
 ::: {.callout-important title="Propuesto 1 — Con fórmula Q*"}
@@ -202,7 +293,6 @@ c) $d = 9.000 / 360 = 25$ uds/día; $PP = 60 + (25 \times 8) = 260$ uds; $S_m = 
 d) $CT = (50 \times 13{,}4) + (2 \times 395{,}5) = 670 + 791 = 1.461$ €
 :::
 :::
-
 ::: {.callout-important title="Propuesto 2 — Ruptura de stock"}
 Una empresa tiene un $ss$ de 80 unidades, un consumo diario de 16 unidades y un plazo de entrega habitual de 6 días. El pedido equivale al consumo de mes y medio.
 
@@ -217,8 +307,4 @@ b) $ss$ aguanta $80/16 = 5$ días de retraso. El retraso es de 4 días → **no 
 
 c) Retraso máximo sin ruptura: 5 días (los que aguanta el $ss$).
 :::
-:::
-
-::: {.callout-important title="Propuesto 3 — EHU (año a completar)"}
-*(Introduce aquí el enunciado cuando lo tengas disponible)*
 :::

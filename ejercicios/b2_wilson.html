@@ -373,6 +373,8 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#ehu-2022-ordinaria-empresa-pereira-helados" id="toc-ehu-2022-ordinaria-empresa-pereira-helados" class="nav-link" data-scroll-target="#ehu-2022-ordinaria-empresa-pereira-helados">EHU 2022 Ordinaria — Empresa PEREIRA (helados)</a></li>
   <li><a href="#examen-interno-202425-empresa-kotina-s.l.-palés" id="toc-examen-interno-202425-empresa-kotina-s.l.-palés" class="nav-link" data-scroll-target="#examen-interno-202425-empresa-kotina-s.l.-palés">Examen interno 2024/25 — Empresa KOTINA S.L. (palés)</a></li>
+  <li><a href="#abau-galicia-2019-dispositivos-de-alarma" id="toc-abau-galicia-2019-dispositivos-de-alarma" class="nav-link" data-scroll-target="#abau-galicia-2019-dispositivos-de-alarma">ABAU Galicia 2019 — Dispositivos de alarma</a></li>
+  <li><a href="#abau-galicia-2020-ice-s.-a.-motores-eléctricos" id="toc-abau-galicia-2020-ice-s.-a.-motores-eléctricos" class="nav-link" data-scroll-target="#abau-galicia-2020-ice-s.-a.-motores-eléctricos">ABAU Galicia 2020 — ICE S. A. (motores eléctricos)</a></li>
   </ul></li>
   <li><a href="#ejercicios-propuestos" id="toc-ejercicios-propuestos" class="nav-link" data-scroll-target="#ejercicios-propuestos"><span class="header-section-number">D.2</span> Ejercicios propuestos</a></li>
   </ul>
@@ -453,46 +455,51 @@ window.Quarto = {
 <td style="text-align: left;">Coste de mantener una unidad en el almacén durante un año (espacio, seguros, obsolescencia…)</td>
 </tr>
 <tr class="even">
+<td style="text-align: center;"><span class="math inline">\(p\)</span></td>
+<td style="text-align: left;">Precio de compra unitario</td>
+<td style="text-align: left;">Precio pagado por cada unidad adquirida</td>
+</tr>
+<tr class="odd">
 <td style="text-align: center;"><span class="math inline">\(ss\)</span></td>
 <td style="text-align: left;">Stock de seguridad</td>
 <td style="text-align: left;">Reserva mínima permanente para cubrir imprevistos (retrasos, picos de demanda)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: center;"><span class="math inline">\(t\)</span></td>
 <td style="text-align: left;">Plazo de entrega</td>
 <td style="text-align: left;">Días que tarda el proveedor desde que se lanza el pedido hasta que llega</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: center;"><span class="math inline">\(d\)</span></td>
 <td style="text-align: left;">Demanda diaria</td>
 <td style="text-align: left;">Unidades consumidas por día (<span class="math inline">\(D/360\)</span>)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: center;"><span class="math inline">\(PP\)</span></td>
 <td style="text-align: left;">Punto de pedido</td>
 <td style="text-align: left;">Nivel de stock en el que hay que lanzar un nuevo pedido</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: center;"><span class="math inline">\(S_m\)</span></td>
 <td style="text-align: left;">Stock medio</td>
 <td style="text-align: left;">Nivel medio de existencias a lo largo del año</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: center;"><span class="math inline">\(IR\)</span></td>
 <td style="text-align: left;">Índice de rotación</td>
 <td style="text-align: left;">Veces que se renueva el stock medio en un año</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: center;"><span class="math inline">\(N\)</span></td>
 <td style="text-align: left;">Número de pedidos</td>
 <td style="text-align: left;">Pedidos realizados al año (<span class="math inline">\(D/Q\)</span>)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: center;"><span class="math inline">\(T\)</span></td>
 <td style="text-align: left;">Tiempo entre pedidos</td>
 <td style="text-align: left;">Días entre un pedido y el siguiente (<span class="math inline">\(360/N\)</span>)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: center;"><span class="math inline">\(CT\)</span></td>
 <td style="text-align: left;">Coste total de gestión</td>
 <td style="text-align: left;">Suma del coste de pedido y el coste de almacenamiento</td>
@@ -508,6 +515,32 @@ window.Quarto = {
 <p><strong>Ruptura de stock</strong></p>
 <p>Ocurre si el retraso adicional (días) <span class="math inline">\(\times\ d &gt; ss\)</span>.</p>
 <p>Días que aguanta el <span class="math inline">\(ss\)</span>: <span class="math inline">\(\ ss / d\)</span></p>
+<p><strong>De dónde sale la fórmula de <span class="math inline">\(Q^*\)</span></strong></p>
+<p>El coste anual de pedido es <span class="math inline">\(sD/Q\)</span> y, sin contar el stock de seguridad, el coste anual de almacenamiento es <span class="math inline">\(gQ/2\)</span>. En el mínimo, ambos componentes variables se igualan:</p>
+<p><span class="math display">\[\frac{sD}{Q^*} = \frac{gQ^*}{2}
+\quad\Longrightarrow\quad
+2sD = g(Q^*)^2
+\quad\Longrightarrow\quad
+Q^* = \sqrt{\frac{2sD}{g}}\]</span></p>
+<p>El coste del stock de seguridad (<span class="math inline">\(g\,ss\)</span>) se suma al coste total, pero no modifica <span class="math inline">\(Q^*\)</span> porque es independiente del tamaño del pedido.</p>
+<p>Si también se calcula el gasto anual de compra, se añade <span class="math inline">\(pD\)</span>, donde <span class="math inline">\(p\)</span> es el precio por unidad. Si el precio no depende del tamaño del pedido, <span class="math inline">\(pD\)</span> es constante y no cambia la cantidad óptima; por eso se excluye al aplicar la fórmula de Wilson.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Explora el modelo interactivo de Wilson">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Explora el modelo interactivo de Wilson
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<iframe src="wilson-interactivo.html" title="Modelo interactivo de Wilson" width="100%" height="820" loading="lazy" sandbox="allow-scripts" style="border: 0; max-width: 100%;">
+</iframe>
+</div>
 </div>
 </div>
 <div class="callout callout-style-default callout-warning callout-titled" title="Trampas de examen">
@@ -657,6 +690,75 @@ window.Quarto = {
 </div>
 <hr>
 </section>
+<section id="abau-galicia-2019-dispositivos-de-alarma" class="level3">
+<h3 class="anchored" data-anchor-id="abau-galicia-2019-dispositivos-de-alarma">ABAU Galicia 2019 — Dispositivos de alarma</h3>
+<blockquote class="blockquote">
+<p><em>Una empresa comercial prevé vender 2.000 dispositivos al año. Cada pedido cuesta 2 € y almacenar una unidad cuesta 5 € al año. Además, mantiene un stock de seguridad de 60 dispositivos.</em></p>
+<ol type="a">
+<li>Calcula el volumen óptimo de pedido.<br></li>
+<li>Calcula el coste anual de pedido y el de almacenamiento, incluido el stock de seguridad.<br></li>
+<li>Explica para qué sirve calcular la cantidad óptima.</li>
+</ol>
+</blockquote>
+<p><em>Ejercicio adaptado de <a href="https://www.econosublime.com/2020/03/ejercicios-modelo-de-wilson-abau-galicia.html">EconoSublime, modelos de Wilson de la ABAU de Galicia</a>.</em></p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Solución comentada">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Solución comentada
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Datos: <span class="math inline">\(D=2.000\)</span> dispositivos/año, <span class="math inline">\(s=2\)</span> €/pedido, <span class="math inline">\(g=5\)</span> €/dispositivo·año y <span class="math inline">\(ss=60\)</span> dispositivos.</p>
+<p><strong>a) Cantidad óptima</strong></p>
+<p><span class="math display">\[Q^* = \sqrt{\frac{2sD}{g}} = \sqrt{\frac{2\cdot2\cdot2.000}{5}} = \mathbf{40\ dispositivos}\]</span></p>
+<p><strong>b) Costes anuales</strong></p>
+<p><span class="math display">\[N = \frac{D}{Q^*} = \frac{2.000}{40} = 50\ pedidos\]</span></p>
+<p><span class="math display">\[C_{pedido} = sN = 2\cdot50 = \mathbf{100\ €}\]</span></p>
+<p>El stock medio es <span class="math inline">\(Q^*/2+ss=20+60=80\)</span> dispositivos. Por tanto:</p>
+<p><span class="math display">\[C_{almacenamiento} = g\left(\frac{Q^*}{2}+ss\right)=5\cdot80=\mathbf{400\ €}\]</span></p>
+<p>De esos 400 €, 100 € corresponden al stock cíclico (<span class="math inline">\(gQ^*/2\)</span>) y 300 € al stock de seguridad (<span class="math inline">\(g\,ss\)</span>). Se comprueba así que, en el óptimo, se igualan los costes de pedido y de almacenamiento variables; el coste del stock de seguridad se añade aparte.</p>
+<p><strong>c) Finalidad</strong></p>
+<p>La cantidad óptima equilibra los pedidos y el almacenamiento para minimizar su coste anual conjunto. Pedidos pequeños reducen el inventario medio, pero obligan a pedir más veces; pedidos grandes reducen la frecuencia, pero elevan el coste de mantener existencias.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="abau-galicia-2020-ice-s.-a.-motores-eléctricos" class="level3">
+<h3 class="anchored" data-anchor-id="abau-galicia-2020-ice-s.-a.-motores-eléctricos">ABAU Galicia 2020 — ICE S. A. (motores eléctricos)</h3>
+<blockquote class="blockquote">
+<p><em>ICE S. A. necesita 281.250 motores al año. Mantener un motor almacenado cuesta 0,50 € al año y realizar cada pedido cuesta 800 €.</em></p>
+<ol type="a">
+<li>Calcula el volumen óptimo de pedido.<br></li>
+<li>Determina el número teórico de pedidos al año y el tiempo entre pedidos, usando un año comercial de 360 días.<br></li>
+<li>Interpreta los resultados.</li>
+</ol>
+</blockquote>
+<p><em>Ejercicio adaptado de <a href="https://www.econosublime.com/2020/03/ejercicios-modelo-de-wilson-abau-galicia.html">EconoSublime, modelos de Wilson de la ABAU de Galicia</a>.</em></p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Solución comentada">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Solución comentada
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Datos: <span class="math inline">\(D=281.250\)</span> motores/año, <span class="math inline">\(s=800\)</span> €/pedido y <span class="math inline">\(g=0{,}50\)</span> €/motor·año.</p>
+<p><strong>a) Cantidad óptima</strong></p>
+<p><span class="math display">\[Q^* = \sqrt{\frac{2sD}{g}} = \sqrt{\frac{2\cdot800\cdot281.250}{0{,}50}} = \sqrt{900.000.000} = \mathbf{30.000\ motores}\]</span></p>
+<p><strong>b) Frecuencia y tiempo entre pedidos</strong></p>
+<p><span class="math display">\[N = \frac{D}{Q^*} = \frac{281.250}{30.000} = \mathbf{9{,}375\ pedidos/año}\]</span></p>
+<p><span class="math display">\[T = \frac{360}{N} = \frac{360}{9{,}375} = \mathbf{38{,}4\ días}\]</span></p>
+<p><strong>c) Interpretación</strong></p>
+<p>El modelo indica un lote óptimo de 30.000 motores y un intervalo medio de 38,4 días entre pedidos. Los 9,375 pedidos son una frecuencia teórica anual; en la planificación real se ajustaría el último pedido a la demanda efectiva.</p>
+</div>
+</div>
+<hr>
+</section>
 </section>
 <section id="ejercicios-propuestos" class="level2" data-number="D.2">
 <h2 data-number="D.2" class="anchored" data-anchor-id="ejercicios-propuestos"><span class="header-section-number">D.2</span> Ejercicios propuestos</h2>
@@ -678,7 +780,7 @@ window.Quarto = {
 <li>Calcula el coste total de gestión del inventario.</li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled" title="Solución">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -687,7 +789,7 @@ window.Quarto = {
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ol type="a">
 <li><p><span class="math inline">\(Q^* = \sqrt{(2 \times 50 \times 9.000) / 2} = \sqrt{450.000} = 670{,}8 \approx 671\)</span> uds</p></li>
@@ -717,7 +819,7 @@ window.Quarto = {
 <li>¿Cuántos días de retraso máximo podría soportar sin ruptura?</li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled" title="Solución">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -726,7 +828,7 @@ window.Quarto = {
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ol type="a">
 <li><p><span class="math inline">\(d = 16\)</span>; <span class="math inline">\(PP = 80 + (16 \times 6) = 176\)</span> uds; <span class="math inline">\(Q = 16 \times 45 = 720\)</span> uds; <span class="math inline">\(S_m = 80 + 360 = 440\)</span> uds</p></li>
@@ -736,19 +838,6 @@ window.Quarto = {
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="callout callout-style-default callout-important callout-titled" title="Propuesto 3 — EHU (año a completar)">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Importante</span>Propuesto 3 — EHU (año a completar)
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><em>(Introduce aquí el enunciado cuando lo tengas disponible)</em></p>
 </div>
 </div>
 

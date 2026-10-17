@@ -38,6 +38,10 @@ $$PP = ss + (d \times t) \qquad S_m = \frac{Q}{2} + ss \qquad IR = \frac{D}{S_m}
 
 $$CT = s \cdot N + g \cdot \left(\frac{Q}{2} + ss\right)$$
 
+En el pedido óptimo, $sD/Q^* = gQ^*/2$, de donde $Q^* = \sqrt{2sD/g}$. El coste del stock de seguridad, $g\,ss$, se añade al coste total, pero no altera la cantidad óptima.
+
+Si también se calcula el gasto anual de compra, se añade $pD$, donde $p$ es el precio por unidad. Si el precio no depende del tamaño del pedido, $pD$ es constante y no cambia la cantidad óptima; por eso se excluye al aplicar la fórmula de Wilson.
+
 **Ruptura de stock:** ocurre si retraso (días) $\times\ d > ss$. Días que aguanta el $ss$: $ss / d$.
 
 ### Período Medio de Maduración
@@ -53,6 +57,10 @@ $$PM_i = \frac{\text{días del año}}{n_i}$$
 | Pago ($PM_P$) | Compras anuales / Saldo medio proveedores |
 
 $$PMMe = PM_A + PM_F + PM_V + PM_C \qquad PMMf = PMMe - PM_P$$
+
+En empresas comerciales: $PMMe = PM_A + PM_C$, porque no existe fase de fabricación ni de almacenamiento de productos terminados.
+
+En una empresa comercial, $n_A = \text{consumo anual de mercaderías}/\text{saldo medio de mercaderías}$; en la fase de pago se usan las compras anuales a crédito.
 
 ### FIFO y PMP
 

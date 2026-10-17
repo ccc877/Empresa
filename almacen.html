@@ -374,17 +374,19 @@ window.Quarto = {
   <li><a href="#notación-y-variables" id="toc-notación-y-variables" class="nav-link" data-scroll-target="#notación-y-variables">Notación y variables</a></li>
   <li><a href="#costes-implicados" id="toc-costes-implicados" class="nav-link" data-scroll-target="#costes-implicados">Costes implicados</a></li>
   <li><a href="#fórmulas-operativas" id="toc-fórmulas-operativas" class="nav-link" data-scroll-target="#fórmulas-operativas">Fórmulas operativas</a></li>
+  <li><a href="#de-dónde-sale-la-fórmula-de-q" id="toc-de-dónde-sale-la-fórmula-de-q" class="nav-link" data-scroll-target="#de-dónde-sale-la-fórmula-de-q">De dónde sale la fórmula de <span class="math inline">\(Q^*\)</span></a></li>
   <li><a href="#conceptos-clave-del-modelo" id="toc-conceptos-clave-del-modelo" class="nav-link" data-scroll-target="#conceptos-clave-del-modelo">Conceptos clave del modelo</a></li>
   <li><a href="#funcionamiento-gráfico-la-curva-de-dientes-de-sierra" id="toc-funcionamiento-gráfico-la-curva-de-dientes-de-sierra" class="nav-link" data-scroll-target="#funcionamiento-gráfico-la-curva-de-dientes-de-sierra">Funcionamiento gráfico: la curva de “dientes de sierra”</a></li>
   </ul></li>
-  <li><a href="#el-sistema-jit-just-in-time" id="toc-el-sistema-jit-just-in-time" class="nav-link" data-scroll-target="#el-sistema-jit-just-in-time"><span class="header-section-number">5.2</span> El sistema JIT (<em>Just in Time</em>)</a>
+  <li><a href="#el-periodo-medio-de-maduración-económico-y-financiero" id="toc-el-periodo-medio-de-maduración-económico-y-financiero" class="nav-link" data-scroll-target="#el-periodo-medio-de-maduración-económico-y-financiero"><span class="header-section-number">5.2</span> El periodo medio de maduración económico y financiero</a></li>
+  <li><a href="#el-sistema-jit-just-in-time" id="toc-el-sistema-jit-just-in-time" class="nav-link" data-scroll-target="#el-sistema-jit-just-in-time"><span class="header-section-number">5.3</span> El sistema JIT (<em>Just in Time</em>)</a>
   <ul class="collapse">
   <li><a href="#el-sistema-pull-arrastre" id="toc-el-sistema-pull-arrastre" class="nav-link" data-scroll-target="#el-sistema-pull-arrastre">El sistema <em>pull</em> (arrastre)</a></li>
   <li><a href="#requisitos-para-el-éxito-del-jit" id="toc-requisitos-para-el-éxito-del-jit" class="nav-link" data-scroll-target="#requisitos-para-el-éxito-del-jit">Requisitos para el éxito del JIT</a></li>
   <li><a href="#ventajas-del-jit" id="toc-ventajas-del-jit" class="nav-link" data-scroll-target="#ventajas-del-jit">Ventajas del JIT</a></li>
   <li><a href="#inconvenientes-del-jit" id="toc-inconvenientes-del-jit" class="nav-link" data-scroll-target="#inconvenientes-del-jit">Inconvenientes del JIT</a></li>
   </ul></li>
-  <li><a href="#el-sistema-abc-de-gestión-de-inventarios" id="toc-el-sistema-abc-de-gestión-de-inventarios" class="nav-link" data-scroll-target="#el-sistema-abc-de-gestión-de-inventarios"><span class="header-section-number">5.3</span> El sistema ABC de gestión de inventarios</a>
+  <li><a href="#el-sistema-abc-de-gestión-de-inventarios" id="toc-el-sistema-abc-de-gestión-de-inventarios" class="nav-link" data-scroll-target="#el-sistema-abc-de-gestión-de-inventarios"><span class="header-section-number">5.4</span> El sistema ABC de gestión de inventarios</a>
   <ul class="collapse">
   <li><a href="#clasificación-de-los-artículos" id="toc-clasificación-de-los-artículos" class="nav-link" data-scroll-target="#clasificación-de-los-artículos">Clasificación de los artículos</a></li>
   <li><a href="#ventajas-del-sistema-abc" id="toc-ventajas-del-sistema-abc" class="nav-link" data-scroll-target="#ventajas-del-sistema-abc">Ventajas del sistema ABC</a></li>
@@ -481,7 +483,7 @@ window.Quarto = {
 <li><p><strong>Coste de pedido</strong> (<span class="math inline">\(s\)</span>): recoge los gastos de tramitación y realización de cada pedido —gastos administrativos, preparación del pedido, transporte y gestión de la recepción—. Es un coste fijo por pedido, independiente de su tamaño. Cuantos más pedidos se hagan al año —es decir, cuanto menor sea <span class="math inline">\(Q\)</span>—, mayor será el coste total anual de pedido, ya que se multiplica por el número de pedidos <span class="math inline">\(N = D/Q\)</span>.</p></li>
 <li><p><strong>Coste de almacenamiento</strong> (<span class="math inline">\(g\)</span>): recoge los gastos derivados de mantener las existencias en el almacén —alquiler del espacio, seguros, pérdidas por obsolescencia, mermas y el coste financiero del capital inmovilizado—. Este coste crece con el nivel medio de inventario: cuanto mayor sea <span class="math inline">\(Q\)</span>, mayor será el stock medio <span class="math inline">\((Q/2 + ss)\)</span> y, por tanto, mayores serán los costes de posesión.</p></li>
 </ul>
-<p>La clave del modelo está en que ambos costes se comportan de forma inversa: reducir <span class="math inline">\(Q\)</span> abarata el almacenamiento pero encarece el pedido, y aumentar <span class="math inline">\(Q\)</span> hace lo contrario. El Modelo de Wilson busca el valor de <span class="math inline">\(Q\)</span> que <strong>minimiza la suma de ambos costes</strong>, que es precisamente el punto en que el coste de pedido y el coste de almacenamiento se igualan.</p>
+<p>La clave del modelo está en que ambos costes se comportan de forma inversa: reducir <span class="math inline">\(Q\)</span> abarata el almacenamiento pero encarece el pedido, y aumentar <span class="math inline">\(Q\)</span> hace lo contrario. El Modelo de Wilson busca el valor de <span class="math inline">\(Q\)</span> que <strong>minimiza la suma de ambos costes</strong>. En el punto óptimo se igualan el coste de pedido y el componente variable del coste de almacenamiento; el coste del stock de seguridad, si existe, es constante y no altera ese óptimo.</p>
 </section>
 <section id="fórmulas-operativas" class="level3">
 <h3 class="anchored" data-anchor-id="fórmulas-operativas">Fórmulas operativas</h3>
@@ -493,7 +495,7 @@ Q^* = \sqrt{\frac{2 \cdot s \cdot D}{g}}
 \]</span></p>
 <p>A partir de <span class="math inline">\(Q^*\)</span> se obtienen:</p>
 <p><span class="math display">\[
-N = \frac{D}{Q} \quad \text{(número de pedidos al año)}
+N = \frac{D}{Q^*} \quad \text{(número de pedidos al año)}
 \]</span></p>
 <p><span class="math display">\[
 T = \frac{360}{N} \quad \text{(días entre pedidos)}
@@ -520,17 +522,30 @@ P_p = (d \times t) + ss
 </div>
 <p><strong>Stock medio (<span class="math inline">\(S_m\)</span>) e Índice de Rotación (<span class="math inline">\(IR\)</span>):</strong></p>
 <p><span class="math display">\[
-S_m = \frac{Q}{2} + ss \qquad \longrightarrow \qquad IR = \frac{D}{S_m} \quad \text{(veces/año)}
+S_m = \frac{Q^*}{2} + ss \qquad \longrightarrow \qquad IR = \frac{D}{S_m} \quad \text{(veces/año)}
 \]</span></p>
 </section>
 <section id="c.-coste-total-de-gestión-cg" class="level4">
 <h4 class="anchored" data-anchor-id="c.-coste-total-de-gestión-cg">C. Coste total de gestión (CG)</h4>
 <p>El coste total que el modelo minimiza es la suma del coste de pedido y el coste de almacenamiento:</p>
 <p><span class="math display">\[
-CT = \underbrace{s \cdot N}_{\text{Coste pedido}} + \underbrace{g \cdot \left(\frac{Q}{2} + ss\right)}_{\text{Coste almacenamiento}}
+CT = \underbrace{s \cdot N}_{\text{Coste pedido}} + \underbrace{g \cdot \left(\frac{Q^*}{2} + ss\right)}_{\text{Coste almacenamiento}}
 \]</span></p>
-<p>En el punto óptimo <span class="math inline">\(Q^*\)</span>, el coste de pedido y el coste de almacenamiento se igualan.</p>
+<p>En el punto óptimo <span class="math inline">\(Q^*\)</span>, el coste de pedido se iguala al componente variable del coste de almacenamiento, <span class="math inline">\(gQ^*/2\)</span>. Si hay stock de seguridad, su coste adicional <span class="math inline">\(g\,ss\)</span> no forma parte de esa igualdad.</p>
 </section>
+</section>
+<section id="de-dónde-sale-la-fórmula-de-q" class="level3">
+<h3 class="anchored" data-anchor-id="de-dónde-sale-la-fórmula-de-q">De dónde sale la fórmula de <span class="math inline">\(Q^*\)</span></h3>
+<p>Si se pide una cantidad <span class="math inline">\(Q\)</span> cada vez, se realizan <span class="math inline">\(D/Q\)</span> pedidos al año. Por tanto, el coste anual de pedido es <span class="math inline">\(sD/Q\)</span>. Sin stock de seguridad, el inventario medio es <span class="math inline">\(Q/2\)</span> y su coste anual de almacenamiento es <span class="math inline">\(gQ/2\)</span>. En la cantidad óptima, ambos componentes variables se igualan:</p>
+<p><span class="math display">\[
+\frac{sD}{Q^*} = \frac{gQ^*}{2}
+\quad\Longrightarrow\quad
+2sD = g(Q^*)^2
+\quad\Longrightarrow\quad
+Q^* = \sqrt{\frac{2sD}{g}}
+\]</span></p>
+<p>Si se mantiene un stock de seguridad, se añade <span class="math inline">\(g\,ss\)</span> al coste anual de almacenamiento. Como ese importe no depende de <span class="math inline">\(Q\)</span>, no cambia la cantidad óptima; sí debe incluirse al calcular el coste total real.</p>
+<p>El coste de compra también puede sumarse al gasto anual completo: si <span class="math inline">\(p\)</span> es el precio por unidad, es <span class="math inline">\(pD\)</span>. Cuando el precio es constante y no hay descuentos por volumen, este gasto no depende de <span class="math inline">\(Q\)</span> y no afecta al cálculo de la cantidad óptima.</p>
 </section>
 <section id="conceptos-clave-del-modelo" class="level3">
 <h3 class="anchored" data-anchor-id="conceptos-clave-del-modelo">Conceptos clave del modelo</h3>
@@ -563,8 +578,24 @@ CT = \underbrace{s \cdot N}_{\text{Coste pedido}} + \underbrace{g \cdot \left(\f
 <hr>
 </section>
 </section>
-<section id="el-sistema-jit-just-in-time" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="el-sistema-jit-just-in-time"><span class="header-section-number">5.2</span> El sistema JIT (<em>Just in Time</em>)</h2>
+<section id="el-periodo-medio-de-maduración-económico-y-financiero" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="el-periodo-medio-de-maduración-económico-y-financiero"><span class="header-section-number">5.2</span> El periodo medio de maduración económico y financiero</h2>
+<p>El <strong>periodo medio de maduración económico (PMMe)</strong> mide el tiempo que transcurre desde que la empresa invierte dinero en las materias primas hasta que lo recupera al cobrar la venta del producto. En una empresa industrial, el ciclo comprende cuatro fases:</p>
+<ol type="1">
+<li><strong>Almacenamiento de materias primas (<span class="math inline">\(PM_A\)</span>):</strong> desde su compra hasta que entran en producción.</li>
+<li><strong>Fabricación (<span class="math inline">\(PM_F\)</span>):</strong> desde el inicio de la producción hasta que el producto está terminado.</li>
+<li><strong>Venta (<span class="math inline">\(PM_V\)</span>):</strong> desde que el producto terminado queda almacenado hasta que se vende.</li>
+<li><strong>Cobro (<span class="math inline">\(PM_C\)</span>):</strong> desde la venta hasta que el cliente paga.</li>
+</ol>
+<p>Por tanto:</p>
+<p><span class="math display">\[PMMe = PM_A + PM_F + PM_V + PM_C\]</span></p>
+<p>Si los proveedores permiten aplazar el pago, hay que tener en cuenta una quinta fase: el <strong>periodo medio de pago (<span class="math inline">\(PM_P\)</span>)</strong>, es decir, los días que pasan desde la compra de las materias primas hasta que se pagan. El <strong>periodo medio de maduración financiero (PMMf)</strong> comienza cuando la empresa paga y termina cuando cobra; por eso se resta el plazo financiado por los proveedores:</p>
+<p><span class="math display">\[PMMf = PMMe - PM_P\]</span></p>
+<p>Un PMMf positivo indica cuántos días debe financiar la empresa por sí misma o mediante financiación ajena. Si es negativo, cobra sus ventas antes de pagar a los proveedores. En una empresa comercial, que no transforma materias primas, el ciclo económico se simplifica a almacenamiento de mercaderías y cobro: <span class="math inline">\(PMMe_{comercial} = PM_A + PM_C\)</span>.</p>
+<hr>
+</section>
+<section id="el-sistema-jit-just-in-time" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="el-sistema-jit-just-in-time"><span class="header-section-number">5.3</span> El sistema JIT (<em>Just in Time</em>)</h2>
 <p>El sistema JIT, desarrollado por Toyota en los años 50 como parte del <strong>Toyota Production System</strong>, es mucho más que un modelo de inventario: es una <strong>filosofía de gestión de la producción y la calidad</strong> que busca la <strong>eliminación de todo tipo de desperdicios</strong> (<em>muda</em> en japonés): el inventario excesivo, los defectos, la sobreproducción, las esperas, los transportes innecesarios, los movimientos inútiles y el procesamiento que no añade valor. Desde Japón, este enfoque se extendió a todo el mundo y se convirtió en el fundamento de lo que hoy conocemos como <strong>producción ajustada</strong> o <em>lean manufacturing</em>.</p>
 <p><strong>Objetivo principal:</strong> producir o adquirir los productos <strong>justo en el momento en que son necesarios y en la cantidad exacta requerida</strong>, minimizando o eliminando la necesidad de mantener grandes inventarios. En la práctica, esto se traduce en realizar <strong>muchos pedidos pequeños con alta frecuencia</strong>, en lugar de pocos pedidos grandes que luego hay que almacenar.</p>
 <section id="el-sistema-pull-arrastre" class="level3">
@@ -615,8 +646,8 @@ CT = \underbrace{s \cdot N}_{\text{Coste pedido}} + \underbrace{g \cdot \left(\f
 <hr>
 </section>
 </section>
-<section id="el-sistema-abc-de-gestión-de-inventarios" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="el-sistema-abc-de-gestión-de-inventarios"><span class="header-section-number">5.3</span> El sistema ABC de gestión de inventarios</h2>
+<section id="el-sistema-abc-de-gestión-de-inventarios" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="el-sistema-abc-de-gestión-de-inventarios"><span class="header-section-number">5.4</span> El sistema ABC de gestión de inventarios</h2>
 <p>El sistema ABC es un método de clasificación de los artículos del inventario basado en su valor o importancia relativa para la empresa. Su principio fundamental es que <strong>no todos los artículos del almacén merecen el mismo nivel de atención y control</strong>: dedicar los mismos recursos a gestionar un componente de alto valor que a gestionar un artículo de papelería es un desperdicio evidente. El sistema propone asignar el esfuerzo de control de forma proporcional al impacto económico de cada artículo.</p>
 <p>El fundamento teórico del ABC es el <strong>Principio de Pareto</strong> (también conocido como regla 80/20), enunciado por el economista italiano Vilfredo Pareto a finales del siglo XIX: en muchos fenómenos económicos, aproximadamente el 20 % de las causas explica el 80 % de los efectos. Aplicado al inventario, esto significa que un pequeño porcentaje de artículos concentra la mayor parte del valor del stock, mientras que la mayoría de los artículos representan una fracción pequeña del valor total.</p>
 <section id="clasificación-de-los-artículos" class="level3">
@@ -649,6 +680,7 @@ para Empresa y Diseño de Modelos de Negocio (2.º Bach.):
 Bloque B.3 - Función productiva y aprovisionamiento:
   - Gestión de inventarios: Punto de pedido, JIT ✓
   - Modelo de Wilson (CEP / EOQ) con fórmulas completas ✓
+  - Periodos de maduración económico y financiero ✓
   - Sistema JIT ✓
   - Sistema ABC (Principio de Pareto) ✓
 
