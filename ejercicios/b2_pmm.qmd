@@ -55,9 +55,13 @@ $$PMMf = PMMe - PM_P$$
 
 ### EHU 2019 Extraordinaria — Empresa con rotaciones dadas
 
-> *Datos: $PM_F = 25$ días; rotación MP $n_A = 18$ veces; $PM_V = 30$ días; rotación cobro $n_C = 12$ veces; $PM_P = 50$ días. Año = 360 días.*
+> Calcule y explique el significado del período medio de maduración económico y financiero, a partir de los siguientes datos de una empresa, considerando el año comercial de 360 días:
 >
-> Calcula el PMM económico y financiero.
+> - Período medio de fabricación: 25 días.
+> - Número de veces que se renuevan las existencias de materias primas en el año: 18 veces.
+> - Período medio de venta: 30 días.
+> - Período medio de pago a proveedores: 50 días.
+> - Número de veces que se renuevan las cuentas pendientes de cobro a clientes: 12 veces.
 
 ::: {.callout-tip title="Solución comentada"}
 

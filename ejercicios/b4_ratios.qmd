@@ -87,6 +87,16 @@ Sustituye los corchetes `[...]` con los valores calculados.
 
 ::: {.callout-tip title="Solución comentada"}
 
+**Fórmulas generales**
+
+$$\text{Ratio de inmovilizado} = \frac{ANC}{PN + PNC} \qquad
+\text{Ratio de endeudamiento} = \frac{PNC + PC}{PN}$$
+
+$$\text{Ratio de liquidez} = \frac{AC}{PC} \qquad
+\text{Ratio de garantía} = \frac{TA}{PNC + PC}$$
+
+$$\text{Ratio de tesorería} = \frac{AC - Existencias}{PC}$$
+
 | Ratio | Cálculo | Valor | Ref. | Situación |
 |:---|:---|:---:|:---:|:---:|
 | Inmovilizado | $1.018.000 / (668.900 + 312.000)$ | **1,03** | < 1 | ⚠️ Desfavorable |
@@ -120,6 +130,16 @@ Sustituye los corchetes `[...]` con los valores calculados.
 > Total Activo = 876.600 €
 
 ::: {.callout-tip title="Solución comentada"}
+
+**Fórmulas generales**
+
+$$\text{Ratio de inmovilizado} = \frac{ANC}{PN + PNC} \qquad
+\text{Ratio de endeudamiento} = \frac{PNC + PC}{PN}$$
+
+$$\text{Ratio de liquidez} = \frac{AC}{PC} \qquad
+\text{Ratio de garantía} = \frac{TA}{PNC + PC}$$
+
+$$\text{Ratio de tesorería} = \frac{AC - Existencias}{PC}$$
 
 | Ratio | Cálculo | Valor | Ref. | Situación |
 |:---|:---|:---:|:---:|:---:|

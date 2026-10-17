@@ -47,17 +47,25 @@ $$CM = \frac{CT}{Q} \qquad \text{(coste medio unitario)}$$
 
 ### EHU 2025 Extraordinaria — Pastelería AMETS (roscos de Navidad)
 
-> *AMETS tiene CF = 58.014 €, CV totales = 245.250 €, produce 54.500 roscos al año y los vende a 7,8 €/ud.*
+> *El obrador de pastelería AMETS S.L. elabora anualmente roscos de Navidad para la cooperativa de distribución Eroski. Para las navidades de este año ha vendido 54.500 roscos. Su producción ha tenido unos costes variables de 245.250 € y unos costes fijos de 58.014 €. El precio unitario de venta es de 7,8 €.*
 >
-> a) Punto muerto, significado y representación gráfica. *(1 p)*
-> b) Resultado económico de este año. *(0,5 p)*
-> c) Si la capacidad máxima fuera de 14.000 roscos, ¿a qué precio mínimo habría que venderlos para no tener pérdidas? *(0,5 p)*
+> Teniendo en cuenta lo anterior, calcule:
+>
+> a) El punto muerto o umbral de rentabilidad, comente su significado y realice la representación gráfica. *(1 punto)*
+> b) El resultado económico de este año. *(0,5 puntos)*
+> c) Si la capacidad productiva máxima de la empresa fuese de 14.000 unidades, ¿qué precio se tendría que poner para no tener pérdidas? *(0,5 puntos)*
 
 ::: {.callout-tip title="Solución comentada"}
 
 **Paso 0 — Calcular el CVu**
 
-$$CVu = \frac{CV}{Q} = \frac{245.250}{54.500} = \mathbf{4{,}5\ \text{€/rosco}}$$
+La fórmula general del coste variable unitario es:
+
+$$CVu = \frac{CV}{Q}$$
+
+Aplicada a los datos del ejercicio:
+
+$$CVu = \frac{245.250}{54.500} = \mathbf{4{,}5\ \text{€/rosco}}$$
 
 **a) Punto muerto**
 
@@ -147,6 +155,8 @@ $$Q^* = \frac{CF}{P - CVu} = \frac{58.014}{7{,}8 - 4{,}5} = \frac{58.014}{3{,}3}
 ```
 
 **b) Resultado este año (54.500 roscos)**
+
+$$B = IT - CT$$
 
 $$IT = 54.500 \times 7{,}8 = 425.100\ \text{€}$$
 $$CT = 58.014 + 245.250 = 303.264\ \text{€}$$
