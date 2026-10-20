@@ -83,7 +83,7 @@ Entre varios proyectos aceptables, se elige el de **mayor VAN**.
 >
 > c) ¿Cuál de los dos criterios (Valor Actual Neto o plazo de recuperación) es el más adecuado? ¿Por qué?
 
-::: {.callout-tip title="Solución oficial comentada"}
+::: {.callout-tip title="Solución oficial comentada" collapse="true"}
 
 La tasa de descuento se calcula con la fórmula de Fisher:
 
@@ -147,7 +147,7 @@ El VAN es más adecuado porque actualiza los flujos y tiene en cuenta la pérdid
 >
 > c) ¿Cuál de los dos criterios (Valor Actual Neto o plazo de recuperación) es el más adecuado? ¿Por qué?
 
-::: {.callout-tip title="Resolución propia a partir del enunciado"}
+::: {.callout-tip title="Resolución propia a partir del enunciado" collapse="true"}
 
 El archivo facilitado contiene el enunciado, pero no la solución oficial. Esta resolución se ha elaborado a partir de los datos del ejercicio.
 
@@ -221,7 +221,7 @@ El VAN es más completo: actualiza los flujos para tener en cuenta el valor temp
 > b) ¿Cuál elegir según el VAN? *(1 p)*
 > c) ¿Qué criterio es más adecuado y por qué? *(0,5 p)*
 
-::: {.callout-tip title="Solución comentada"}
+::: {.callout-tip title="Solución comentada" collapse="true"}
 
 **Paso 0 — Calcular los flujos de caja**
 
@@ -313,7 +313,7 @@ El **VAN es superior al Pay-back** por dos razones:
 > b) ¿Qué proyecto se debería elegir según el criterio del Valor Actual Neto (VAN)? *(1 punto)*
 > c) ¿Cuál de los dos criterios (Valor Actual Neto o Plazo de Recuperación) es el más adecuado? ¿Por qué? *(0,25 puntos)*
 
-::: {.callout-tip title="Solución comentada"}
+::: {.callout-tip title="Solución comentada" collapse="true"}
 
 **Paso 0 — Flujos de caja (con cuidado con los pagos fraccionados)**
 
@@ -416,7 +416,7 @@ El **VAN** es superior porque es un método dinámico: actualiza los flujos teni
 >
 > c) ¿Cuál de los dos criterios (Valor Actual Neto o plazo de recuperación) es el más adecuado? ¿Por qué?
 
-::: {.callout-tip title="Solución oficial comentada"}
+::: {.callout-tip title="Solución oficial comentada" collapse="true"}
 
 **a) Valor Actual Neto**
 
