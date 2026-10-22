@@ -179,3 +179,155 @@ b) En el **descuento de efectos**, si el deudor no paga al vencimiento, el banco
 c) Las amortizaciones reducen el beneficio contable (son un gasto), pero **no suponen una salida real de dinero**: el dinero ya salió cuando se compró el activo. Cada año, la empresa retiene internamente el importe de la cuota de amortización, que se va acumulando en el fondo de amortización. Cuando el activo se agota, la empresa dispone de esos fondos para reponerlo. Por eso son autofinanciación de mantenimiento: propias (no hay que devolverlas) e internas (generadas por la propia actividad).
 :::
 :::
+
+## Actividades de repaso
+
+### Verdadero o falso: fuentes de financiación
+
+::: {.callout-important title="Actividad — Verdadero o falso"}
+
+Indica si cada afirmación es verdadera o falsa:
+
+1. Todos los fondos ajenos a largo plazo son capitales permanentes.
+2. Todos los capitales permanentes son fondos ajenos a largo plazo.
+3. Toda la financiación interna son fondos propios.
+4. Todos los fondos propios son financiación interna.
+5. Todos los fondos ajenos a corto plazo son capitales a corto plazo.
+6. El capital social es financiación propia y externa.
+
+:::
+
+::: {.callout-note title="Solución" collapse="true"}
+
+1. **Verdadera.** La financiación ajena a largo plazo forma parte de los capitales permanentes.
+2. **Falsa.** También son capitales permanentes los fondos propios, como el capital y las reservas.
+3. **Verdadera.** La autofinanciación se genera dentro de la empresa y pertenece a esta.
+4. **Falsa.** El capital social es propio, pero externo: procede de los socios.
+5. **Verdadera.** La deuda ajena que vence antes de un año es financiación a corto plazo.
+6. **Verdadera.** El capital pertenece a la empresa, pero llega desde fuera a través de las aportaciones de socios.
+
+:::
+
+### ¿De qué fuente procede cada fondo?
+
+::: {.callout-important title="Actividad — Fondos propios e internos"}
+
+Una empresa necesita fondos para financiar una inversión. Relaciona cada descripción con una fuente: **ampliación de capital, reservas, subvención o amortización**.
+
+1. Los socios aportan 10.000 € adicionales a los que habían invertido al constituir la empresa.
+2. La empresa destina 5.000 € de beneficios de años anteriores que no repartió.
+3. El ayuntamiento concede una ayuda de 15.000 €.
+4. La empresa utiliza los recursos que ha ido reteniendo para sustituir una máquina.
+
+:::
+
+::: {.callout-note title="Solución" collapse="true"}
+
+| Descripción | Fuente | Clasificación |
+|:---|:---|:---|
+| 1. Aportación adicional de los socios | Ampliación de capital | Propia y externa |
+| 2. Beneficios no repartidos | Reservas | Propia e interna; autofinanciación de enriquecimiento |
+| 3. Ayuda pública | Subvención | Propia y externa |
+| 4. Recursos retenidos para sustituir un equipo | Amortización | Propia e interna; autofinanciación de mantenimiento |
+
+Aunque el material de origen titula la actividad «Fondos internos», la ampliación de capital y la subvención son fuentes **externas**. Las reservas y las amortizaciones sí son internas.
+
+:::
+
+### ¿Quién es quién? Fuentes de financiación
+
+::: {.callout-important title="Actividad — ¿Quién es quién?"}
+
+Identifica la fuente de financiación descrita en cada situación: **factoring, leasing, crédito comercial o empréstito**.
+
+1. La empresa tiene facturas pendientes de cobro y otra entidad le adelanta el dinero; los clientes pagarán a esa entidad.
+2. La empresa necesita una máquina y una entidad la compra para cedérsela en alquiler.
+3. La empresa compra productos y acuerda pagarlos a sus proveedores dentro de 90 días.
+4. La empresa obtiene dinero de muchas personas o entidades que compran sus bonos u obligaciones y reciben intereses.
+
+:::
+
+::: {.callout-note title="Solución" collapse="true"}
+
+1. **Factoring.**
+2. **Leasing.**
+3. **Crédito comercial.**
+4. **Empréstito.**
+
+:::
+
+### Clasificación de inversiones
+
+::: {.callout-important title="Actividad — Tipos de inversión"}
+
+Para cada caso, clasifica la inversión según el **tipo de activo** (real o financiera) y su **duración** (corto o largo plazo). Cuando la información lo permita, añade su finalidad.
+
+a) La empresa abre una fábrica para atender la demanda de México y Argentina.
+
+b) Compra acciones de Netflix con la intención de obtener rentabilidad durante los próximos seis meses.
+
+c) Adquiere materias primas para su proceso productivo.
+
+d) Sustituye una máquina averiada por otra que cumple la misma función.
+
+:::
+
+::: {.callout-note title="Solución" collapse="true"}
+
+| Caso | Tipo de activo | Duración | Finalidad |
+|:---|:---|:---|:---|
+| a) Nueva fábrica | Real | Largo plazo | Expansión |
+| b) Acciones durante seis meses | Financiero | Corto plazo | Obtener rentabilidad financiera |
+| c) Materias primas | Real | Corto plazo | Mantener el ciclo productivo |
+| d) Sustitución de una máquina | Real | Largo plazo | Renovación |
+
+:::
+
+### Autoevaluación: inversión y financiación
+
+::: {.callout-important title="Actividad — Autoevaluación"}
+
+Elige la respuesta correcta en cada pregunta.
+
+1. En una línea de crédito bancaria:
+   a) Se pagan intereses por la cantidad utilizada.
+   b) Se pagan intereses desde el primer día por todo el límite concedido.
+   c) El banco paga intereses a la empresa por el saldo utilizado.
+
+2. La autofinanciación de enriquecimiento está formada por:
+   a) Los recursos ajenos a corto y largo plazo.
+   b) Los fondos de amortización y las provisiones.
+   c) Las reservas.
+
+3. Cuando una empresa cede sus facturas pendientes para recibir un anticipo, la operación se denomina:
+   a) *Factoring*.
+   b) *Confirming*.
+   c) *Leasing*.
+
+4. El criterio que indica cuánto tiempo se necesita para recuperar el desembolso inicial es:
+   a) El Valor Actual Neto (VAN).
+   b) La Tasa Interna de Rentabilidad (TIR).
+   c) El plazo de recuperación (*pay-back*).
+
+5. Según el criterio de la TIR, interesará realizar una inversión cuando:
+   a) La TIR sea igual al coste del capital exigido.
+   b) La TIR sea superior al coste del capital exigido.
+   c) La TIR sea inferior al coste del capital exigido.
+
+6. Si el VAN de una inversión es positivo:
+   a) La inversión genera pérdidas.
+   b) La inversión es rentable al tipo de descuento utilizado.
+   c) Todos sus flujos de caja tienen que ser positivos.
+
+:::
+
+::: {.callout-note title="Solución" collapse="true"}
+
+1. **a)** Los intereses se calculan sobre el saldo dispuesto; además, puede haber comisiones sobre la parte no utilizada.
+2. **c)** Las reservas son beneficios no distribuidos y permiten financiar el crecimiento.
+3. **a)** En el *factoring* se ceden derechos de cobro a un factor.
+4. **c)** El *pay-back* mide el tiempo que tarda en recuperarse el desembolso inicial.
+5. **b)** La TIR debe superar el coste del capital exigido para que el proyecto resulte aceptable según este criterio.
+6. **b)** Un VAN positivo indica que, tras actualizar los flujos al tipo elegido, el proyecto crea valor.
+
+:::

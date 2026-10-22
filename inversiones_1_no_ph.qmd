@@ -16,6 +16,11 @@ Existe un mercado de capitales que redirige ahorros de los diversos agentes econ
 - **Activos reales o productivos**: engloban todos los bienes destinados a la producción (no a su consumo directo). Por ejemplo, la maquinaria.
 - **Activos financieros**: acciones, bonos y otro tipo de instrumentos financieros.
 
+También se pueden clasificar las inversiones atendiendo a su duración y a su finalidad:
+
+- **Según su duración**: son **a largo plazo** las inversiones cuyos activos permanecerán en la empresa durante varios ejercicios (una nave o una máquina); son **a corto plazo** las ligadas al ciclo corriente, como la compra de materias primas o mercaderías.
+- **Según su finalidad**: las inversiones de **renovación** sustituyen equipos que se han estropeado o han quedado obsoletos; las **expansivas** aumentan la capacidad productiva; y las **estratégicas** adaptan la empresa a cambios del entorno, requisitos o nuevas formas de producir.
+
 **Según la relación entre inversiones:**
 
 - **Sustitutivas**: la realización de una hace innecesaria o imposible la otra.
@@ -265,7 +270,7 @@ Las fuentes de financiación se clasifican según tres criterios:
 ### Según su titularidad
 
 - **Fondos propios**: recursos que pertenecen a la empresa y no necesitan ser devueltos. Incluyen aportaciones de socios (capital), beneficios no distribuidos (reservas) y amortizaciones y provisiones.
-- **Fondos ajenos**: recursos que se piden prestados y deben devolverse con intereses. Se dividen en:
+- **Fondos ajenos**: recursos obtenidos de otras personas o entidades que deben devolverse. Pueden tener intereses, comisiones u otros costes; en algunos casos, como el crédito comercial dentro del plazo acordado, no hay un interés explícito. Se dividen en:
   - *A largo plazo*: devolución en más de un año (pasivo no corriente).
   - *A corto plazo*: devolución en menos de un año (pasivo corriente). Los intereses se consideran gastos financieros.
 
@@ -291,11 +296,22 @@ Las fuentes de financiación se clasifican según tres criterios:
 
 ### Financiación propia interna (autofinanciación)
 
-Son los fondos generados por la propia actividad de la empresa:
+La **autofinanciación** (o financiación interna) reúne los recursos que la empresa genera y retiene con su actividad. Es financiación **propia** porque no hay que devolverla y **interna** porque se origina dentro de la empresa. Se distingue según su función:
 
-- **Reservas**: beneficios no distribuidos. Pueden ser legales (fijadas por la ley), estatutarias (fijadas por los estatutos) o voluntarias.
-- **Amortizaciones**: reflejan la pérdida de valor de los activos productivos a lo largo del tiempo. Por ejemplo, un coche comprado por 20.000 € con vida útil de 10 años se amortiza a razón de 2.000 € anuales. Este monto se contabiliza como coste, pero en realidad se "ahorra" para futuras inversiones.
-- **Provisiones**: cantidades reservadas para cubrir gastos futuros inciertos (p. ej., una reparación prevista en la fábrica).
+- **Autofinanciación de enriquecimiento: reservas.** Son beneficios que no se distribuyen entre los socios y permanecen en la empresa. Pueden ser legales, estatutarias o voluntarias. Financian nuevas inversiones y permiten crecer.
+- **Autofinanciación de mantenimiento: amortizaciones y provisiones.** Las **amortizaciones** reflejan la pérdida de valor de los activos productivos y permiten reunir recursos para reponerlos. Por ejemplo, un equipo de 20.000 € con una vida útil de diez años genera, si se amortiza linealmente y sin valor residual, una cuota anual de 2.000 €. Las **provisiones** cubren riesgos o gastos futuros probables cuyo importe o fecha no se conocen con exactitud.
+
+Estas partidas no son una cuenta bancaria separada: la empresa debe conservar liquidez para que los recursos contables puedan utilizarse cuando haga falta. Las reservas financian crecimiento; las amortizaciones y provisiones ayudan a mantener la capacidad productiva y afrontar obligaciones futuras.
+
+**Ventajas e inconvenientes de la autofinanciación**
+
+| Ventajas | Inconvenientes |
+|:---|:---|
+| No genera una deuda que haya que devolver ni intereses explícitos. | Se acumula lentamente y puede no bastar para inversiones grandes o urgentes. |
+| Da autonomía: no depende de que un banco conceda financiación ni exige negociar un préstamo. | Retener beneficios reduce los dividendos que reciben los socios y puede generar desacuerdos. |
+| Es especialmente útil para empresas pequeñas que tienen dificultades para conseguir financiación externa. | Que no haya intereses explícitos no significa que sea gratis: los beneficios retenidos tienen un coste de oportunidad. Si no se evalúan los proyectos, puede invertirse en alternativas menos rentables. |
+
+La comparación debe hacerse con el coste total y el riesgo de cada alternativa, no solo con el interés que aparece en un contrato.
 
 
 ## La financiación ajena
@@ -316,13 +332,26 @@ Pedir financiación a largo plazo suele ser más costoso debido a los intereses 
 1. **Préstamos a corto plazo**: préstamos bancarios con plazo de devolución inferior a un año.
 2. **Líneas de crédito**: el banco habilita una cuenta con un límite determinado y la empresa retira fondos según lo necesite. Se pagan intereses por la cantidad utilizada y comisión por el monto no dispuesto.
 3. **Crédito comercial**: los proveedores permiten aplazar el pago de materias primas (normalmente entre 45 y 90 días). Es una forma de financiación gratuita, salvo que el proveedor ofrezca descuento por pago anticipado.
-4. **Descuento de efectos**: el banco anticipa el importe de un efecto comercial (pagaré, cheque) antes de su vencimiento, descontando un interés. El banco asume el riesgo de impago.
-5. **Factoring**: la empresa vende sus derechos de cobro a una entidad ("factor"), que adelanta el dinero con un descuento que cubre intereses y riesgo de impago. Permite trasladar el riesgo al factor, aunque el coste es elevado.
-6. **Confirming**: servicio bancario que facilita la gestión de pagos a proveedores. El banco informa al proveedor sobre el pago pendiente y le ofrece cobrarlo antes del vencimiento a cambio de intereses.
+4. **Descuento de efectos**: el banco anticipa el importe de un efecto comercial (por ejemplo, una letra o un pagaré) antes de su vencimiento, descontando intereses y comisiones. En el descuento habitual **con recurso**, la empresa sigue respondiendo si el cliente no paga: el banco puede reclamarle el importe.
+5. **Factoring**: la empresa cede sus facturas pendientes de cobro a una entidad (el *factor*), que anticipa el dinero a cambio de intereses y comisiones. Solo en el **factoring sin recurso** el factor asume el riesgo de insolvencia del cliente; con recurso, ese riesgo permanece en la empresa.
+6. **Confirming**: servicio bancario para gestionar los pagos de la empresa a sus proveedores. La empresa ordena los pagos al banco; este comunica al proveedor la fecha prevista y puede ofrecerle cobrar antes, normalmente a cambio de un coste. El anticipo es una opción del proveedor, no un préstamo que la empresa reciba automáticamente.
 7. **Fuentes espontáneas de financiación**: formas de financiación que se obtienen sin negociación previa:
    - *Descubierto en cuenta*: la empresa gasta más de lo disponible en cuenta; los intereses aplicados suelen ser muy altos.
    - *Salarios pendientes de pago*: los empleados cobran a fin de mes, por lo que la empresa dispone temporalmente de esos fondos.
    - *Pagos a Hacienda*: la empresa dispone de los fondos fiscales hasta la fecha de pago.
+
+#### Préstamo y crédito: no son lo mismo
+
+En un **préstamo**, la entidad entrega todo el importe acordado al inicio y la empresa paga intereses por el capital pendiente según el contrato. En una **línea de crédito**, el banco fija un límite y la empresa utiliza solo lo que necesita; paga intereses por lo dispuesto y normalmente una comisión por la parte disponible que no utiliza.
+
+| | Préstamo bancario | Línea de crédito |
+|:---|:---|:---|
+| Dinero disponible | Se entrega el importe total al inicio. | Se establece un límite; la empresa dispone del dinero según sus necesidades. |
+| Intereses | Se calculan sobre el capital prestado que queda pendiente. | Se calculan sobre el saldo utilizado. |
+| Otros costes | Puede haber comisión de apertura, estudio u otras pactadas. | Puede haber comisión por el saldo no dispuesto, además de otras comisiones. |
+| Uso habitual | Financiar una inversión o necesidad concreta cuyo importe se conoce. | Cubrir desfases temporales de tesorería cuando no se conoce exactamente cuánto dinero se necesitará. |
+
+Los préstamos pueden ser a corto o largo plazo; las líneas de crédito suelen cubrir necesidades de tesorería a corto plazo.
 
 
 ## Fuentes alternativas de financiación
@@ -336,6 +365,50 @@ Las fuentes alternativas han cobrado gran relevancia especialmente para las pyme
 5. **Friends, Family and Fools (FFF)**: financiamiento en el círculo cercano (familiares, amigos y personas que confían en el proyecto).
 6. **Aceleradoras de *startups***: apoyan a nuevas empresas en sus primeras etapas ofreciendo inversión, redes de contactos, formación y asesoramiento.
 7. **Capitalización de la prestación de desempleo**: la Seguridad Social permite a los desempleados recibir el total de su prestación de una sola vez para iniciar un negocio.
+
+## Coste y riesgo de las fuentes de financiación
+
+Que una fuente no cobre intereses explícitos no significa que sea siempre gratuita: puede tener un coste de oportunidad, exigir ceder parte de la propiedad o implicar perder un descuento. El coste efectivo depende del contrato y de la situación de la empresa.
+
+| Fuente | Coste habitual y riesgo que conviene valorar |
+|:---|:---|
+| Reservas, amortizaciones y provisiones | No generan intereses ni obligación de devolución. Su coste de oportunidad es renunciar a repartir beneficios o a destinar esos recursos a otro uso; las provisiones deben reservarse para el riesgo previsto. |
+| Capital y ampliación de capital | No se devuelven como una deuda ni pagan intereses obligatorios, pero diluyen la participación y el control de los socios anteriores y crean expectativas de dividendos. |
+| Subvenciones | Por lo general no devengan intereses ni se devuelven si se cumplen las condiciones. Si se incumplen, la Administración puede exigir su reintegro. |
+| Préstamo bancario | Intereses y, según el contrato, comisiones de apertura, estudio o cancelación. Hay que devolver el principal aunque la inversión no salga bien; puede exigirse garantía. |
+| Empréstito | Intereses o cupones para quienes compran bonos u obligaciones y posibles gastos de emisión. La empresa debe devolver el nominal al vencimiento. |
+| Leasing | Cuotas que incluyen el coste financiero y posibles comisiones. El mantenimiento suele correr a cargo de la empresa; puede ejercer la opción de compra al final. |
+| Renting | Cuotas periódicas que suelen incluir mantenimiento y seguro. No suele haber opción de compra; hay que comparar el coste total y las condiciones de salida. |
+| Crédito bancario o línea de crédito | Intereses por el saldo utilizado y, normalmente, una comisión por la parte disponible no utilizada; pueden añadirse otras comisiones. |
+| Crédito comercial de proveedores | No suele tener intereses explícitos dentro del plazo ordinario. Puede costar el descuento por pronto pago al que se renuncia o estar incorporado al precio. |
+| Descuento de efectos | Intereses y comisiones por anticipar el cobro. Si es con recurso, la empresa responde cuando el cliente no paga. |
+| Factoring | Intereses y comisiones por gestionar y anticipar facturas. Con recurso, el riesgo de impago permanece en la empresa; sin recurso, se transfiere al factor según lo pactado. |
+| Confirming | Puede generar comisiones por el servicio y un coste de anticipo si el proveedor cobra antes. El contrato determina quién asume cada coste. |
+| Descubierto en cuenta | Intereses y comisiones normalmente elevados; es una fuente de emergencia, no una financiación estable. |
+| Crowdlending | Intereses y, en su caso, comisiones de la plataforma; la deuda debe devolverse. |
+| Capital riesgo, *business angels* y financiación participativa | No siempre hay intereses, pero a cambio puede cederse participación, derechos de decisión o una recompensa; en el *crowdlending* sí se pagan intereses. |
+| Salarios e impuestos pendientes | No suelen llevar intereses mientras se paguen en plazo. El retraso puede generar recargos, sanciones y obligaciones legales. |
+
+## Quién aporta el dinero y quién lo recibe
+
+El esquema permite seguir el recorrido de los fondos o de los derechos de cobro. En varias fuentes, quien adelanta el dinero no es la misma persona que finalmente lo devuelve.
+
+| Fuente | Recorrido del dinero o del activo |
+|:---|:---|
+| Autofinanciación | La propia empresa retiene beneficios o recursos generados y los aplica a sus necesidades. No hay prestamista externo. |
+| Capital social | Los socios aportan dinero o bienes a la empresa y reciben a cambio participaciones o acciones. |
+| Subvención | La Administración concede fondos a la empresa, normalmente sujetos a unas condiciones. |
+| Préstamo | El banco entrega dinero a la empresa; la empresa devuelve el principal y los intereses. |
+| Empréstito | Las personas o entidades inversoras compran bonos u obligaciones; la empresa recibe el dinero y paga intereses y principal. |
+| Leasing | La entidad de *leasing* compra el bien al fabricante y lo cede a la empresa. La empresa paga cuotas y puede tener opción de compra al final. |
+| Renting | La empresa de *renting* cede el uso del bien a la empresa cliente y suele prestar mantenimiento y seguro; la cliente paga cuotas, sin opción de compra habitual. |
+| Línea de crédito | El banco fija un límite a disposición de la empresa. La empresa retira solo lo que necesita y devuelve el saldo utilizado con sus costes. |
+| Crédito comercial | El proveedor entrega bienes a la empresa y aplaza el cobro; la empresa paga al proveedor en la fecha acordada. |
+| Descuento de efectos | El cliente debe dinero a la empresa. El banco anticipa el importe menos gastos y, al vencimiento, cobra al cliente. Si el efecto resulta impagado y hay recurso, reclama a la empresa. |
+| Factoring | La empresa cede sus facturas a un factor y recibe un anticipo. Los clientes pagan al factor; la transferencia del riesgo depende de si el contrato es con o sin recurso. |
+| Confirming | La empresa compradora comunica sus facturas al banco para que gestione el pago al proveedor. El proveedor puede aceptar el anticipo ofrecido por el banco; la empresa paga al banco según el vencimiento pactado. |
+
+En resumen: en el **descuento de efectos**, el banco adelanta el cobro de un derecho que la empresa conserva frente al cliente si hay recurso; en el **factoring**, el derecho se cede al factor y el contrato determina si también se cede el riesgo de impago. En el **leasing**, la entidad adquiere el bien y financia su uso; en el **crédito comercial**, quien concede el aplazamiento es el proveedor.
 
 ---
 
