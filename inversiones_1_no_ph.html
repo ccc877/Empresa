@@ -566,7 +566,7 @@ VAN = 0 = -A + \frac{FNC_1}{(1+TIR)^1} + \frac{FNC_2}{(1+TIR)^2} + \frac{FNC_3}{
 </tbody>
 </table>
 <p>Se elige, de entre todos los proyectos con TIR positiva, el que tenga el valor más elevado.</p>
-<div id="85f7e8c0" class="cell" data-execution_count="1">
+<div id="41891696" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -709,6 +709,93 @@ Nota
 <section id="fuentes-de-financiación" class="level2" data-number="4.5">
 <h2 data-number="4.5" class="anchored" data-anchor-id="fuentes-de-financiación"><span class="header-section-number">4.5</span> Fuentes de financiación</h2>
 <p>Las fuentes de financiación se clasifican según tres criterios:</p>
+<style>
+.financing-map-wrap { overflow-x: auto; margin: 1.25rem 0 1.5rem; }
+.financing-map { width: 100%; min-width: 690px; border-collapse: separate; border-spacing: 5px; }
+.financing-map th, .financing-map td { border: 0; padding: .62rem .72rem; vertical-align: middle; }
+.financing-map thead th { color: #243447; background: #edf1f5; text-align: center; font-size: .92em; }
+.financing-map .term { width: 19%; color: #173b12; background: #79b64d; border-radius: 16px; text-align: center; font-weight: 700; }
+.financing-map .ownership { width: 21%; color: #102f4b; background: #69a6d8; border-radius: 14px; text-align: center; font-weight: 650; }
+.financing-map .source { background: #ffe49a; border-radius: 8px; }
+.financing-map .internal { width: 17%; color: #fff; background: #c6530c; border-radius: 14px; text-align: center; font-weight: 700; }
+.financing-map .external { width: 17%; color: #302400; background: #ffd966; border-radius: 14px; text-align: center; font-weight: 700; }
+.financing-map .source ul { margin: 0; padding-left: 1.15rem; }
+.financing-map .source li + li { margin-top: .2rem; }
+.financing-map-note { font-size: .92em; }
+@media (max-width: 700px) { .financing-map-wrap { margin-right: -.5rem; } }
+</style>
+<div class="financing-map-wrap">
+<table class="financing-map">
+<thead>
+<tr>
+<th>
+Duración
+</th>
+<th>
+Titularidad
+</th>
+<th>
+Fuentes habituales
+</th>
+<th>
+Origen
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="term" rowspan="3">
+Capitales<br>permanentes
+</td>
+<td class="ownership" rowspan="2">
+Fondos propios
+</td>
+<td class="source">
+Capital social y ampliaciones
+</td>
+<td class="external" rowspan="1">
+Financiación externa
+</td>
+</tr>
+<tr>
+<td class="source">
+Reservas, amortizaciones y provisiones
+</td>
+<td class="internal" rowspan="1">
+Financiación interna
+</td>
+</tr>
+<tr>
+<td class="ownership">
+Fondos ajenos a largo plazo
+</td>
+<td class="source">
+Préstamos a largo plazo, empréstitos, <em>leasing</em> y <em>renting</em>
+</td>
+<td class="external">
+Financiación externa
+</td>
+</tr>
+<tr>
+<td class="term">
+Capitales<br>a corto plazo
+</td>
+<td class="ownership">
+Fondos ajenos a corto plazo
+</td>
+<td class="source">
+Préstamos a corto plazo, líneas de crédito, crédito comercial, descuento de efectos, <em>confirming</em> y <em>factoring</em>
+</td>
+<td class="external">
+Financiación externa
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="financing-map-note">
+<strong>Cómo leer el esquema:</strong> el color verde identifica la duración, el azul la titularidad, el naranja la financiación interna y el amarillo la externa. El capital social es financiación propia, pero externa; la autofinanciación (reservas, amortizaciones y provisiones) es propia e interna.
+</p>
 <section id="según-su-titularidad" class="level3">
 <h3 class="anchored" data-anchor-id="según-su-titularidad">Según su titularidad</h3>
 <ul>
