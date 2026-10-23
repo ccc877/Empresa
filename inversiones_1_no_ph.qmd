@@ -49,6 +49,14 @@ A la hora de valorar una inversión, lo más simple es considerar que el valor d
 
 Para calcularlo hay que organizar una línea temporal, restando el desembolso inicial y sumando año a año los ingresos generados, hasta superar el 0. Superar el cero significará que en ese momento ($T$) se habrá recuperado el dinero desembolsado. La inversión seleccionada será aquella en la que el dinero logre recuperarse; si hay varias, se seleccionará aquella que permita recuperar la inversión antes (el menor $T$ posible).
 
+::: {.callout-important}
+### El Pay-back y el VAN responden a preguntas distintas
+
+El **Pay-back** permite saber cuánto tarda la empresa en recuperar el desembolso inicial; por eso informa sobre la **liquidez** del proyecto. Sin embargo, en su versión simple no actualiza los flujos para reflejar el valor del dinero en el tiempo y deja de contar los flujos que llegan después de recuperar la inversión.
+
+El **VAN** es un criterio más completo para valorar la **rentabilidad total**: actualiza todos los flujos de caja de la vida del proyecto y los compara con el desembolso inicial. Por eso, si ambos criterios conducen a decisiones distintas, normalmente se considera más adecuado el VAN. Esto no hace inútil al Pay-back: ambos pueden complementarse, pues miden aspectos diferentes.
+:::
+
 ### Métodos dinámicos
 
 Si se cuenta con los medios necesarios, lo ideal es tener en cuenta el momento en el que se producen los flujos de caja. Los métodos que lo hacen se denominan **métodos dinámicos**.
@@ -303,6 +311,12 @@ La **autofinanciación** (o financiación interna) reúne los recursos que la em
 
 Estas partidas no son una cuenta bancaria separada: la empresa debe conservar liquidez para que los recursos contables puedan utilizarse cuando haga falta. Las reservas financian crecimiento; las amortizaciones y provisiones ayudan a mantener la capacidad productiva y afrontar obligaciones futuras.
 
+::: {.callout-note}
+### Amortización e inversión de mantenimiento no son lo mismo
+
+La **amortización no es una inversión ni una entrada de dinero**: es el reconocimiento contable de la pérdida de valor de un activo por su uso o por el paso del tiempo. Se considera una fuente de autofinanciación de mantenimiento porque la empresa puede retener recursos para reponer ese activo. La compra del nuevo equipo que sustituye al antiguo sí es una **inversión de renovación o mantenimiento**.
+:::
+
 **Ventajas e inconvenientes de la autofinanciación**
 
 | Ventajas | Inconvenientes |
@@ -331,7 +345,7 @@ Pedir financiación a largo plazo suele ser más costoso debido a los intereses 
 
 1. **Préstamos a corto plazo**: préstamos bancarios con plazo de devolución inferior a un año.
 2. **Líneas de crédito**: el banco habilita una cuenta con un límite determinado y la empresa retira fondos según lo necesite. Se pagan intereses por la cantidad utilizada y comisión por el monto no dispuesto.
-3. **Crédito comercial**: los proveedores permiten aplazar el pago de materias primas (normalmente entre 45 y 90 días). Es una forma de financiación gratuita, salvo que el proveedor ofrezca descuento por pago anticipado.
+3. **Crédito comercial**: los proveedores permiten aplazar el pago de materias primas o mercaderías (normalmente entre 45 y 90 días). Es financiación **ajena, externa y a corto plazo**: la empresa debe pagar al proveedor en la fecha acordada. No suele tener intereses explícitos dentro del plazo habitual, aunque renunciar a un descuento por pronto pago puede suponer un coste.
 4. **Descuento de efectos**: el banco anticipa el importe de un efecto comercial (por ejemplo, una letra o un pagaré) antes de su vencimiento, descontando intereses y comisiones. En el descuento habitual **con recurso**, la empresa sigue respondiendo si el cliente no paga: el banco puede reclamarle el importe.
 5. **Factoring**: la empresa cede sus facturas pendientes de cobro a una entidad (el *factor*), que anticipa el dinero a cambio de intereses y comisiones. Solo en el **factoring sin recurso** el factor asume el riesgo de insolvencia del cliente; con recurso, ese riesgo permanece en la empresa.
 6. **Confirming**: servicio bancario para gestionar los pagos de la empresa a sus proveedores. La empresa ordena los pagos al banco; este comunica al proveedor la fecha prevista y puede ofrecerle cobrar antes, normalmente a cambio de un coste. El anticipo es una opción del proveedor, no un préstamo que la empresa reciba automáticamente.

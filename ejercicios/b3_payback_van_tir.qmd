@@ -462,3 +462,19 @@ El Pay-back también favorece al **proyecto A**, que recupera antes la inversió
 El VAN es más adecuado porque actualiza todos los flujos al presente y tiene en cuenta el valor temporal del dinero; además, considera los flujos de toda la vida de la inversión. El Pay-back no descuenta los flujos y omite los que se producen después de recuperar el desembolso.
 
 :::
+
+## Preguntas de concepto
+
+### EHU 2021 Ordinaria — Pay-back y VAN
+
+::: {.callout-important title="Verdadero o falso"}
+
+El método Pay-back es más fiable que el método del Valor Actual Neto (VAN) a la hora de valorar una inversión. Justifica la respuesta.
+
+:::
+
+::: {.callout-tip title="Solución" collapse="true"}
+
+**Falso.** El VAN es más completo para valorar la rentabilidad porque actualiza todos los flujos de caja de la inversión, incluidos los posteriores al momento en que se recupera el desembolso inicial. Así tiene en cuenta cuándo se producen los flujos y el valor del dinero en el tiempo. El Pay-back mide cuánto se tarda en recuperar la inversión y resulta útil para analizar la liquidez, pero no considera los flujos posteriores a la recuperación.
+
+:::

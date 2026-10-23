@@ -465,6 +465,20 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="criterio-estático-el-pay-back-plazo-de-recuperación">Criterio estático: el pay-back (plazo de recuperación)</h3>
 <p>A la hora de valorar una inversión, lo más simple es considerar que el valor del dinero es constante. Cuando no hay medios para hacer un cálculo más complejo, puede recurrirse al <strong>criterio del plazo de recuperación o pay-back</strong>. Este criterio estático muestra el tiempo necesario para recuperar el monto desembolsado. El foco está, por tanto, en la <strong>liquidez</strong> de la inversión.</p>
 <p>Para calcularlo hay que organizar una línea temporal, restando el desembolso inicial y sumando año a año los ingresos generados, hasta superar el 0. Superar el cero significará que en ese momento (<span class="math inline">\(T\)</span>) se habrá recuperado el dinero desembolsado. La inversión seleccionada será aquella en la que el dinero logre recuperarse; si hay varias, se seleccionará aquella que permita recuperar la inversión antes (el menor <span class="math inline">\(T\)</span> posible).</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>El Pay-back y el VAN responden a preguntas distintas
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>El <strong>Pay-back</strong> permite saber cuánto tarda la empresa en recuperar el desembolso inicial; por eso informa sobre la <strong>liquidez</strong> del proyecto. Sin embargo, en su versión simple no actualiza los flujos para reflejar el valor del dinero en el tiempo y deja de contar los flujos que llegan después de recuperar la inversión.</p>
+<p>El <strong>VAN</strong> es un criterio más completo para valorar la <strong>rentabilidad total</strong>: actualiza todos los flujos de caja de la vida del proyecto y los compara con el desembolso inicial. Por eso, si ambos criterios conducen a decisiones distintas, normalmente se considera más adecuado el VAN. Esto no hace inútil al Pay-back: ambos pueden complementarse, pues miden aspectos diferentes.</p>
+</div>
+</div>
 </section>
 <section id="métodos-dinámicos" class="level3">
 <h3 class="anchored" data-anchor-id="métodos-dinámicos">Métodos dinámicos</h3>
@@ -566,7 +580,7 @@ VAN = 0 = -A + \frac{FNC_1}{(1+TIR)^1} + \frac{FNC_2}{(1+TIR)^2} + \frac{FNC_3}{
 </tbody>
 </table>
 <p>Se elige, de entre todos los proyectos con TIR positiva, el que tenga el valor más elevado.</p>
-<div id="85f7e8c0" class="cell" data-execution_count="1">
+<div id="e1aa8606" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -756,6 +770,19 @@ Nota
 <li><strong>Autofinanciación de mantenimiento: amortizaciones y provisiones.</strong> Las <strong>amortizaciones</strong> reflejan la pérdida de valor de los activos productivos y permiten reunir recursos para reponerlos. Por ejemplo, un equipo de 20.000 € con una vida útil de diez años genera, si se amortiza linealmente y sin valor residual, una cuota anual de 2.000 €. Las <strong>provisiones</strong> cubren riesgos o gastos futuros probables cuyo importe o fecha no se conocen con exactitud.</li>
 </ul>
 <p>Estas partidas no son una cuenta bancaria separada: la empresa debe conservar liquidez para que los recursos contables puedan utilizarse cuando haga falta. Las reservas financian crecimiento; las amortizaciones y provisiones ayudan a mantener la capacidad productiva y afrontar obligaciones futuras.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Amortización e inversión de mantenimiento no son lo mismo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La <strong>amortización no es una inversión ni una entrada de dinero</strong>: es el reconocimiento contable de la pérdida de valor de un activo por su uso o por el paso del tiempo. Se considera una fuente de autofinanciación de mantenimiento porque la empresa puede retener recursos para reponer ese activo. La compra del nuevo equipo que sustituye al antiguo sí es una <strong>inversión de renovación o mantenimiento</strong>.</p>
+</div>
+</div>
 <p><strong>Ventajas e inconvenientes de la autofinanciación</strong></p>
 <table class="caption-top table">
 <colgroup>
@@ -804,7 +831,7 @@ Nota
 <ol type="1">
 <li><strong>Préstamos a corto plazo</strong>: préstamos bancarios con plazo de devolución inferior a un año.</li>
 <li><strong>Líneas de crédito</strong>: el banco habilita una cuenta con un límite determinado y la empresa retira fondos según lo necesite. Se pagan intereses por la cantidad utilizada y comisión por el monto no dispuesto.</li>
-<li><strong>Crédito comercial</strong>: los proveedores permiten aplazar el pago de materias primas (normalmente entre 45 y 90 días). Es una forma de financiación gratuita, salvo que el proveedor ofrezca descuento por pago anticipado.</li>
+<li><strong>Crédito comercial</strong>: los proveedores permiten aplazar el pago de materias primas o mercaderías (normalmente entre 45 y 90 días). Es financiación <strong>ajena, externa y a corto plazo</strong>: la empresa debe pagar al proveedor en la fecha acordada. No suele tener intereses explícitos dentro del plazo habitual, aunque renunciar a un descuento por pronto pago puede suponer un coste.</li>
 <li><strong>Descuento de efectos</strong>: el banco anticipa el importe de un efecto comercial (por ejemplo, una letra o un pagaré) antes de su vencimiento, descontando intereses y comisiones. En el descuento habitual <strong>con recurso</strong>, la empresa sigue respondiendo si el cliente no paga: el banco puede reclamarle el importe.</li>
 <li><strong>Factoring</strong>: la empresa cede sus facturas pendientes de cobro a una entidad (el <em>factor</em>), que anticipa el dinero a cambio de intereses y comisiones. Solo en el <strong>factoring sin recurso</strong> el factor asume el riesgo de insolvencia del cliente; con recurso, ese riesgo permanece en la empresa.</li>
 <li><strong>Confirming</strong>: servicio bancario para gestionar los pagos de la empresa a sus proveedores. La empresa ordena los pagos al banco; este comunica al proveedor la fecha prevista y puede ofrecerle cobrar antes, normalmente a cambio de un coste. El anticipo es una opción del proveedor, no un préstamo que la empresa reciba automáticamente.</li>
