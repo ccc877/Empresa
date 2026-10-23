@@ -331,3 +331,39 @@ Elige la respuesta correcta en cada pregunta.
 6. **b)** Un VAN positivo indica que, tras actualizar los flujos al tipo elegido, el proyecto crea valor.
 
 :::
+
+### EHU 2020 Ordinaria — Crédito comercial
+
+::: {.callout-important title="Opción múltiple"}
+
+El crédito comercial de los proveedores de mercaderías es una fuente de financiación:
+
+a) Ajena y a corto plazo.
+b) Ajena y a largo plazo.
+c) Propia y a corto plazo.
+
+:::
+
+::: {.callout-note title="Solución" collapse="true"}
+
+La respuesta correcta es **a) Ajena y a corto plazo**. El proveedor aplaza el cobro de las mercaderías, de modo que la empresa dispone temporalmente de fondos que tendrá que devolver en el plazo acordado. Por eso es financiación ajena; como suele vencerse en unas semanas o meses, es a corto plazo.
+
+:::
+
+### EHU 2023 Extraordinaria — Amortizaciones
+
+::: {.callout-important title="Opción múltiple"}
+
+En la clasificación de la financiación propia interna, las amortizaciones se relacionan con inversiones:
+
+a) De mantenimiento.
+b) De crecimiento.
+c) Inmateriales.
+
+:::
+
+::: {.callout-note title="Solución" collapse="true"}
+
+La respuesta esperada es **a) De mantenimiento**: la amortización se vincula a la reposición de los activos productivos y, por tanto, al mantenimiento de la capacidad de producción. En sentido estricto, la amortización no es una inversión; es el reconocimiento contable de la pérdida de valor. La inversión de mantenimiento es la compra del nuevo activo que sustituye al antiguo.
+
+:::
