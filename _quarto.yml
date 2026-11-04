@@ -32,6 +32,8 @@ book:
           - ejercicios/b3_payback_van_tir.qmd
           - ejercicios/b3_fuentes_financiacion.qmd
           - ejercicios/b4_balance_pyg.qmd
+          - ejercicios/b4_balances_adicionales.qmd
+          - ejercicios/b4_pyg_rentabilidad.qmd
           - ejercicios/b4_ratios.qmd
           - ejercicios/b5_formas_juridicas.qmd
           - ejercicios/b5_verdadero_falso.qmd
@@ -66,6 +68,8 @@ book:
     - part: "Bloque 4 · Contabilidad y ratios"
       chapters:
         - ejercicios/b4_balance_pyg.qmd
+        - ejercicios/b4_balances_adicionales.qmd
+        - ejercicios/b4_pyg_rentabilidad.qmd
         - ejercicios/b4_ratios.qmd
     - part: "Bloque 5 · Empresa y marco jurídico"
       chapters:
