@@ -66,14 +66,14 @@ Si se cuenta con los medios necesarios, lo ideal es tener en cuenta el momento e
 El método más simple es calcular el **Valor Actual Neto (VAN)**:
 
 $$
-VAN = \sum_{t=1}^{n} \frac{V_t}{(1+k)^t} - I_0
+VAN = -I_0 + \sum_{n=1}^{N} \frac{FNC_n}{(1+k)^n}
 $$
 
 Donde:
 
-- $V_t$ representa los flujos de caja en cada periodo $t$.
+- $FNC_n$ representa el flujo neto de caja del periodo $n$.
 - $I_0$ es el valor del desembolso inicial de la inversión.
-- $n$ es el número de períodos considerado.
+- $N$ es el número total de períodos considerados.
 - $k$ es el tipo de interés (coste del capital o rentabilidad mínima exigida).
 
 El VAN consiste en llevar al momento actual (momento 0) todos los flujos de caja. Por la **equivalencia financiera**, los capitales son comparables cuando están todos en el mismo punto de la línea temporal.
@@ -108,7 +108,7 @@ El VAN da una medida **absoluta** de la rentabilidad. Para comparar adecuadament
 La TIR es la tasa de actualización $k$ que hace que el VAN sea igual a cero:
 
 $$
-VAN = 0 = -A + \frac{FNC_1}{(1+TIR)^1} + \frac{FNC_2}{(1+TIR)^2} + \frac{FNC_3}{(1+TIR)^3} + \cdots + \frac{FNC_n}{(1+TIR)^n}
+VAN = 0 = -I_0 + \frac{FNC_1}{(1+TIR)^1} + \frac{FNC_2}{(1+TIR)^2} + \frac{FNC_3}{(1+TIR)^3} + \cdots + \frac{FNC_N}{(1+TIR)^N}
 $$
 
 La TIR mide la rentabilidad **relativa** de la inversión (cuánto se obtiene por cada euro invertido), expresada en porcentaje. Permite saber si una inversión es más rentable que otra aunque tenga un VAN absoluto mayor pero también una mayor inversión inicial.

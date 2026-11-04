@@ -487,13 +487,13 @@ window.Quarto = {
 <h4 class="anchored" data-anchor-id="valor-actual-neto-van">Valor Actual Neto (VAN)</h4>
 <p>El método más simple es calcular el <strong>Valor Actual Neto (VAN)</strong>:</p>
 <p><span class="math display">\[
-VAN = \sum_{t=1}^{n} \frac{V_t}{(1+k)^t} - I_0
+VAN = -I_0 + \sum_{n=1}^{N} \frac{FNC_n}{(1+k)^n}
 \]</span></p>
 <p>Donde:</p>
 <ul>
-<li><span class="math inline">\(V_t\)</span> representa los flujos de caja en cada periodo <span class="math inline">\(t\)</span>.</li>
+<li><span class="math inline">\(FNC_n\)</span> representa el flujo neto de caja del periodo <span class="math inline">\(n\)</span>.</li>
 <li><span class="math inline">\(I_0\)</span> es el valor del desembolso inicial de la inversión.</li>
-<li><span class="math inline">\(n\)</span> es el número de períodos considerado.</li>
+<li><span class="math inline">\(N\)</span> es el número total de períodos considerados.</li>
 <li><span class="math inline">\(k\)</span> es el tipo de interés (coste del capital o rentabilidad mínima exigida).</li>
 </ul>
 <p>El VAN consiste en llevar al momento actual (momento 0) todos los flujos de caja. Por la <strong>equivalencia financiera</strong>, los capitales son comparables cuando están todos en el mismo punto de la línea temporal.</p>
@@ -550,7 +550,7 @@ VAN = \sum_{t=1}^{n} \frac{V_t}{(1+k)^t} - I_0
 <p>El VAN da una medida <strong>absoluta</strong> de la rentabilidad. Para comparar adecuadamente inversiones de distinto tamaño puede utilizarse la <strong>Tasa Interna de Rentabilidad (TIR)</strong>.</p>
 <p>La TIR es la tasa de actualización <span class="math inline">\(k\)</span> que hace que el VAN sea igual a cero:</p>
 <p><span class="math display">\[
-VAN = 0 = -A + \frac{FNC_1}{(1+TIR)^1} + \frac{FNC_2}{(1+TIR)^2} + \frac{FNC_3}{(1+TIR)^3} + \cdots + \frac{FNC_n}{(1+TIR)^n}
+VAN = 0 = -I_0 + \frac{FNC_1}{(1+TIR)^1} + \frac{FNC_2}{(1+TIR)^2} + \frac{FNC_3}{(1+TIR)^3} + \cdots + \frac{FNC_N}{(1+TIR)^N}
 \]</span></p>
 <p>La TIR mide la rentabilidad <strong>relativa</strong> de la inversión (cuánto se obtiene por cada euro invertido), expresada en porcentaje. Permite saber si una inversión es más rentable que otra aunque tenga un VAN absoluto mayor pero también una mayor inversión inicial.</p>
 <table class="caption-top table">
@@ -580,7 +580,7 @@ VAN = 0 = -A + \frac{FNC_1}{(1+TIR)^1} + \frac{FNC_2}{(1+TIR)^2} + \frac{FNC_3}{
 </tbody>
 </table>
 <p>Se elige, de entre todos los proyectos con TIR positiva, el que tenga el valor más elevado.</p>
-<div id="e1aa8606" class="cell" data-execution_count="1">
+<div id="868e2800" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">

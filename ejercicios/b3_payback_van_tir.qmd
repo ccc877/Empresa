@@ -9,9 +9,9 @@
 | Símbolo | Nombre completo | Significado |
 |:---:|:---|:---|
 | $D_0$ | Desembolso inicial | Pago realizado en el momento 0 para iniciar la inversión |
-| $F_t$ | Flujo neto de caja del año $t$ | Cobros menos pagos del año $t$ (puede ser negativo) |
-| $n$ | Vida útil | Número de años que dura el proyecto |
-| $VR$ | Valor residual | Valor de venta del activo al finalizar la vida útil (se suma al último $F_n$) |
+| $FNC_t$ | Flujo neto de caja del año $t$ | Cobros menos pagos del año $t$ (puede ser negativo) |
+| $N$ | Vida útil | Número total de años que dura el proyecto |
+| $VR$ | Valor residual | Valor de venta del activo al finalizar la vida útil (se suma al último $FNC_n$) |
 | $k$ | Tasa de descuento | Rentabilidad mínima exigida ajustada por inflación (fórmula de Fisher) |
 | $i$ | Rentabilidad mínima exigida | Rendimiento mínimo que debe ofrecer la inversión para que compense |
 | $g$ | Tasa de inflación | Pérdida anual de poder adquisitivo del dinero |
@@ -19,7 +19,7 @@
 
 **Flujo neto de caja**
 
-$$F_t = \text{Cobros}_t - \text{Pagos}_t$$
+$$FNC_t = \text{Cobros}_t - \text{Pagos}_t$$
 
 Si hay valor residual, se suma al flujo del último año. Si la inversión se paga a plazos, cada pago es un egreso en el año correspondiente.
 
@@ -27,7 +27,7 @@ Si hay valor residual, se suma al flujo del último año. Si la inversión se pa
 
 Sumar flujos acumulados hasta igualar $D_0$. Para los meses del año parcial:
 
-$$\text{Meses} = \frac{\text{Cantidad pendiente}}{F_{\text{año parcial}}} \times 12$$
+$$\text{Meses} = \frac{\text{Cantidad pendiente}}{FNC_{\text{año parcial}}} \times 12$$
 
 Criterio: se elige el proyecto que recupera la inversión **antes**. Si algún proyecto no la recupera dentro de su vida útil, se descarta.
 
@@ -39,7 +39,7 @@ donde $i$ = rentabilidad mínima exigida y $g$ = tasa de inflación.
 
 **Valor Actual Neto (VAN)**
 
-$$VAN = -D_0 + \frac{F_1}{(1+k)^1} + \frac{F_2}{(1+k)^2} + \cdots + \frac{F_n}{(1+k)^n}$$
+$$VAN = -D_0 + \sum_{n=1}^{N} \frac{FNC_n}{(1+k)^n}$$
 
 | VAN | Interpretación |
 |:---:|:---|
@@ -95,7 +95,7 @@ La solución oficial redondea esta tasa al 5 % y publica los valores siguientes.
 
 Si la inversión se recupera durante un año, se calcula la parte de ese año mediante:
 
-$$PB = (t-1) + \frac{\text{importe pendiente al inicio del año }t}{F_t}$$
+$$PB = (t-1) + \frac{\text{importe pendiente al inicio del año }t}{FNC_t}$$
 
 - **Alpha:** al final del tercer año quedan 4.000 € por recuperar; $4.000/6.000 \times 12 = 8$ meses. Pay-back: **3 años y 8 meses**.
 - **Beta:** al final del cuarto año quedan 2.000 € por recuperar; $2.000/8.000 \times 12 = 3$ meses. Pay-back: **4 años y 3 meses**.
@@ -107,7 +107,7 @@ Según el Pay-back, se elige **Gamma**, porque recupera antes la inversión.
 
 La fórmula general es:
 
-$$VAN = -D_0 + \sum_{t=1}^{n}\frac{F_t}{(1+k)^t}$$
+$$VAN = -D_0 + \sum_{n=1}^{N}\frac{FNC_n}{(1+k)^n}$$
 
 Aplicada a cada proyecto, la solución oficial obtiene:
 
@@ -153,26 +153,26 @@ El archivo facilitado contiene el enunciado, pero no la solución oficial. Esta 
 
 **Flujos netos de caja**
 
-La fórmula general es $F_t = \text{cobros}_t - \text{pagos}_t$; al flujo final se suma el valor residual y los pagos de inversión se imputan al año en que se realizan.
+La fórmula general es $FNC_t = \text{cobros}_t - \text{pagos}_t$; al flujo final se suma el valor residual y los pagos de inversión se imputan al año en que se realizan.
 
 *Proyecto 1 — nevera industrial:*
 
 $$D_0 = 180.000 + 25.000 = 205.000\text{ €}$$
-$$F_t = 31.000\times(\text{precio por kg}_t - \text{coste por kg}_t) - 74.000$$
-$$F_1 = 143.000\text{ €};\quad F_2 = 158.500\text{ €};\quad F_3 = 174.000\text{ €}$$
+$$FNC_t = 31.000\times(\text{precio por kg}_t - \text{coste por kg}_t) - 74.000$$
+$$FNC_1 = 143.000\text{ €};\quad FNC_2 = 158.500\text{ €};\quad FNC_3 = 174.000\text{ €}$$
 
 *Proyecto 2 — pecera:*
 
 $$D_0 = 50.000\text{ €}$$
-$$F_1 = 30.500 - 1.000 - 15.000 = 14.500\text{ €}$$
-$$F_2 = 44.500 - 1.000 = 43.500\text{ €}$$
-$$F_3 = 68.000 - 1.000 + 5.000 = 72.000\text{ €}$$
+$$FNC_1 = 30.500 - 1.000 - 15.000 = 14.500\text{ €}$$
+$$FNC_2 = 44.500 - 1.000 = 43.500\text{ €}$$
+$$FNC_3 = 68.000 - 1.000 + 5.000 = 72.000\text{ €}$$
 
 **a) VAN**
 
 $$k = i + g + (i\times g) = 0{,}05 + 0{,}03 + (0{,}05\times0{,}03) = 0{,}0815$$
 
-$$VAN = -D_0 + \sum_{t=1}^{n}\frac{F_t}{(1+k)^t}$$
+$$VAN = -D_0 + \sum_{n=1}^{N}\frac{FNC_n}{(1+k)^n}$$
 
 $$VAN_1 = -205.000 + \frac{143.000}{1{,}0815} + \frac{158.500}{1{,}0815^2} + \frac{174.000}{1{,}0815^3} = 200.288{,}16\text{ €}$$
 
@@ -182,7 +182,7 @@ Ambos VAN son positivos, por lo que los dos proyectos son aceptables. Se elige e
 
 **b) Pay-back**
 
-$$PB = (t-1) + \frac{\text{importe pendiente al inicio del año }t}{F_t}$$
+$$PB = (t-1) + \frac{\text{importe pendiente al inicio del año }t}{FNC_t}$$
 
 - Proyecto 1: tras el primer año quedan $205.000 - 143.000 = 62.000$ € por recuperar. Se recupera durante el segundo año: $62.000/158.500 \times 12 = 4{,}7$ meses. **1 año y 4,7 meses**.
 - Proyecto 2: después del primer año quedan $50.000 - 14.500 = 35.500$ €; $35.500/43.500 \times 12 = 9{,}8$ meses. **1 año y 9,8 meses**.
@@ -229,19 +229,19 @@ El enunciado no da los flujos directamente: hay que construirlos.
 
 *Proyecto A:* Los ingresos del año 3 llevan valor residual, que se suma.
 
-$$F_1 = 35.000 - 12.000 = 23.000\ \text{€}$$
-$$F_2 = 52.000 - 15.000 = 37.000\ \text{€}$$
-$$F_3 = 55.000 - 25.000 + 15.000 = 45.000\ \text{€}$$
+$$FNC_1 = 35.000 - 12.000 = 23.000\ \text{€}$$
+$$FNC_2 = 52.000 - 15.000 = 37.000\ \text{€}$$
+$$FNC_3 = 55.000 - 25.000 + 15.000 = 45.000\ \text{€}$$
 
 *Proyecto B:* Los ingresos hay que calcularlos (precio × unidades).
 
-$$F_1 = (25 \times 1.200) - 17.800 = 30.000 - 17.800 = 12.200\ \text{€}$$
-$$F_2 = (25 \times 1.300) - 16.600 = 32.500 - 16.600 = 15.900\ \text{€}$$
-$$F_3 = (25 \times 2.400) - 25.000 = 60.000 - 25.000 = 35.000\ \text{€}$$
+$$FNC_1 = (25 \times 1.200) - 17.800 = 30.000 - 17.800 = 12.200\ \text{€}$$
+$$FNC_2 = (25 \times 1.300) - 16.600 = 32.500 - 16.600 = 15.900\ \text{€}$$
+$$FNC_3 = (25 \times 2.400) - 25.000 = 60.000 - 25.000 = 35.000\ \text{€}$$
 
 **Tabla resumen:**
 
-| Proyecto | $D_0$ | $F_1$ | $F_2$ | $F_3$ |
+| Proyecto | $D_0$ | $FNC_1$ | $FNC_2$ | $FNC_3$ |
 |:---|:---:|:---:|:---:|:---:|
 | A | 75.000 € | 23.000 € | 37.000 € | 45.000 € |
 | B | 50.000 € | 12.200 € | 15.900 € | 35.000 € |
@@ -319,7 +319,7 @@ El **VAN es superior al Pay-back** por dos razones:
 
 La fórmula general para construir cada flujo anual es:
 
-$$F_t = \text{Cobros}_t - \text{Pagos de explotación}_t - \text{Pagos de inversión}_t + \text{Valor residual}_t$$
+$$FNC_t = \text{Cobros}_t - \text{Pagos de explotación}_t - \text{Pagos de inversión}_t + \text{Valor residual}_t$$
 
 Cada tercio de la máquina A: $105.000 / 3 = 35.000$ €.
 Cada mitad de la máquina B: $110.000 / 2 = 55.000$ €.
@@ -327,17 +327,17 @@ Cada mitad de la máquina B: $110.000 / 2 = 55.000$ €.
 *Proyecto A:*
 
 $$D_0 = 35.000\ \text{€}$$
-$$F_1 = 40.000 - 5.000 - 35.000 = \mathbf{0\ \text{€}}$$
-$$F_2 = 50.000 - 10.000 - 35.000 = \mathbf{5.000\ \text{€}}$$
-$$F_3 = 60.000 - 15.000 = \mathbf{45.000\ \text{€}}$$
-$$F_4 = 46.000 - 7.000 + 2.000 = \mathbf{41.000\ \text{€}}$$
+$$FNC_1 = 40.000 - 5.000 - 35.000 = \mathbf{0\ \text{€}}$$
+$$FNC_2 = 50.000 - 10.000 - 35.000 = \mathbf{5.000\ \text{€}}$$
+$$FNC_3 = 60.000 - 15.000 = \mathbf{45.000\ \text{€}}$$
+$$FNC_4 = 46.000 - 7.000 + 2.000 = \mathbf{41.000\ \text{€}}$$
 
 *Proyecto B:*
 
 $$D_0 = 55.000\ \text{€}$$
-$$F_1 = 20.000 - 300 - 55.000 = \mathbf{-35.300\ \text{€}}$$
-$$F_2 = 25.000 - 300 = \mathbf{24.700\ \text{€}}$$
-$$F_3 = 35.000 - 300 + 20.000 = \mathbf{54.700\ \text{€}}$$
+$$FNC_1 = 20.000 - 300 - 55.000 = \mathbf{-35.300\ \text{€}}$$
+$$FNC_2 = 25.000 - 300 = \mathbf{24.700\ \text{€}}$$
+$$FNC_3 = 35.000 - 300 + 20.000 = \mathbf{54.700\ \text{€}}$$
 
 ::: {.callout-warning title="Flujo negativo en el año 1 del Proyecto B"}
 En el año 1, el pago del segundo plazo de la máquina (55.000 €) supera con creces los cobros netos (19.700 €). El resultado es un flujo negativo de −35.300 €. Hay que incluirlo así en el pay-back y en el VAN: no se puede ignorar ni poner a cero.
@@ -347,13 +347,13 @@ En el año 1, el pago del segundo plazo de la máquina (55.000 €) supera con c
 
 Si la inversión se recupera durante el año $t$, el plazo se calcula como:
 
-$$PB = (t-1) + \frac{\text{Importe pendiente al inicio del año } t}{F_t}$$
+$$PB = (t-1) + \frac{\text{Importe pendiente al inicio del año } t}{FNC_t}$$
 
 La parte fraccionaria del año puede convertirse a meses multiplicándola por 12.
 
 *Proyecto A ($D_0 = 35.000$ €):*
 
-- Año 1: $F_1 = 0$. Pendiente: 35.000 €.
+- Año 1: $FNC_1 = 0$. Pendiente: 35.000 €.
 - Año 2: acumulado = 5.000 €. Pendiente: **30.000 €**.
 - Año 3: $\frac{30.000}{45.000} \times 12 = 8\ \text{meses}$
 
@@ -379,7 +379,7 @@ $$k = 0{,}03 + 0{,}059 + (0{,}03 \times 0{,}059) = 0{,}089 + 0{,}00177 = \mathbf
 
 La expresión general del Valor Actual Neto es:
 
-$$VAN = -D_0 + \sum_{t=1}^{n}\frac{F_t}{(1+k)^t}$$
+$$VAN = -D_0 + \sum_{n=1}^{N}\frac{FNC_n}{(1+k)^n}$$
 
 $$VAN_A = -35.000 + \frac{0}{1{,}09077} + \frac{5.000}{1{,}09077^2} + \frac{45.000}{1{,}09077^3} + \frac{41.000}{1{,}09077^4} = \mathbf{32.840{,}69\ \text{€}}$$
 
@@ -422,7 +422,7 @@ El **VAN** es superior porque es un método dinámico: actualiza los flujos teni
 
 La fórmula general es:
 
-$$VAN = -D_0 + \sum_{t=1}^{n}\frac{F_t}{(1+k)^t}$$
+$$VAN = -D_0 + \sum_{n=1}^{N}\frac{FNC_n}{(1+k)^n}$$
 
 La tasa de descuento por Fisher es:
 
@@ -430,7 +430,7 @@ $$k = i + g + (i \times g) = 0{,}10 + 0{,}08 + (0{,}10 \times 0{,}08) = 0{,}188$
 
 *Proyecto A:*
 
-$$D_0 = 10.000\text{ €};\quad F_1=4.000\text{ €};\quad F_2=6.000\text{ €};\quad F_3=8.000\text{ €}$$
+$$D_0 = 10.000\text{ €};\quad FNC_1=4.000\text{ €};\quad FNC_2=6.000\text{ €};\quad FNC_3=8.000\text{ €}$$
 
 $$VAN_A = -10.000 + \frac{4.000}{1{,}188} + \frac{6.000}{1{,}188^2} + \frac{8.000}{1{,}188^3} = 2.389{,}61\text{ €}$$
 
@@ -439,8 +439,8 @@ El VAN es positivo: el proyecto A es aceptable.
 *Proyecto B:*
 
 $$D_0 = 26.000 - 10.500 = 15.500\text{ €}$$
-$$F_1 = 6.000 - 5.000 = 1.000\text{ €};\quad F_2 = 6.000 - (5.000\times1{,}12) = 400\text{ €}$$
-$$F_3 = 20.000 - (5.600\times1{,}12) = 13.728\text{ €};\quad F_4 = 16.000 - (6.272\times1{,}12) = 8.975{,}36\text{ €}$$
+$$FNC_1 = 6.000 - 5.000 = 1.000\text{ €};\quad FNC_2 = 6.000 - (5.000\times1{,}12) = 400\text{ €}$$
+$$FNC_3 = 20.000 - (5.600\times1{,}12) = 13.728\text{ €};\quad FNC_4 = 16.000 - (6.272\times1{,}12) = 8.975{,}36\text{ €}$$
 
 $$VAN_B = -15.500 + \frac{1.000}{1{,}188} + \frac{400}{1{,}188^2} + \frac{13.728}{1{,}188^3} + \frac{8.975{,}36}{1{,}188^4} = -1.681{,}26\text{ €}$$
 
@@ -450,7 +450,7 @@ El VAN de B es negativo, así que se rechaza. Según este criterio se elige **A*
 
 Si se recupera la inversión durante el año $t$:
 
-$$PB = (t-1) + \frac{\text{importe pendiente al inicio del año }t}{F_t}$$
+$$PB = (t-1) + \frac{\text{importe pendiente al inicio del año }t}{FNC_t}$$
 
 - Proyecto A: se recuperan 4.000 € el primer año y 6.000 € el segundo. **Pay-back: 2 años.**
 - Proyecto B: quedan 14.500 € tras el primer año, 14.100 € tras el segundo y 372 € tras el tercero. Con el flujo del cuarto año: $372/8.975{,}36\times12 \approx 0{,}5$ meses. **Pay-back: 3 años y aproximadamente medio mes.**

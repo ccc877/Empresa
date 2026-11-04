@@ -28,13 +28,19 @@ $$PMP = \frac{\text{Valor total en existencias}}{\text{Unidades totales en exist
 
 Las salidas se valoran siempre al PMP vigente en ese momento. Cuando entra un nuevo lote, el PMP se recalcula y todas las unidades pasan a valer ese nuevo precio medio.
 
+**¿Qué precio de compra se anota en la ficha?** Según la norma de valoración de existencias del Plan General de Contabilidad, el precio de adquisición parte del importe de factura una vez descontadas las rebajas y descuentos. Se añaden los gastos directamente atribuibles hasta que los bienes están ubicados para su venta, como transporte, seguros o aranceles. Los impuestos indirectos solo forman parte del coste si no son recuperables.
+
+> **Precio de adquisición** = importe de factura − descuentos + gastos atribuibles + impuestos indirectos no recuperables.
+
+Por eso, el **IVA soportado deducible no se incluye** en el valor de las existencias: la empresa puede recuperarlo o compensarlo en la liquidación del impuesto. Por ejemplo, si un artículo cuesta 100 € más 21 € de IVA deducible, se anota por 100 € (más los gastos atribuibles, si los hay), no por 121 €. Si el IVA no es recuperable, sí se incorpora al coste. En los ejercicios, salvo que se indique otra cosa, toma los precios unitarios como precios de adquisición sin IVA recuperable. [Plan General de Contabilidad, norma de valoración 10.ª](https://www.boe.es/buscar/act.php?id=BOE-A-2007-19884&p=20241221&tn=0).
+
 :::
 
 ::: {.callout-warning title="Trampas de examen"}
 - Los **precios de venta** al cliente **no se usan en la ficha de almacén**. Solo interesan los precios de coste (precio de adquisición). Los precios de venta sirven para calcular el beneficio, no para valorar el stock.
 - En FIFO, cuando una venta requiere más unidades de las que hay en el lote más antiguo, hay que **partir la salida en dos filas**: una por cada lote del que se extrae.
 - En PMP, el recálculo se hace **solo cuando hay entradas**, nunca en las salidas. Las salidas usan el PMP ya calculado.
-- Cuidado con el **redondeo en PMP**: lo más seguro es trabajar con la fracción exacta durante los cálculos intermedios y redondear solo en el resultado final de existencias. El corrector oficial de EHU suele calcular el valor de la salida con el precio exacto y el valor de existencias con el precio redondeado a dos decimales.
+- Cuidado con el **redondeo en PMP**: conserva el precio medio exacto durante los cálculos y redondea a céntimos solo para mostrarlo. Calcula los valores de las salidas y de las existencias con el precio exacto; así, el valor del inventario cuadra con el valor inicial más las entradas menos las salidas.
 - Comprueba siempre que: $\text{Existencias iniciales} + \text{Total entradas} - \text{Total salidas} = \text{Existencias finales}$ (en unidades).
 :::
 
@@ -92,9 +98,9 @@ En PMP, cada entrada obliga a recalcular el precio medio. Las salidas usan el PM
 | 09/01 | Compra GOR | 1.000 | 22 | 22.000 | | | | 2.000 | **22** | 44.000 |
 | 13/01 | Venta ODI | | | | 750 | 22 | 16.500 | 1.250 | 22 | 27.500 |
 | 22/01 | Compra EUR | 2.500 | 20 | 50.000 | | | | 3.750 | **20,67** | 77.500 |
-| 30/01 | Venta ODI | | | | 1.200 | 20,67 | 24.800 | 2.550 | 20,67 | 52.708,5 |
+| 30/01 | Venta ODI | | | | 1.200 | 20,67 | 24.800 | 2.550 | 20,67 | 52.700 |
 
-**Existencias finales: 2.550 unidades — Valor: 52.708,5 €**
+**Existencias finales: 2.550 unidades — Valor: 52.700 €**
 
 *Recálculo del PMP paso a paso:*
 
@@ -102,10 +108,10 @@ En PMP, cada entrada obliga a recalcular el precio medio. Las salidas usan el PM
 - **09/01:** $(22.000 + 22.000) / (1.000 + 1.000) = 44.000 / 2.000 = \mathbf{22\ €}$ (igual porque el precio de entrada coincide con el PMP)
 - **22/01:** $(27.500 + 50.000) / (1.250 + 2.500) = 77.500 / 3.750 = \mathbf{20{,}67\ \text{€}}$ (periódico: $20{,}\overline{6}$)
 - **30/01 salida:** $1.200 \times (77.500/3.750) = \mathbf{24.800\ \text{€}}$ (calculado con precio exacto, sin redondear)
-- **30/01 existencias:** $2.550 \times 20{,}67 = \mathbf{52.708{,}5\ €}$ (precio redondeado)
+- **30/01 existencias:** $77.500 - 24.800 = 52.700\ €$. Equivale a calcular $2.550 \times (77.500/3.750)$ sin redondear el PMP intermedio.
 
 ::: {.callout-warning title="Nota sobre el redondeo en el día 30/01"}
-El valor de la salida (24.800 €) se calcula con el precio exacto para que cuadre con el valor de existencias. El valor final de existencias (52.708,5 €) se calcula con el precio redondeado a dos decimales. Esta es la práctica habitual del corrector oficial EHU: evita que el error de redondeo se acumule.
+El PMP exacto es $77.500/3.750 = 20{,}666\ldots$ €. En la ficha puede mostrarse redondeado como 20,67 €, pero los valores monetarios deben calcularse con el precio exacto: salida 24.800 € y existencias finales 52.700 €. Multiplicar 2.550 por el PMP ya redondeado daría 52.708,50 € y acumularía un error de redondeo.
 :::
 
 :::
@@ -114,17 +120,17 @@ El valor de la salida (24.800 €) se calcula con el precio exacto para que cuad
 
 ### EHU 2024 Extraordinaria — Empresa PERTUERO S.A. (juguetes)
 
-> *PERTUERO se dedica a la compraventa de juguetes. Operaciones de mayo:*
+> La empresa **PERTUERO, S. A.**, dedicada a la compraventa de juguetes, ha realizado en mayo las operaciones siguientes:
 >
-> - 05/01: Existencias iniciales: 20 ud × 10 €
-> - 05/07: Compra GAC: 30 ud × 11 €
-> - 05/10: Venta JOSTA: 30 ud (precio venta: 19,35 €)
-> - 05/15: Venta TUNIA: 20 ud (precio venta: 18,75 €)
-> - 05/23: Compra BARA: 25 ud × 11 €
-> - 05/25: Compra EIRA: 15 ud × 12 €
-> - 05/30: Venta SNOW: 30 ud (precio venta: 22,95 €)
+> - 05/01: Existencias iniciales: 20 unidades a 10 €/unidad.
+> - 05/07: Compra a GAC: 30 unidades a 11 €/unidad.
+> - 05/10: Venta al cliente JOSTA: 30 unidades a 19,35 €/unidad.
+> - 05/15: Venta al cliente TUNIA: 20 unidades a 18,75 €/unidad.
+> - 05/23: Compra a BARA: 25 unidades a 11 €/unidad.
+> - 05/25: Compra al proveedor EIRA: 15 unidades a 12 €/unidad.
+> - 05/30: Venta al cliente SNOW: 30 unidades a 22,95 €/unidad.
 >
-> Rellena la ficha por FIFO y PMP.
+> Teniendo en cuenta los datos anteriores, rellena la ficha de almacén del mes de mayo utilizando los métodos FIFO y precio medio ponderado (PMP), y calcula las existencias finales y su valor.
 
 ::: {.callout-tip title="Solución comentada — FIFO"}
 

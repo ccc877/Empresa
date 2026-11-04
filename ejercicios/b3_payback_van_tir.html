@@ -439,19 +439,19 @@ window.Quarto = {
 <td style="text-align: left;">Pago realizado en el momento 0 para iniciar la inversión</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"><span class="math inline">\(F_t\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(FNC_t\)</span></td>
 <td style="text-align: left;">Flujo neto de caja del año <span class="math inline">\(t\)</span></td>
 <td style="text-align: left;">Cobros menos pagos del año <span class="math inline">\(t\)</span> (puede ser negativo)</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"><span class="math inline">\(n\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(N\)</span></td>
 <td style="text-align: left;">Vida útil</td>
-<td style="text-align: left;">Número de años que dura el proyecto</td>
+<td style="text-align: left;">Número total de años que dura el proyecto</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><span class="math inline">\(VR\)</span></td>
 <td style="text-align: left;">Valor residual</td>
-<td style="text-align: left;">Valor de venta del activo al finalizar la vida útil (se suma al último <span class="math inline">\(F_n\)</span>)</td>
+<td style="text-align: left;">Valor de venta del activo al finalizar la vida útil (se suma al último <span class="math inline">\(FNC_n\)</span>)</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"><span class="math inline">\(k\)</span></td>
@@ -476,17 +476,17 @@ window.Quarto = {
 </tbody>
 </table>
 <p><strong>Flujo neto de caja</strong></p>
-<p><span class="math display">\[F_t = \text{Cobros}_t - \text{Pagos}_t\]</span></p>
+<p><span class="math display">\[FNC_t = \text{Cobros}_t - \text{Pagos}_t\]</span></p>
 <p>Si hay valor residual, se suma al flujo del último año. Si la inversión se paga a plazos, cada pago es un egreso en el año correspondiente.</p>
 <p><strong>Pay-back (plazo de recuperación)</strong></p>
 <p>Sumar flujos acumulados hasta igualar <span class="math inline">\(D_0\)</span>. Para los meses del año parcial:</p>
-<p><span class="math display">\[\text{Meses} = \frac{\text{Cantidad pendiente}}{F_{\text{año parcial}}} \times 12\]</span></p>
+<p><span class="math display">\[\text{Meses} = \frac{\text{Cantidad pendiente}}{FNC_{\text{año parcial}}} \times 12\]</span></p>
 <p>Criterio: se elige el proyecto que recupera la inversión <strong>antes</strong>. Si algún proyecto no la recupera dentro de su vida útil, se descarta.</p>
 <p><strong>Tasa de descuento — Fórmula de Fisher</strong></p>
 <p><span class="math display">\[k = i + g + (i \times g)\]</span></p>
 <p>donde <span class="math inline">\(i\)</span> = rentabilidad mínima exigida y <span class="math inline">\(g\)</span> = tasa de inflación.</p>
 <p><strong>Valor Actual Neto (VAN)</strong></p>
-<p><span class="math display">\[VAN = -D_0 + \frac{F_1}{(1+k)^1} + \frac{F_2}{(1+k)^2} + \cdots + \frac{F_n}{(1+k)^n}\]</span></p>
+<p><span class="math display">\[VAN = -D_0 + \sum_{n=1}^{N} \frac{FNC_n}{(1+k)^n}\]</span></p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -615,7 +615,7 @@ window.Quarto = {
 <p>La solución oficial redondea esta tasa al 5 % y publica los valores siguientes. Se conservan aquí sus resultados tal como aparecen en el solucionario.</p>
 <p><strong>a) Plazo de recuperación (Pay-back)</strong></p>
 <p>Si la inversión se recupera durante un año, se calcula la parte de ese año mediante:</p>
-<p><span class="math display">\[PB = (t-1) + \frac{\text{importe pendiente al inicio del año }t}{F_t}\]</span></p>
+<p><span class="math display">\[PB = (t-1) + \frac{\text{importe pendiente al inicio del año }t}{FNC_t}\]</span></p>
 <ul>
 <li><strong>Alpha:</strong> al final del tercer año quedan 4.000 € por recuperar; <span class="math inline">\(4.000/6.000 \times 12 = 8\)</span> meses. Pay-back: <strong>3 años y 8 meses</strong>.</li>
 <li><strong>Beta:</strong> al final del cuarto año quedan 2.000 € por recuperar; <span class="math inline">\(2.000/8.000 \times 12 = 3\)</span> meses. Pay-back: <strong>4 años y 3 meses</strong>.</li>
@@ -624,7 +624,7 @@ window.Quarto = {
 <p>Según el Pay-back, se elige <strong>Gamma</strong>, porque recupera antes la inversión.</p>
 <p><strong>b) Valor Actual Neto</strong></p>
 <p>La fórmula general es:</p>
-<p><span class="math display">\[VAN = -D_0 + \sum_{t=1}^{n}\frac{F_t}{(1+k)^t}\]</span></p>
+<p><span class="math display">\[VAN = -D_0 + \sum_{n=1}^{N}\frac{FNC_n}{(1+k)^n}\]</span></p>
 <p>Aplicada a cada proyecto, la solución oficial obtiene:</p>
 <table class="caption-top table">
 <thead>
@@ -693,19 +693,19 @@ window.Quarto = {
 <div class="callout-body-container callout-body">
 <p>El archivo facilitado contiene el enunciado, pero no la solución oficial. Esta resolución se ha elaborado a partir de los datos del ejercicio.</p>
 <p><strong>Flujos netos de caja</strong></p>
-<p>La fórmula general es <span class="math inline">\(F_t = \text{cobros}_t - \text{pagos}_t\)</span>; al flujo final se suma el valor residual y los pagos de inversión se imputan al año en que se realizan.</p>
+<p>La fórmula general es <span class="math inline">\(FNC_t = \text{cobros}_t - \text{pagos}_t\)</span>; al flujo final se suma el valor residual y los pagos de inversión se imputan al año en que se realizan.</p>
 <p><em>Proyecto 1 — nevera industrial:</em></p>
-<p><span class="math display">\[D_0 = 180.000 + 25.000 = 205.000\text{ €}\]</span> <span class="math display">\[F_t = 31.000\times(\text{precio por kg}_t - \text{coste por kg}_t) - 74.000\]</span> <span class="math display">\[F_1 = 143.000\text{ €};\quad F_2 = 158.500\text{ €};\quad F_3 = 174.000\text{ €}\]</span></p>
+<p><span class="math display">\[D_0 = 180.000 + 25.000 = 205.000\text{ €}\]</span> <span class="math display">\[FNC_t = 31.000\times(\text{precio por kg}_t - \text{coste por kg}_t) - 74.000\]</span> <span class="math display">\[FNC_1 = 143.000\text{ €};\quad FNC_2 = 158.500\text{ €};\quad FNC_3 = 174.000\text{ €}\]</span></p>
 <p><em>Proyecto 2 — pecera:</em></p>
-<p><span class="math display">\[D_0 = 50.000\text{ €}\]</span> <span class="math display">\[F_1 = 30.500 - 1.000 - 15.000 = 14.500\text{ €}\]</span> <span class="math display">\[F_2 = 44.500 - 1.000 = 43.500\text{ €}\]</span> <span class="math display">\[F_3 = 68.000 - 1.000 + 5.000 = 72.000\text{ €}\]</span></p>
+<p><span class="math display">\[D_0 = 50.000\text{ €}\]</span> <span class="math display">\[FNC_1 = 30.500 - 1.000 - 15.000 = 14.500\text{ €}\]</span> <span class="math display">\[FNC_2 = 44.500 - 1.000 = 43.500\text{ €}\]</span> <span class="math display">\[FNC_3 = 68.000 - 1.000 + 5.000 = 72.000\text{ €}\]</span></p>
 <p><strong>a) VAN</strong></p>
 <p><span class="math display">\[k = i + g + (i\times g) = 0{,}05 + 0{,}03 + (0{,}05\times0{,}03) = 0{,}0815\]</span></p>
-<p><span class="math display">\[VAN = -D_0 + \sum_{t=1}^{n}\frac{F_t}{(1+k)^t}\]</span></p>
+<p><span class="math display">\[VAN = -D_0 + \sum_{n=1}^{N}\frac{FNC_n}{(1+k)^n}\]</span></p>
 <p><span class="math display">\[VAN_1 = -205.000 + \frac{143.000}{1{,}0815} + \frac{158.500}{1{,}0815^2} + \frac{174.000}{1{,}0815^3} = 200.288{,}16\text{ €}\]</span></p>
 <p><span class="math display">\[VAN_2 = -50.000 + \frac{14.500}{1{,}0815} + \frac{43.500}{1{,}0815^2} + \frac{72.000}{1{,}0815^3} = 57.516{,}60\text{ €}\]</span></p>
 <p>Ambos VAN son positivos, por lo que los dos proyectos son aceptables. Se elige el <strong>proyecto 1</strong>, que genera el VAN más alto.</p>
 <p><strong>b) Pay-back</strong></p>
-<p><span class="math display">\[PB = (t-1) + \frac{\text{importe pendiente al inicio del año }t}{F_t}\]</span></p>
+<p><span class="math display">\[PB = (t-1) + \frac{\text{importe pendiente al inicio del año }t}{FNC_t}\]</span></p>
 <ul>
 <li>Proyecto 1: tras el primer año quedan <span class="math inline">\(205.000 - 143.000 = 62.000\)</span> € por recuperar. Se recupera durante el segundo año: <span class="math inline">\(62.000/158.500 \times 12 = 4{,}7\)</span> meses. <strong>1 año y 4,7 meses</strong>.</li>
 <li>Proyecto 2: después del primer año quedan <span class="math inline">\(50.000 - 14.500 = 35.500\)</span> €; <span class="math inline">\(35.500/43.500 \times 12 = 9{,}8\)</span> meses. <strong>1 año y 9,8 meses</strong>.</li>
@@ -801,18 +801,18 @@ window.Quarto = {
 <p><strong>Paso 0 — Calcular los flujos de caja</strong></p>
 <p>El enunciado no da los flujos directamente: hay que construirlos.</p>
 <p><em>Proyecto A:</em> Los ingresos del año 3 llevan valor residual, que se suma.</p>
-<p><span class="math display">\[F_1 = 35.000 - 12.000 = 23.000\ \text{€}\]</span> <span class="math display">\[F_2 = 52.000 - 15.000 = 37.000\ \text{€}\]</span> <span class="math display">\[F_3 = 55.000 - 25.000 + 15.000 = 45.000\ \text{€}\]</span></p>
+<p><span class="math display">\[FNC_1 = 35.000 - 12.000 = 23.000\ \text{€}\]</span> <span class="math display">\[FNC_2 = 52.000 - 15.000 = 37.000\ \text{€}\]</span> <span class="math display">\[FNC_3 = 55.000 - 25.000 + 15.000 = 45.000\ \text{€}\]</span></p>
 <p><em>Proyecto B:</em> Los ingresos hay que calcularlos (precio × unidades).</p>
-<p><span class="math display">\[F_1 = (25 \times 1.200) - 17.800 = 30.000 - 17.800 = 12.200\ \text{€}\]</span> <span class="math display">\[F_2 = (25 \times 1.300) - 16.600 = 32.500 - 16.600 = 15.900\ \text{€}\]</span> <span class="math display">\[F_3 = (25 \times 2.400) - 25.000 = 60.000 - 25.000 = 35.000\ \text{€}\]</span></p>
+<p><span class="math display">\[FNC_1 = (25 \times 1.200) - 17.800 = 30.000 - 17.800 = 12.200\ \text{€}\]</span> <span class="math display">\[FNC_2 = (25 \times 1.300) - 16.600 = 32.500 - 16.600 = 15.900\ \text{€}\]</span> <span class="math display">\[FNC_3 = (25 \times 2.400) - 25.000 = 60.000 - 25.000 = 35.000\ \text{€}\]</span></p>
 <p><strong>Tabla resumen:</strong></p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: left;">Proyecto</th>
 <th style="text-align: center;"><span class="math inline">\(D_0\)</span></th>
-<th style="text-align: center;"><span class="math inline">\(F_1\)</span></th>
-<th style="text-align: center;"><span class="math inline">\(F_2\)</span></th>
-<th style="text-align: center;"><span class="math inline">\(F_3\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(FNC_1\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(FNC_2\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(FNC_3\)</span></th>
 </tr>
 </thead>
 <tbody>
@@ -896,12 +896,12 @@ window.Quarto = {
 <div class="callout-body-container callout-body">
 <p><strong>Paso 0 — Flujos de caja (con cuidado con los pagos fraccionados)</strong></p>
 <p>La fórmula general para construir cada flujo anual es:</p>
-<p><span class="math display">\[F_t = \text{Cobros}_t - \text{Pagos de explotación}_t - \text{Pagos de inversión}_t + \text{Valor residual}_t\]</span></p>
+<p><span class="math display">\[FNC_t = \text{Cobros}_t - \text{Pagos de explotación}_t - \text{Pagos de inversión}_t + \text{Valor residual}_t\]</span></p>
 <p>Cada tercio de la máquina A: <span class="math inline">\(105.000 / 3 = 35.000\)</span> €. Cada mitad de la máquina B: <span class="math inline">\(110.000 / 2 = 55.000\)</span> €.</p>
 <p><em>Proyecto A:</em></p>
-<p><span class="math display">\[D_0 = 35.000\ \text{€}\]</span> <span class="math display">\[F_1 = 40.000 - 5.000 - 35.000 = \mathbf{0\ \text{€}}\]</span> <span class="math display">\[F_2 = 50.000 - 10.000 - 35.000 = \mathbf{5.000\ \text{€}}\]</span> <span class="math display">\[F_3 = 60.000 - 15.000 = \mathbf{45.000\ \text{€}}\]</span> <span class="math display">\[F_4 = 46.000 - 7.000 + 2.000 = \mathbf{41.000\ \text{€}}\]</span></p>
+<p><span class="math display">\[D_0 = 35.000\ \text{€}\]</span> <span class="math display">\[FNC_1 = 40.000 - 5.000 - 35.000 = \mathbf{0\ \text{€}}\]</span> <span class="math display">\[FNC_2 = 50.000 - 10.000 - 35.000 = \mathbf{5.000\ \text{€}}\]</span> <span class="math display">\[FNC_3 = 60.000 - 15.000 = \mathbf{45.000\ \text{€}}\]</span> <span class="math display">\[FNC_4 = 46.000 - 7.000 + 2.000 = \mathbf{41.000\ \text{€}}\]</span></p>
 <p><em>Proyecto B:</em></p>
-<p><span class="math display">\[D_0 = 55.000\ \text{€}\]</span> <span class="math display">\[F_1 = 20.000 - 300 - 55.000 = \mathbf{-35.300\ \text{€}}\]</span> <span class="math display">\[F_2 = 25.000 - 300 = \mathbf{24.700\ \text{€}}\]</span> <span class="math display">\[F_3 = 35.000 - 300 + 20.000 = \mathbf{54.700\ \text{€}}\]</span></p>
+<p><span class="math display">\[D_0 = 55.000\ \text{€}\]</span> <span class="math display">\[FNC_1 = 20.000 - 300 - 55.000 = \mathbf{-35.300\ \text{€}}\]</span> <span class="math display">\[FNC_2 = 25.000 - 300 = \mathbf{24.700\ \text{€}}\]</span> <span class="math display">\[FNC_3 = 35.000 - 300 + 20.000 = \mathbf{54.700\ \text{€}}\]</span></p>
 <div class="callout callout-style-default callout-warning callout-titled" title="Flujo negativo en el año 1 del Proyecto B">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -917,11 +917,11 @@ window.Quarto = {
 </div>
 <p><strong>a) Pay-back</strong></p>
 <p>Si la inversión se recupera durante el año <span class="math inline">\(t\)</span>, el plazo se calcula como:</p>
-<p><span class="math display">\[PB = (t-1) + \frac{\text{Importe pendiente al inicio del año } t}{F_t}\]</span></p>
+<p><span class="math display">\[PB = (t-1) + \frac{\text{Importe pendiente al inicio del año } t}{FNC_t}\]</span></p>
 <p>La parte fraccionaria del año puede convertirse a meses multiplicándola por 12.</p>
 <p><em>Proyecto A (<span class="math inline">\(D_0 = 35.000\)</span> €):</em></p>
 <ul>
-<li>Año 1: <span class="math inline">\(F_1 = 0\)</span>. Pendiente: 35.000 €.</li>
+<li>Año 1: <span class="math inline">\(FNC_1 = 0\)</span>. Pendiente: 35.000 €.</li>
 <li>Año 2: acumulado = 5.000 €. Pendiente: <strong>30.000 €</strong>.</li>
 <li>Año 3: <span class="math inline">\(\frac{30.000}{45.000} \times 12 = 8\ \text{meses}\)</span></li>
 </ul>
@@ -939,7 +939,7 @@ window.Quarto = {
 <p><span class="math display">\[k = (1+i)(1+g)-1\]</span></p>
 <p><span class="math display">\[k = 0{,}03 + 0{,}059 + (0{,}03 \times 0{,}059) = 0{,}089 + 0{,}00177 = \mathbf{0{,}09077}\]</span></p>
 <p>La expresión general del Valor Actual Neto es:</p>
-<p><span class="math display">\[VAN = -D_0 + \sum_{t=1}^{n}\frac{F_t}{(1+k)^t}\]</span></p>
+<p><span class="math display">\[VAN = -D_0 + \sum_{n=1}^{N}\frac{FNC_n}{(1+k)^n}\]</span></p>
 <p><span class="math display">\[VAN_A = -35.000 + \frac{0}{1{,}09077} + \frac{5.000}{1{,}09077^2} + \frac{45.000}{1{,}09077^3} + \frac{41.000}{1{,}09077^4} = \mathbf{32.840{,}69\ \text{€}}\]</span></p>
 <p><span class="math display">\[VAN_B = -55.000 + \frac{-35.300}{1{,}09077} + \frac{24.700}{1{,}09077^2} + \frac{54.700}{1{,}09077^3} = \mathbf{-24.453{,}26\ \text{€}}\]</span></p>
 <p><span class="math inline">\(VAN_A &gt; 0\)</span>: el Proyecto A supera la rentabilidad mínima exigida del 3 % (tras descontar la inflación del 5,9 %); genera 32.840,69 € de riqueza neta adicional. Es aceptable.</p>
@@ -982,20 +982,20 @@ window.Quarto = {
 <div class="callout-body-container callout-body">
 <p><strong>a) Valor Actual Neto</strong></p>
 <p>La fórmula general es:</p>
-<p><span class="math display">\[VAN = -D_0 + \sum_{t=1}^{n}\frac{F_t}{(1+k)^t}\]</span></p>
+<p><span class="math display">\[VAN = -D_0 + \sum_{n=1}^{N}\frac{FNC_n}{(1+k)^n}\]</span></p>
 <p>La tasa de descuento por Fisher es:</p>
 <p><span class="math display">\[k = i + g + (i \times g) = 0{,}10 + 0{,}08 + (0{,}10 \times 0{,}08) = 0{,}188\]</span></p>
 <p><em>Proyecto A:</em></p>
-<p><span class="math display">\[D_0 = 10.000\text{ €};\quad F_1=4.000\text{ €};\quad F_2=6.000\text{ €};\quad F_3=8.000\text{ €}\]</span></p>
+<p><span class="math display">\[D_0 = 10.000\text{ €};\quad FNC_1=4.000\text{ €};\quad FNC_2=6.000\text{ €};\quad FNC_3=8.000\text{ €}\]</span></p>
 <p><span class="math display">\[VAN_A = -10.000 + \frac{4.000}{1{,}188} + \frac{6.000}{1{,}188^2} + \frac{8.000}{1{,}188^3} = 2.389{,}61\text{ €}\]</span></p>
 <p>El VAN es positivo: el proyecto A es aceptable.</p>
 <p><em>Proyecto B:</em></p>
-<p><span class="math display">\[D_0 = 26.000 - 10.500 = 15.500\text{ €}\]</span> <span class="math display">\[F_1 = 6.000 - 5.000 = 1.000\text{ €};\quad F_2 = 6.000 - (5.000\times1{,}12) = 400\text{ €}\]</span> <span class="math display">\[F_3 = 20.000 - (5.600\times1{,}12) = 13.728\text{ €};\quad F_4 = 16.000 - (6.272\times1{,}12) = 8.975{,}36\text{ €}\]</span></p>
+<p><span class="math display">\[D_0 = 26.000 - 10.500 = 15.500\text{ €}\]</span> <span class="math display">\[FNC_1 = 6.000 - 5.000 = 1.000\text{ €};\quad FNC_2 = 6.000 - (5.000\times1{,}12) = 400\text{ €}\]</span> <span class="math display">\[FNC_3 = 20.000 - (5.600\times1{,}12) = 13.728\text{ €};\quad FNC_4 = 16.000 - (6.272\times1{,}12) = 8.975{,}36\text{ €}\]</span></p>
 <p><span class="math display">\[VAN_B = -15.500 + \frac{1.000}{1{,}188} + \frac{400}{1{,}188^2} + \frac{13.728}{1{,}188^3} + \frac{8.975{,}36}{1{,}188^4} = -1.681{,}26\text{ €}\]</span></p>
 <p>El VAN de B es negativo, así que se rechaza. Según este criterio se elige <strong>A</strong>.</p>
 <p><strong>b) Plazo de recuperación</strong></p>
 <p>Si se recupera la inversión durante el año <span class="math inline">\(t\)</span>:</p>
-<p><span class="math display">\[PB = (t-1) + \frac{\text{importe pendiente al inicio del año }t}{F_t}\]</span></p>
+<p><span class="math display">\[PB = (t-1) + \frac{\text{importe pendiente al inicio del año }t}{FNC_t}\]</span></p>
 <ul>
 <li>Proyecto A: se recuperan 4.000 € el primer año y 6.000 € el segundo. <strong>Pay-back: 2 años.</strong></li>
 <li>Proyecto B: quedan 14.500 € tras el primer año, 14.100 € tras el segundo y 372 € tras el tercero. Con el flujo del cuarto año: <span class="math inline">\(372/8.975{,}36\times12 \approx 0{,}5\)</span> meses. <strong>Pay-back: 3 años y aproximadamente medio mes.</strong></li>

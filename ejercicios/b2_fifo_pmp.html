@@ -434,6 +434,11 @@ window.Quarto = {
 <p>Cada vez que entra un nuevo lote, se recalcula el precio medio:</p>
 <p><span class="math display">\[PMP = \frac{\text{Valor total en existencias}}{\text{Unidades totales en existencias}}\]</span></p>
 <p>Las salidas se valoran siempre al PMP vigente en ese momento. Cuando entra un nuevo lote, el PMP se recalcula y todas las unidades pasan a valer ese nuevo precio medio.</p>
+<p><strong>¿Qué precio de compra se anota en la ficha?</strong> Según la norma de valoración de existencias del Plan General de Contabilidad, el precio de adquisición parte del importe de factura una vez descontadas las rebajas y descuentos. Se añaden los gastos directamente atribuibles hasta que los bienes están ubicados para su venta, como transporte, seguros o aranceles. Los impuestos indirectos solo forman parte del coste si no son recuperables.</p>
+<blockquote class="blockquote">
+<p><strong>Precio de adquisición</strong> = importe de factura − descuentos + gastos atribuibles + impuestos indirectos no recuperables.</p>
+</blockquote>
+<p>Por eso, el <strong>IVA soportado deducible no se incluye</strong> en el valor de las existencias: la empresa puede recuperarlo o compensarlo en la liquidación del impuesto. Por ejemplo, si un artículo cuesta 100 € más 21 € de IVA deducible, se anota por 100 € (más los gastos atribuibles, si los hay), no por 121 €. Si el IVA no es recuperable, sí se incorpora al coste. En los ejercicios, salvo que se indique otra cosa, toma los precios unitarios como precios de adquisición sin IVA recuperable. <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-19884&amp;p=20241221&amp;tn=0">Plan General de Contabilidad, norma de valoración 10.ª</a>.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-warning callout-titled" title="Trampas de examen">
@@ -450,7 +455,7 @@ window.Quarto = {
 <li>Los <strong>precios de venta</strong> al cliente <strong>no se usan en la ficha de almacén</strong>. Solo interesan los precios de coste (precio de adquisición). Los precios de venta sirven para calcular el beneficio, no para valorar el stock.</li>
 <li>En FIFO, cuando una venta requiere más unidades de las que hay en el lote más antiguo, hay que <strong>partir la salida en dos filas</strong>: una por cada lote del que se extrae.</li>
 <li>En PMP, el recálculo se hace <strong>solo cuando hay entradas</strong>, nunca en las salidas. Las salidas usan el PMP ya calculado.</li>
-<li>Cuidado con el <strong>redondeo en PMP</strong>: lo más seguro es trabajar con la fracción exacta durante los cálculos intermedios y redondear solo en el resultado final de existencias. El corrector oficial de EHU suele calcular el valor de la salida con el precio exacto y el valor de existencias con el precio redondeado a dos decimales.</li>
+<li>Cuidado con el <strong>redondeo en PMP</strong>: conserva el precio medio exacto durante los cálculos y redondea a céntimos solo para mostrarlo. Calcula los valores de las salidas y de las existencias con el precio exacto; así, el valor del inventario cuadra con el valor inicial más las entradas menos las salidas.</li>
 <li>Comprueba siempre que: <span class="math inline">\(\text{Existencias iniciales} + \text{Total entradas} - \text{Total salidas} = \text{Existencias finales}\)</span> (en unidades).</li>
 </ul>
 </div>
@@ -721,18 +726,18 @@ window.Quarto = {
 <td style="text-align: center;">24.800</td>
 <td style="text-align: center;">2.550</td>
 <td style="text-align: center;">20,67</td>
-<td style="text-align: center;">52.708,5</td>
+<td style="text-align: center;">52.700</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Existencias finales: 2.550 unidades — Valor: 52.708,5 €</strong></p>
+<p><strong>Existencias finales: 2.550 unidades — Valor: 52.700 €</strong></p>
 <p><em>Recálculo del PMP paso a paso:</em></p>
 <ul>
 <li><strong>03/01:</strong> <span class="math inline">\((10.000 + 12.000) / (500 + 500) = 22.000 / 1.000 = \mathbf{22\ €}\)</span></li>
 <li><strong>09/01:</strong> <span class="math inline">\((22.000 + 22.000) / (1.000 + 1.000) = 44.000 / 2.000 = \mathbf{22\ €}\)</span> (igual porque el precio de entrada coincide con el PMP)</li>
 <li><strong>22/01:</strong> <span class="math inline">\((27.500 + 50.000) / (1.250 + 2.500) = 77.500 / 3.750 = \mathbf{20{,}67\ \text{€}}\)</span> (periódico: <span class="math inline">\(20{,}\overline{6}\)</span>)</li>
 <li><strong>30/01 salida:</strong> <span class="math inline">\(1.200 \times (77.500/3.750) = \mathbf{24.800\ \text{€}}\)</span> (calculado con precio exacto, sin redondear)</li>
-<li><strong>30/01 existencias:</strong> <span class="math inline">\(2.550 \times 20{,}67 = \mathbf{52.708{,}5\ €}\)</span> (precio redondeado)</li>
+<li><strong>30/01 existencias:</strong> <span class="math inline">\(77.500 - 24.800 = 52.700\ €\)</span>. Equivale a calcular <span class="math inline">\(2.550 \times (77.500/3.750)\)</span> sin redondear el PMP intermedio.</li>
 </ul>
 <div class="callout callout-style-default callout-warning callout-titled" title="Nota sobre el redondeo en el día 30/01">
 <div class="callout-header d-flex align-content-center">
@@ -744,7 +749,7 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>El valor de la salida (24.800 €) se calcula con el precio exacto para que cuadre con el valor de existencias. El valor final de existencias (52.708,5 €) se calcula con el precio redondeado a dos decimales. Esta es la práctica habitual del corrector oficial EHU: evita que el error de redondeo se acumule.</p>
+<p>El PMP exacto es <span class="math inline">\(77.500/3.750 = 20{,}666\ldots\)</span> €. En la ficha puede mostrarse redondeado como 20,67 €, pero los valores monetarios deben calcularse con el precio exacto: salida 24.800 € y existencias finales 52.700 €. Multiplicar 2.550 por el PMP ya redondeado daría 52.708,50 € y acumularía un error de redondeo.</p>
 </div>
 </div>
 </div>
@@ -754,17 +759,17 @@ window.Quarto = {
 <section id="ehu-2024-extraordinaria-empresa-pertuero-s.a.-juguetes" class="level3">
 <h3 class="anchored" data-anchor-id="ehu-2024-extraordinaria-empresa-pertuero-s.a.-juguetes">EHU 2024 Extraordinaria — Empresa PERTUERO S.A. (juguetes)</h3>
 <blockquote class="blockquote">
-<p><em>PERTUERO se dedica a la compraventa de juguetes. Operaciones de mayo:</em></p>
+<p>La empresa <strong>PERTUERO, S. A.</strong>, dedicada a la compraventa de juguetes, ha realizado en mayo las operaciones siguientes:</p>
 <ul>
-<li>05/01: Existencias iniciales: 20 ud × 10 €</li>
-<li>05/07: Compra GAC: 30 ud × 11 €</li>
-<li>05/10: Venta JOSTA: 30 ud (precio venta: 19,35 €)</li>
-<li>05/15: Venta TUNIA: 20 ud (precio venta: 18,75 €)</li>
-<li>05/23: Compra BARA: 25 ud × 11 €</li>
-<li>05/25: Compra EIRA: 15 ud × 12 €</li>
-<li>05/30: Venta SNOW: 30 ud (precio venta: 22,95 €)</li>
+<li>05/01: Existencias iniciales: 20 unidades a 10 €/unidad.</li>
+<li>05/07: Compra a GAC: 30 unidades a 11 €/unidad.</li>
+<li>05/10: Venta al cliente JOSTA: 30 unidades a 19,35 €/unidad.</li>
+<li>05/15: Venta al cliente TUNIA: 20 unidades a 18,75 €/unidad.</li>
+<li>05/23: Compra a BARA: 25 unidades a 11 €/unidad.</li>
+<li>05/25: Compra al proveedor EIRA: 15 unidades a 12 €/unidad.</li>
+<li>05/30: Venta al cliente SNOW: 30 unidades a 22,95 €/unidad.</li>
 </ul>
-<p>Rellena la ficha por FIFO y PMP.</p>
+<p>Teniendo en cuenta los datos anteriores, rellena la ficha de almacén del mes de mayo utilizando los métodos FIFO y precio medio ponderado (PMP), y calcula las existencias finales y su valor.</p>
 </blockquote>
 <div class="callout callout-style-default callout-tip callout-titled" title="Solución comentada — FIFO">
 <div class="callout-header d-flex align-content-center">
