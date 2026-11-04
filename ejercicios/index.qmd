@@ -17,7 +17,7 @@ Cada bloque sigue siempre la misma estructura:
 | Bloque 1 · Producción y costes | Cap. 1 | Umbral de rentabilidad, producir o comprar, productividad |
 | Bloque 2 · Gestión del almacén | Cap. 5 | Modelo de Wilson, PMM, FIFO y PMP |
 | Bloque 3 · Inversión y financiación | Cap. 4 | Pay-back, VAN, fuentes de financiación |
-| Bloque 4 · Contabilidad y ratios | Cap. 6 | Balance, cuenta de PyG, ratios financieros |
+| Bloque 4 · Contabilidad y ratios | Cap. 6 | Balance, cuenta de PyG, rentabilidad económica y financiera, ratios |
 | Bloque 5 · Empresa y marco jurídico | Cap. 1 | Formas jurídicas, verdadero/falso conceptual |
 
 > **Temas no incluidos:** Marketing (Cap. 3) y Recursos Humanos (Cap. 7) aparecen en EHU casi exclusivamente como preguntas teóricas sin cálculo. Para estudiarlos, consulta directamente el libro.
@@ -44,19 +44,25 @@ Problema para resolver de forma autónoma.
 
 | Año | Ordinaria | Extraordinaria |
 |:---:|:---|:---|
-| 2019 | — | PMM |
+| 2010 | Balance y ratios (CORTI) | — |
+| 2017 | — | Balance y ratios (GARDEN & TASUNA) |
+| 2019 | — | Balance y ratios (LEDROM), PMM |
+| 2020 | Balance y ratios (ZERTIKA) | — |
 | 2021 | — | Inversiones (ALPHA), fuentes de financiación |
-| 2022 | Inversiones (NORBERA), Wilson (PEREIRA) | Inversiones (ITSUKI), producir o comprar (camisas) |
+| 2022 | Balance y ratios (BYZAPI), inversiones (NORBERA), Wilson (PEREIRA) | Inversiones (ITSUKI), producir o comprar (camisas) |
 | 2023 | Inversiones (GAUTZO) | — |
-| 2024 | Costes (HELTZU), Balance y ratios (GAI SAI), FIFO y PMP (EDIMO) | Inversiones (ELURKETA), producir o comprar (BOLLAR), FIFO y PMP (PERTUERO) |
-| 2025 | PMM | Balance y ratios (EHUNTZE) |
+| 2024 | Costes (HELTZU), balance y ratios (GAI SAI), FIFO y PMP (EDIMO) | Inversiones (ELURKETA), producir o comprar (BOLLAR), FIFO y PMP (PERTUERO) |
+| 2025 | PMM | Costes (AMETS), balance y ratios (EHUNTZE) |
 
 ### Ejercicios de otras comunidades
 
 | Año | Comunidad | Contenido |
 |:---:|:---|:---|
+| 2018 | Andalucía | Rentabilidad económica y financiera (UNIVERSIADA) |
+| 2019 | Andalucía | Rentabilidad y financiación (TIPA) |
 | 2019 | Galicia | Modelo de Wilson con stock de seguridad |
 | 2020 | Galicia | Modelo de Wilson (ICE S. A.) |
+| 2024 | Madrid | PyG y rentabilidades (AQUALUNG) |
 
 ## Índice de ejercicios por empresa
 
@@ -85,4 +91,13 @@ Problema para resolver de forma autónoma.
 | PERTUERO S.A. | FIFO y PMP | EHU 2024 Ext. | B2 · FIFO y PMP |
 | GAI SAI S.A. | Balance y ratios | EHU 2024 Ord. | B4 · Balance / Ratios |
 | EHUNTZE S.A. | Balance y ratios | EHU 2025 Ext. | B4 · Balance / Ratios |
+| CORTI S.A. | Balance, fondo de maniobra y ratios | EHU 2010 Ord. | B4 · Balances |
+| GARDEN & TASUNA | Balance, fondo de maniobra y ratios | EHU 2017 Ext. | B4 · Balances |
+| LEDROM S.A. | Balance, fondo de maniobra y ratios | EHU 2019 Ext. | B4 · Balances |
+| BYZAPI S.A. | Balance, fondo de maniobra y ratios | EHU 2022 Ord. | B4 · Balances |
+| ZERTIKA Cooperativa | Balance, fondo de maniobra y ratios | EHU 2020 Ord. | B4 · Balances |
+| AQUALUNG | Cuenta de PyG y rentabilidades | EVAU Madrid 2024 | B4 · PyG |
+| AVANZ, S. L. L. | Rentabilidad económica y financiera | Ejercicio facilitado | B4 · Rentabilidad |
+| UNIVERSIADA S. A. | Rentabilidad con y sin deuda | Andalucía 2018 | B4 · Rentabilidad |
+| TIPA S. A. | Rentabilidad y elección de financiación | Andalucía 2019 | B4 · Rentabilidad |
 | Elena, Marcos y Sofía | Forma jurídica razonada | Examen interno | B5 · Formas jurídicas |

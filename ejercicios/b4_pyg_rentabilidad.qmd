@@ -1,0 +1,154 @@
+# Cuenta de pérdidas y ganancias y rentabilidad
+
+## Formulario {.unnumbered}
+
+::: {.callout-note title="Formulario — PyG y rentabilidad"}
+
+**Cascada de resultados**
+
+| Magnitud | Cálculo |
+|:---|:---|
+| Resultado de explotación (BAII o BAIT) | Ingresos de explotación − Gastos de explotación |
+| Resultado financiero | Ingresos financieros − Gastos financieros |
+| Resultado antes de impuestos (BAI o BAT) | BAII + Resultado financiero |
+| Resultado del ejercicio o beneficio neto (BN) | BAI − Impuesto sobre beneficios |
+
+**Rentabilidades**
+
+$$RE = \frac{BAII}{Activo\ total} \times 100
+\qquad
+RF = \frac{Beneficio\ neto}{Patrimonio\ neto} \times 100$$
+
+La **rentabilidad económica (RE)** mide el rendimiento generado por los activos antes de intereses e impuestos. La **rentabilidad financiera (RF)** mide el rendimiento neto obtenido por cada euro de patrimonio neto.
+
+:::
+
+## Ejercicios resueltos
+
+### EVAU Madrid 2024 — AQUALUNG
+
+> AQUALUNG es una tienda de equipamiento para submarinismo. En el ejercicio 2023 tuvo:
+>
+> - Ventas de equipos: 270.000 €.
+> - Compra de equipos: 115.000 €.
+> - Intereses de las deudas: 2.000 €.
+> - Sueldos y salarios: 83.000 €.
+> - Seguridad Social a cargo de la empresa: 28.000 €.
+> - Alquiler del local: 19.200 €.
+> - Amortización del inmovilizado material: 800 €.
+>
+> El tipo impositivo del impuesto sobre beneficios es del 25 %. El activo total asciende a 200.000 € y el patrimonio neto a 75.000 €.
+>
+> a) Elabora la cuenta de pérdidas y ganancias, identificando el resultado de explotación, el resultado financiero y el resultado del ejercicio. b) Calcula e interpreta la rentabilidad económica. c) Calcula e interpreta la rentabilidad financiera.
+
+::: {.callout-tip title="Solución comentada" collapse="true"}
+
+**a) Cuenta de pérdidas y ganancias**
+
+Los gastos de explotación suman 115.000 + 83.000 + 28.000 + 19.200 + 800 = 246.000 €.
+
+| Concepto | Importe (€) |
+|:---|---:|
+| Ingresos por ventas | 270.000 |
+| Gastos de explotación | (246.000) |
+| **Resultado de explotación (BAII)** | **24.000** |
+| Ingresos financieros | 0 |
+| Gastos financieros | (2.000) |
+| **Resultado financiero** | **(2.000)** |
+| **Resultado antes de impuestos (BAI)** | **22.000** |
+| Impuesto sobre beneficios (25 % × 22.000) | (5.500) |
+| **Resultado del ejercicio (BN)** | **16.500** |
+
+**b) Rentabilidad económica**
+
+$$RE = \frac{24.000}{200.000} \times 100 = 12\%$$
+
+Por cada 100 € invertidos en activos, la empresa genera 12 € de resultado de explotación antes de intereses e impuestos.
+
+**c) Rentabilidad financiera**
+
+$$RF = \frac{16.500}{75.000} \times 100 = 22\%$$
+
+Por cada 100 € de patrimonio neto, la empresa obtiene 22 € de beneficio neto.
+
+:::
+
+### AVANZ, S. L. L.
+
+> AVANZ, S. L. L. tiene un activo total de 4.500.000 €. Los accionistas han aportado 2.500.000 € y el resto se ha financiado mediante préstamos, por los que paga un interés del 10 %. El tipo impositivo es del 25 % y el resultado de explotación (BAIT) asciende a 500.000 €.
+>
+> Calcula la rentabilidad económica y la rentabilidad financiera.
+
+::: {.callout-tip title="Solución comentada" collapse="true"}
+
+La deuda es 4.500.000 − 2.500.000 = 2.000.000 €. Los intereses ascienden a 2.000.000 × 10 % = 200.000 €.
+
+$$BAI = 500.000 - 200.000 = 300.000\ \text{€}$$
+$$Impuesto = 300.000 \times 25\% = 75.000\ \text{€}$$
+$$BN = 300.000 - 75.000 = 225.000\ \text{€}$$
+
+$$RE = \frac{500.000}{4.500.000} \times 100 = 11{,}11\%$$
+$$RF = \frac{225.000}{2.500.000} \times 100 = 9\%$$
+
+Por cada 100 € de activo se obtienen 11,11 € antes de intereses e impuestos; por cada 100 € de patrimonio neto, 9 € de beneficio neto. Aunque la RF (9 %) es inferior a la RE antes de impuestos (11,11 %), la comparación adecuada para el efecto del apalancamiento tiene en cuenta los impuestos: sin deuda, el rendimiento neto sería 8,33 % (11,11 % × (1 − 0,25)). El endeudamiento eleva la RF del 8,33 % al 9 %, porque la rentabilidad económica supera el coste de la deuda.
+
+:::
+
+### Andalucía 2018 — UNIVERSIADA S. A.
+
+> UNIVERSIADA S. A. posee un activo total de 30 millones de euros y ha obtenido un beneficio antes de intereses e impuestos (BAIT) de 5,5 millones. El tipo impositivo es del 30 %.
+>
+> a) Calcula la rentabilidad económica. b) Calcula la rentabilidad financiera si la empresa se financia exclusivamente con capital propio. c) Repite el cálculo suponiendo que se financia con un 60 % de capital propio y un 40 % de deuda, cuyo coste es del 14 %.
+
+::: {.callout-tip title="Solución comentada" collapse="true"}
+
+**a) Rentabilidad económica**
+
+$$RE = \frac{5.500.000}{30.000.000} \times 100 = 18{,}33\%$$
+
+**b) Financiación íntegra con capital propio**
+
+Al no haber deuda, no se pagan intereses. El beneficio antes de impuestos es 5.500.000 €; el impuesto es 5.500.000 × 30 % = 1.650.000 € y el beneficio neto, 3.850.000 €. El patrimonio neto equivale al activo: 30.000.000 €.
+
+$$RF = \frac{3.850.000}{30.000.000} \times 100 = 12{,}83\%$$
+
+**c) Financiación con 60 % de recursos propios y 40 % de deuda**
+
+Patrimonio neto = 30.000.000 × 60 % = 18.000.000 €. Deuda = 12.000.000 €. Intereses = 12.000.000 × 14 % = 1.680.000 €.
+
+$$BAI = 5.500.000 - 1.680.000 = 3.820.000\ \text{€}$$
+$$BN = 3.820.000 \times (1 - 0{,}30) = 2.674.000\ \text{€}$$
+$$RF = \frac{2.674.000}{18.000.000} \times 100 = 14{,}86\%$$
+
+La RF aumenta del 12,83 % al 14,86 % al incorporar deuda. El apalancamiento es positivo porque la RE (18,33 %) supera el coste de la deuda (14 %).
+
+:::
+
+### Andalucía 2019 — TIPA S. A.
+
+> TIPA S. A. tiene inicialmente un activo de 150.000 €, financiado íntegramente con fondos propios. Estudia una inversión adicional de 65.000 € que generaría un beneficio de explotación (BAII) de 45.000 €. Puede financiarla mediante una ampliación de capital o con un préstamo de 65.000 € al 8 % anual. El tipo impositivo es del 20 %.
+>
+> ¿Qué forma de financiación conviene elegir si el criterio es la rentabilidad financiera? Justifica la respuesta.
+
+::: {.callout-tip title="Solución comentada" collapse="true"}
+
+Tras la inversión, el activo total será 150.000 + 65.000 = 215.000 €.
+
+**Opción 1: ampliación de capital**
+
+El patrimonio neto será 215.000 € y no habrá intereses.
+
+$$BN = 45.000 \times (1 - 0{,}20) = 36.000\ \text{€}$$
+$$RF_1 = \frac{36.000}{215.000} \times 100 = 16{,}74\%$$
+
+**Opción 2: préstamo**
+
+El patrimonio neto permanece en 150.000 €. Los intereses son 65.000 × 8 % = 5.200 €.
+
+$$BAI = 45.000 - 5.200 = 39.800\ \text{€}$$
+$$BN = 39.800 \times (1 - 0{,}20) = 31.840\ \text{€}$$
+$$RF_2 = \frac{31.840}{150.000} \times 100 = 21{,}23\%$$
+
+Conviene financiar la inversión con el préstamo si se atiende exclusivamente a la RF: esta asciende al 21,23 %, frente al 16,74 % de la ampliación de capital. Aunque el beneficio neto total es menor con deuda, los fondos propios son también menores. La RE de la empresa tras la inversión es 45.000 / 215.000 = 20,93 %, superior al coste de la deuda del 8 %, lo que produce apalancamiento positivo.
+
+:::
