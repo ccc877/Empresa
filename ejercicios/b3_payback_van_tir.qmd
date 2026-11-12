@@ -149,7 +149,7 @@ El VAN es más adecuado porque actualiza los flujos y tiene en cuenta la pérdid
 
 ::: {.callout-tip title="Resolución propia a partir del enunciado" collapse="true"}
 
-El archivo facilitado contiene el enunciado, pero no la solución oficial. Esta resolución se ha elaborado a partir de los datos del ejercicio.
+Solucionario no oficial.
 
 **Flujos netos de caja**
 
