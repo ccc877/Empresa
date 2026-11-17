@@ -1,0 +1,75 @@
+# Empresa, organización y marco jurídico
+
+Este bloque abre el cuaderno y sigue el primer tema de los apuntes: la empresa, sus formas, tamaño, crecimiento y organización.
+
+## Cooperativa, estrategia y crecimiento
+
+La cooperativa vasca Erreka fabrica tornillos inteligentes para aerogeneradores y otras instalaciones. Tras la crisis del sector eólico, apostó por una tecnología propia, el sistema i-Bolt, y prevé ampliar su facturación y su actividad internacional.
+
+**1.** Define **cooperativa**, **liderazgo**, **inversión**, **plan estratégico** y **crecimiento empresarial**. Explica también la diferencia entre fusión y absorción.
+
+::: {.callout-tip title="Solución comentada" collapse="true"}
+
+- **Cooperativa:** sociedad constituida por personas que se asocian voluntariamente para desarrollar una actividad económica de interés común. La participación y la toma de decisiones siguen los principios cooperativos.
+- **Liderazgo:** posición destacada de una empresa en su mercado, por su cuota, capacidad competitiva o influencia en el sector.
+- **Inversión:** adquisición de bienes o derechos que se espera que generen rendimientos futuros, renunciando a recursos en el presente.
+- **Plan estratégico:** objetivos y decisiones de largo plazo que orientan la actividad de la empresa y la asignación de sus recursos.
+- **Crecimiento empresarial:** aumento del tamaño o alcance de la empresa mediante más ventas, producción, mercados o actividad internacional.
+- **Fusión:** dos o más sociedades se integran para formar una nueva. En la **absorción**, una sociedad incorpora a otra, que deja de existir como entidad independiente.
+
+:::
+
+*UPV/EHU · Convocatoria ordinaria de 2018.*
+
+## Ferrovial: localización e internacionalización
+
+Ferrovial propuso trasladar su sede social desde España a los Países Bajos. La empresa señaló como motivos la presencia de gran parte de su actividad en el extranjero, la estabilidad jurídica y unas condiciones de financiación que consideraba más favorables. La operación societaria propuesta incluía una fusión con su matriz.
+
+**2.** Define **plan estratégico**, **fusión**, **empresa matriz** e **internacionalización**. Expón posibles causas empresariales para trasladar la sede social.
+
+::: {.callout-tip title="Solución comentada" collapse="true"}
+
+- **Plan estratégico:** documento que fija los objetivos de largo plazo y las acciones y recursos necesarios para alcanzarlos.
+- **Fusión:** integración de dos o más empresas en una sola sociedad. En una fusión por absorción, una empresa incorpora a otra.
+- **Empresa matriz:** sociedad que controla otra empresa, normalmente mediante una participación que le permite influir en sus decisiones.
+- **Internacionalización:** extensión de la actividad empresarial a otros países mediante ventas, inversiones u otras operaciones.
+
+Entre las posibles razones del traslado están acercar la sede a los mercados donde se genera la mayor parte del negocio, acceder a financiación o mercados de capitales en mejores condiciones, buscar estabilidad jurídica y considerar las diferencias fiscales. Son motivos alegados o posibles; el texto por sí solo no permite confirmar su peso efectivo.
+
+:::
+
+*UPV/EHU · Convocatoria ordinaria de 2024.*
+
+## Tamaño empresarial
+
+**3.** Explica qué es una pyme y una empresa multinacional. Indica una ventaja y una limitación de cada tipo por su tamaño o ámbito de actuación.
+
+::: {.callout-tip title="Solución comentada" collapse="true"}
+
+Una **pyme** es una pequeña o mediana empresa, definida atendiendo al número de personas empleadas y a límites económicos. Puede adaptarse con agilidad y mantener cercanía con sus clientes, aunque suele tener menos capacidad para aprovechar economías de escala o financiar una expansión.
+
+Una **empresa multinacional** desarrolla actividad en más de un país. Puede aprovechar economías de escala y diversificar sus mercados; a cambio, se expone a riesgos internacionales, como variaciones del tipo de cambio o cambios políticos y regulatorios.
+
+:::
+
+*UPV/EHU · Convocatoria extraordinaria de 2025.*
+
+## Empresariado y tecnologías de la información
+
+Luis fundó una empresa de quesos artesanales que pasó de tres a 40 empleados. El crecimiento se relaciona con su creatividad e iniciativa, su capacidad para empatizar con el personal y liderar equipos, y la incorporación de ordenadores, programas de gestión y una tienda en línea.
+
+**4.** Explica el concepto de empresario o empresaria, sus perfiles y características. Identifica los perfiles y características de Luis que aparecen en el caso. Señala también qué elementos del texto son TIC.
+
+::: {.callout-tip title="Solución comentada" collapse="true"}
+
+El empresario coordina y dirige los factores productivos para ofrecer bienes o servicios, toma decisiones y asume riesgos. Entre los perfiles estudiados están quien asume la incertidumbre económica, quien introduce innovaciones y quien organiza y dirige la empresa.
+
+Luis muestra iniciativa y creatividad al fundar la empresa; liderazgo y empatía al coordinar al personal; y un perfil innovador al incorporar herramientas digitales y una tienda en línea. Los ordenadores son equipos informáticos; el programa de gestión es software; y la tienda en línea es un canal de comercio electrónico. El crecimiento descrito es coherente con sus funciones directivas, aunque no permite atribuirle por sí solo todos los resultados.
+
+:::
+
+*Castilla-La Mancha · Convocatoria extraordinaria de julio de 2026.*
+
+## Formas jurídicas y conceptos de empresa
+
+Los ejercicios sobre formas jurídicas, concentración empresarial y conceptos de organización continúan en [Formas jurídicas](b5_formas_juridicas.qmd) y [Verdadero o falso: empresa](b5_verdadero_falso.qmd).

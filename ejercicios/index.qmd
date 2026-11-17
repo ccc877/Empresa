@@ -14,13 +14,15 @@ Cada bloque sigue siempre la misma estructura:
 
 | Cuaderno — Bloque | Capítulos del libro | Contenido |
 |:---|:---:|:---|
+| Empresa y organización | Cap. 1 | Formas de empresa, tamaño, crecimiento y marco jurídico |
+| Modelos de negocio, marketing e innovación | Cap. 2–3 | Propuestas de valor, modelos de ingresos, marketing e innovación |
 | Bloque 1 · Producción y costes | Cap. 1 | Umbral de rentabilidad, producir o comprar, productividad |
 | Bloque 2 · Gestión del almacén | Cap. 5 | Modelo de Wilson, PMM, FIFO y PMP |
 | Bloque 3 · Inversión y financiación | Cap. 4 | Pay-back, VAN, fuentes de financiación |
 | Bloque 4 · Contabilidad y ratios | Cap. 6 | Balance, cuenta de PyG, rentabilidad económica y financiera, ratios |
-| Bloque 5 · Empresa y marco jurídico | Cap. 1 | Formas jurídicas, verdadero/falso conceptual |
+| Recursos humanos | Cap. 7 | Casos teóricos integrados en los ejercicios de modelos de negocio |
 
-> **Temas no incluidos:** Marketing (Cap. 3) y Recursos Humanos (Cap. 7) aparecen en EHU casi exclusivamente como preguntas teóricas sin cálculo. Para estudiarlos, consulta directamente el libro.
+> **Nota:** El nuevo bloque de modelos de negocio, marketing e innovación incorpora preguntas teóricas de la EHU junto con casos de otras comunidades.
 
 ## Convenciones visuales
 
@@ -41,6 +43,10 @@ Problema para resolver de forma autónoma.
 :::
 
 ## Exámenes EHU cubiertos
+
+Los dos primeros bloques reúnen preguntas teóricas de empresa y de modelos de
+negocio, innovación y marketing, seleccionadas de convocatorias EHU y de otras
+comunidades. El resto de bloques sigue el orden de los ejercicios cuantitativos.
 
 | Año | Ordinaria | Extraordinaria |
 |:---:|:---|:---|

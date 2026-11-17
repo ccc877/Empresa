@@ -23,6 +23,8 @@ book:
       - section: "Anexo · Ejercicios resueltos y formularios"
         contents:
           - ejercicios/index.qmd
+          - ejercicios/b0_empresa_upv.qmd
+          - ejercicios/b0_modelos_marketing.qmd
           - ejercicios/b1_costes_umbral.qmd
           - ejercicios/b1_producir_o_comprar.qmd
           - ejercicios/b1_productividad.qmd
@@ -35,8 +37,6 @@ book:
           - ejercicios/b4_balances_adicionales.qmd
           - ejercicios/b4_pyg_rentabilidad.qmd
           - ejercicios/b4_ratios.qmd
-          - ejercicios/b5_formas_juridicas.qmd
-          - ejercicios/b5_verdadero_falso.qmd
           - ejercicios/formularios.qmd
           - ejercicios/plantillas_ratios.qmd
           - ejercicios/examenes_completos.qmd
@@ -51,6 +51,14 @@ book:
     - RRHH.qmd
   appendices:
     - ejercicios/index.qmd
+    - part: "Bloque 0 · Empresa y organización"
+      chapters:
+        - ejercicios/b0_empresa_upv.qmd
+        - ejercicios/b5_formas_juridicas.qmd
+        - ejercicios/b5_verdadero_falso.qmd
+    - part: "Bloque 0 · Modelos de negocio, marketing e innovación"
+      chapters:
+        - ejercicios/b0_modelos_marketing.qmd
     - part: "Bloque 1 · Producción y costes"
       chapters:
         - ejercicios/b1_costes_umbral.qmd
@@ -63,18 +71,16 @@ book:
         - ejercicios/b2_fifo_pmp.qmd
     - part: "Bloque 3 · Inversión y financiación"
       chapters:
+        - ejercicios/b3_aragon_inversion.qmd
         - ejercicios/b3_payback_van_tir.qmd
         - ejercicios/b3_fuentes_financiacion.qmd
     - part: "Bloque 4 · Contabilidad y ratios"
       chapters:
+        - ejercicios/b4_aragon_balance.qmd
         - ejercicios/b4_balance_pyg.qmd
         - ejercicios/b4_balances_adicionales.qmd
         - ejercicios/b4_pyg_rentabilidad.qmd
         - ejercicios/b4_ratios.qmd
-    - part: "Bloque 5 · Empresa y marco jurídico"
-      chapters:
-        - ejercicios/b5_formas_juridicas.qmd
-        - ejercicios/b5_verdadero_falso.qmd
     - part: "Formularios y plantillas"
       chapters:
         - ejercicios/formularios.qmd

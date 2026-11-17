@@ -1,0 +1,45 @@
+# Balance y análisis financiero: Cebollas de Fuentes, S. A.
+
+La empresa presenta al cierre del ejercicio las siguientes cuentas (euros):
+
+| Cuenta | Importe | Cuenta | Importe |
+|:---|---:|:---|---:|
+| Mobiliario | 27.000 | Proveedores de inmovilizado a corto plazo | 18.000 |
+| Caja | 3.000 | Clientes | 36.000 |
+| Deudas a largo plazo con entidades de crédito | 30.000 | Reserva legal | 45.000 |
+| Capital social | 300.000 | Materias primas | 18.000 |
+| Maquinaria | 48.000 | Bancos | 36.000 |
+| Terrenos y bienes naturales | 75.000 | Construcciones | 150.000 |
+
+Se pide: a) elaborar el balance por masas patrimoniales; b) calcular e interpretar el fondo de maniobra; c) calcular los ratios de tesorería, tesorería inmediata y endeudamiento total, e indicar si la situación permite estudiar una expansión.
+
+::: {.callout-tip title="Solución comentada" collapse="true"}
+
+**a) Balance de situación**
+
+| Activo | Importe | Patrimonio neto y pasivo | Importe |
+|:---|---:|:---|---:|
+| **Activo no corriente** | **300.000** | **Patrimonio neto** | **345.000** |
+| Terrenos y bienes naturales | 75.000 | Capital social | 300.000 |
+| Construcciones | 150.000 | Reserva legal | 45.000 |
+| Maquinaria | 48.000 | **Pasivo no corriente** | **30.000** |
+| Mobiliario | 27.000 | Deudas a largo plazo | 30.000 |
+| **Activo corriente** | **93.000** | **Pasivo corriente** | **18.000** |
+| Existencias: materias primas | 18.000 | Proveedores de inmovilizado a corto plazo | 18.000 |
+| Realizable: clientes | 36.000 | | |
+| Disponible: caja y bancos | 39.000 | | |
+| **Total activo** | **393.000** | **Total patrimonio neto y pasivo** | **393.000** |
+
+**b)** Fondo de maniobra = activo corriente − pasivo corriente = 93.000 − 18.000 = **75.000 €**. Es positivo: el activo corriente supera las obligaciones a corto plazo.
+
+**c)**
+
+- Ratio de tesorería = (realizable + disponible) / pasivo corriente = 75.000 / 18.000 = **4,17**.
+- Ratio de tesorería inmediata = disponible / pasivo corriente = 39.000 / 18.000 = **2,17**.
+- Ratio de endeudamiento total = pasivo / patrimonio neto = 48.000 / 345.000 = **0,14**.
+
+La empresa muestra una elevada capacidad para atender las deudas a corto plazo y un endeudamiento reducido. La liquidez alta también puede indicar recursos corrientes ociosos. Los datos parecen favorables para estudiar una expansión, aunque la decisión debe valorar además la rentabilidad y el riesgo del proyecto.
+
+:::
+
+*Aragón · Ejercicio extra de contabilidad de 2026.*

@@ -1,0 +1,36 @@
+# Inversión en Aragón: VAN y *lean startup*
+
+Una empresa farmacéutica de Teruel debe elegir entre dos proyectos. La tasa de descuento anual es del 7,5 %.
+
+| Proyecto | Desembolso inicial | Año 1: cobros | Año 1: pagos | Año 2: cobros | Año 2: pagos | Año 3: cobros | Año 3: pagos | Año 4: cobros | Año 4: pagos |
+|:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Ibuprofeno | 57.015 € | 27.000 € | 20.500 € | 42.000 € | 12.500 € | 83.000 € | 78.000 € | 44.000 € | 13.850 € |
+| Paracetamol | 47.025 € | 18.000 € | 13.500 € | 92.000 € | 87.000 € | 95.000 € | 45.000 € | 19.000 € | 18.400 € |
+
+Se pide: a) calcular los flujos netos de caja; b) calcular los VAN y recomendar un proyecto; c) determinar el flujo del cuarto año de Ibuprofeno que igualaría su VAN al de Paracetamol; d) valorar la afirmación de que la filosofía *lean startup* exige estar seguros del éxito antes de iniciar un proyecto a gran escala.
+
+::: {.callout-tip title="Solución comentada" collapse="true"}
+
+**a) Flujos netos de caja** ($FNC_t = Cobros_t - Pagos_t$):
+
+| Proyecto | Año 1 | Año 2 | Año 3 | Año 4 |
+|:---|---:|---:|---:|---:|
+| Ibuprofeno | 6.500 € | 29.500 € | 5.000 € | 30.150 € |
+| Paracetamol | 4.500 € | 5.000 € | 50.000 € | 600 € |
+
+**b) Valor actual neto**
+
+$$VAN=-D_0+\sum_{t=1}^{n}\frac{FNC_t}{(1+k)^t}$$
+
+- Ibuprofeno: **1.161,16 €**.
+- Paracetamol: **2.185,02 €**.
+
+Ambos VAN son positivos y, por tanto, ambos proyectos crean valor según este criterio. Se recomienda **Paracetamol**, cuyo VAN es mayor.
+
+**c)** Para igualar el VAN de Paracetamol, el flujo del cuarto año de Ibuprofeno debe ser **31.518,94 €**. Para que resulte preferible, debe superar esa cifra.
+
+**d)** La afirmación no es correcta. *Lean startup* propone probar pronto las hipótesis del negocio con versiones o lotes pequeños —por ejemplo, un producto mínimo viable— y aprender de la respuesta real del mercado. No exige esperar a tener certeza del éxito antes de lanzar a gran escala; busca reducir la incertidumbre antes de comprometer más recursos.
+
+:::
+
+*Aragón · Ejercicio extra de inversión de 2026.*
