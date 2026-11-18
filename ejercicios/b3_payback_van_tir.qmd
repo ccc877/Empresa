@@ -11,7 +11,7 @@
 | $D_0$ | Desembolso inicial | Pago realizado en el momento 0 para iniciar la inversión |
 | $FNC_t$ | Flujo neto de caja del año $t$ | Cobros menos pagos del año $t$ (puede ser negativo) |
 | $N$ | Vida útil | Número total de años que dura el proyecto |
-| $VR$ | Valor residual | Valor de venta del activo al finalizar la vida útil (se suma al último $FNC_n$) |
+| $VR$ | Valor residual | Valor de venta del activo al finalizar la vida útil (se suma al último $FNC_t$) |
 | $k$ | Tasa de descuento | Rentabilidad mínima exigida ajustada por inflación (fórmula de Fisher) |
 | $i$ | Rentabilidad mínima exigida | Rendimiento mínimo que debe ofrecer la inversión para que compense |
 | $g$ | Tasa de inflación | Pérdida anual de poder adquisitivo del dinero |
@@ -39,7 +39,7 @@ donde $i$ = rentabilidad mínima exigida y $g$ = tasa de inflación.
 
 **Valor Actual Neto (VAN)**
 
-$$VAN = -D_0 + \sum_{n=1}^{N} \frac{FNC_n}{(1+k)^n}$$
+$$VAN = -D_0 + \sum_{t=1}^{n} \frac{FNC_t}{(1+k)^t}$$
 
 | VAN | Interpretación |
 |:---:|:---|
@@ -107,7 +107,7 @@ Según el Pay-back, se elige **Gamma**, porque recupera antes la inversión.
 
 La fórmula general es:
 
-$$VAN = -D_0 + \sum_{n=1}^{N}\frac{FNC_n}{(1+k)^n}$$
+$$VAN = -D_0 + \sum_{t=1}^{n}\frac{FNC_t}{(1+k)^t}$$
 
 Aplicada a cada proyecto, la solución oficial obtiene:
 
@@ -172,7 +172,7 @@ $$FNC_3 = 68.000 - 1.000 + 5.000 = 72.000\text{ €}$$
 
 $$k = i + g + (i\times g) = 0{,}05 + 0{,}03 + (0{,}05\times0{,}03) = 0{,}0815$$
 
-$$VAN = -D_0 + \sum_{n=1}^{N}\frac{FNC_n}{(1+k)^n}$$
+$$VAN = -D_0 + \sum_{t=1}^{n}\frac{FNC_t}{(1+k)^t}$$
 
 $$VAN_1 = -205.000 + \frac{143.000}{1{,}0815} + \frac{158.500}{1{,}0815^2} + \frac{174.000}{1{,}0815^3} = 200.288{,}16\text{ €}$$
 
@@ -379,7 +379,7 @@ $$k = 0{,}03 + 0{,}059 + (0{,}03 \times 0{,}059) = 0{,}089 + 0{,}00177 = \mathbf
 
 La expresión general del Valor Actual Neto es:
 
-$$VAN = -D_0 + \sum_{n=1}^{N}\frac{FNC_n}{(1+k)^n}$$
+$$VAN = -D_0 + \sum_{t=1}^{n}\frac{FNC_t}{(1+k)^t}$$
 
 $$VAN_A = -35.000 + \frac{0}{1{,}09077} + \frac{5.000}{1{,}09077^2} + \frac{45.000}{1{,}09077^3} + \frac{41.000}{1{,}09077^4} = \mathbf{32.840{,}69\ \text{€}}$$
 
@@ -422,7 +422,7 @@ El **VAN** es superior porque es un método dinámico: actualiza los flujos teni
 
 La fórmula general es:
 
-$$VAN = -D_0 + \sum_{n=1}^{N}\frac{FNC_n}{(1+k)^n}$$
+$$VAN = -D_0 + \sum_{t=1}^{n}\frac{FNC_t}{(1+k)^t}$$
 
 La tasa de descuento por Fisher es:
 
