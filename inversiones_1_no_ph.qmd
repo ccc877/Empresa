@@ -66,14 +66,14 @@ Si se cuenta con los medios necesarios, lo ideal es tener en cuenta el momento e
 El método más simple es calcular el **Valor Actual Neto (VAN)**:
 
 $$
-VAN = -I_0 + \sum_{n=1}^{N} \frac{FNC_n}{(1+k)^n}
+VAN = -I_0 + \sum_{t=1}^{n} \frac{FNC_t}{(1+k)^t}
 $$
 
 Donde:
 
-- $FNC_n$ representa el flujo neto de caja del periodo $n$.
+- $FNC_t$ representa el flujo neto de caja del periodo $t$.
 - $I_0$ es el valor del desembolso inicial de la inversión.
-- $N$ es el número total de períodos considerados.
+- $n$ es el último período considerado y, por tanto, el número total de períodos.
 - $k$ es el tipo de interés (coste del capital o rentabilidad mínima exigida).
 
 El VAN consiste en llevar al momento actual (momento 0) todos los flujos de caja. Por la **equivalencia financiera**, los capitales son comparables cuando están todos en el mismo punto de la línea temporal.

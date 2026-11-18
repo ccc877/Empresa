@@ -84,7 +84,7 @@ $$\text{Meses} = \frac{\text{Cantidad pendiente}}{FNC_{\text{año parcial}}} \ti
 
 $$k = i + g + (i \times g) \qquad \text{(fórmula de Fisher)}$$
 
-$$VAN = -D_0 + \sum_{n=1}^{N} \frac{FNC_n}{(1+k)^n}$$
+$$VAN = -D_0 + \sum_{t=1}^{n} \frac{FNC_t}{(1+k)^t}$$
 
 | VAN | Decisión |
 |:---:|:---|
