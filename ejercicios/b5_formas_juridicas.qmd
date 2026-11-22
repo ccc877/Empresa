@@ -13,7 +13,7 @@
 | Sociedad Comanditaria Simple | Mín. 2 | Sin mínimo | Mixta* | IS |
 | **Sociedad de Responsabilidad Limitada (SL)** | Mín. 1 | **1 €** | **Limitada** | IS |
 | **Sociedad Anónima (SA)** | Mín. 1 | **60.000 €** | **Limitada** | IS |
-| Sociedad Cooperativa | Mín. 3 | Estatutos | **Limitada** | IS (bonif.) |
+| Sociedad Cooperativa | Mín. 3 (1.er grado) | Estatutos; 3.000 € mínimo en Euskadi | **Limitada** | IS (bonif.) |
 | Sociedad Laboral (SLL / SAL) | Mín. 2 | 1 € / 60.000 € | **Limitada** | IS |
 
 *En la comanditaria: socios colectivos → ilimitada; socios comanditarios → limitada al capital aportado.

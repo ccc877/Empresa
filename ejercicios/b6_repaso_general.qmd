@@ -1,0 +1,31 @@
+# Repaso general de teoría
+
+Este bloque reúne preguntas conceptuales de distintos temas para practicar respuestas breves y relacionar conceptos.
+
+## EHU 2025 Ordinaria — Eficiencia y productividad
+
+> Define eficiencia y productividad. Indica posibles causas de un aumento de la productividad y explica cómo se mide la productividad de un factor.
+
+::: {.callout-tip title="Solución comentada"}
+
+La **eficiencia** consiste en alcanzar un objetivo productivo aprovechando bien los recursos: producir lo máximo posible con unos factores dados o lograr una producción determinada usando la menor cantidad de factores posible. La **productividad** relaciona la producción obtenida con los factores empleados.
+
+La productividad puede aumentar mediante la formación y motivación del personal, la mejora de la tecnología y de los procesos, una mejor organización y una gestión más eficaz de los recursos.
+
+La productividad de un factor se calcula dividiendo la producción física obtenida entre la cantidad de ese factor utilizada. Por ejemplo, la productividad horaria del trabajo es el número de unidades producidas dividido entre las horas de trabajo empleadas.
+
+:::
+
+*UPV/EHU · Convocatoria ordinaria de 2025.*
+
+## Servitización: Grupo Gaes
+
+> Una empresa que distribuía rodamientos incorpora una oficina técnica, talleres de montaje y mecanizado, soluciones personalizadas y mantenimiento predictivo con sensores. Explica cómo cambia su modelo de negocio y define la servitización.
+
+::: {.callout-tip title="Solución comentada"}
+
+La empresa pasa de centrarse en la distribución de productos a ofrecer soluciones integrales que combinan componentes, adaptación técnica, montaje y mantenimiento predictivo. La **servitización** es la incorporación de servicios al producto o la transformación de la oferta en una solución de producto y servicios. El cambio puede aumentar el valor ofrecido y fortalecer la relación con el cliente, aunque exige nuevas capacidades técnicas y organizativas.
+
+:::
+
+*UPV/EHU · Convocatoria ordinaria de 2025, pregunta basada en un texto sobre Grupo Gaes.*

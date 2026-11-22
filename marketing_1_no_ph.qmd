@@ -268,3 +268,17 @@ Para que un objetivo sirva de guía y de evaluación, debe cumplir una serie de 
 | **A** | *Achievable* — Alcanzable | Debe ser realista y posible dadas las capacidades y recursos de la empresa. |
 | **R** | *Relevant* — Relevante | Debe estar alineado con la estrategia y los valores de la empresa. |
 | **T** | *Time-bound* — Temporal | Debe tener un plazo definido de consecución. |
+
+## Sostenibilidad, ética y responsabilidad social
+
+La **responsabilidad social corporativa (RSC)** es la integración voluntaria de preocupaciones sociales y ambientales en las decisiones y relaciones de una empresa, además del cumplimiento de sus obligaciones legales. Incluye prácticas laborales responsables, transparencia, respeto a los derechos humanos, reducción de impactos ambientales y relaciones honestas con clientes y proveedores.
+
+La sostenibilidad empresarial busca que la actividad pueda mantenerse a largo plazo, atendiendo a sus dimensiones económica, social y ambiental. No equivale a una campaña publicitaria: requiere objetivos, indicadores, decisiones coherentes y rendición de cuentas. La comunicación de avances debe ser verificable para evitar presentar como sostenible una actividad que no lo es (*greenwashing*).
+
+## Innovación, internacionalización y servitización
+
+La innovación puede afectar a distintas áreas de la empresa. La **innovación de producto** introduce un bien o servicio nuevo o significativamente mejorado; la **innovación de proceso** cambia la forma de producir o distribuir; y la **innovación comercial** modifica el diseño, la presentación, la promoción, los canales o los métodos de fijación de precios.
+
+La **internacionalización** es la expansión de la actividad empresarial a mercados de otros países. Puede comenzar con exportaciones y avanzar hacia acuerdos, licencias, filiales comerciales o centros de producción. Permite acceder a más clientes y diversificar mercados, pero exige adaptación a normas, culturas, monedas y competidores, además de asumir costes y riesgos adicionales.
+
+La **servitización** consiste en añadir servicios al producto o pasar de vender un producto a ofrecer una solución que combina producto y servicios, como mantenimiento, actualización, financiación o pago por uso. Puede mejorar la relación con el cliente y generar ingresos recurrentes, aunque requiere nuevas capacidades y una organización preparada para prestar esos servicios.

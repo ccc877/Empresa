@@ -36,7 +36,7 @@ $$Q^* = \sqrt{\frac{2 \cdot s \cdot D}{g}} \qquad N = \frac{D}{Q} \qquad T = \fr
 
 $$PP = ss + (d \times t) \qquad S_m = \frac{Q}{2} + ss \qquad IR = \frac{D}{S_m}$$
 
-$$CT = s \cdot N + g \cdot \left(\frac{Q}{2} + ss\right)$$
+$$CG = s \cdot N + g \cdot \left(\frac{Q}{2} + ss\right)$$
 
 En el pedido óptimo, $sD/Q^* = gQ^*/2$, de donde $Q^* = \sqrt{2sD/g}$. El coste del stock de seguridad, $g\,ss$, se añade al coste total, pero no altera la cantidad óptima.
 
@@ -94,6 +94,12 @@ $$VAN = -D_0 + \sum_{t=1}^{n} \frac{FNC_t}{(1+k)^t}$$
 
 Entre proyectos aceptables: elegir el de **mayor VAN**.
 
+### Tasa interna de rentabilidad
+
+La TIR es la tasa que hace que el VAN sea cero. En proyectos convencionales se acepta si supera la tasa mínima exigida $k$. En proyectos mutuamente excluyentes, el VAN es el criterio para elegir la alternativa que más valor crea.
+
+$$0 = -D_0 + \sum_{t=1}^{n}\frac{FNC_t}{(1+TIR)^t}$$
+
 ---
 
 ## Bloque 4 · Contabilidad y ratios
@@ -105,6 +111,14 @@ $$\text{Activo} = \text{Patrimonio Neto} + \text{Pasivo}$$
 $$B = \text{Total Activo} - \text{Capital} - \text{Reservas} - PNC - PC$$
 
 $$FM = AC - PC = (PN + PNC) - ANC$$
+
+### Rentabilidad y apalancamiento
+
+$$RE = \frac{BAII}{Activo\ total}\times100 \qquad RF = \frac{Beneficio\ neto}{Patrimonio\ neto}\times100$$
+
+El apalancamiento financiero es positivo cuando la rentabilidad de los activos supera el coste de la deuda y el endeudamiento eleva la rentabilidad financiera, teniendo en cuenta impuestos y riesgo.
+
+$$Multiplicador\ de\ apalancamiento = \frac{Activo\ total}{PN}$$
 
 ### Cuenta de resultados
 

@@ -38,7 +38,7 @@ A la hora de valorar una inversión, existen **tres características** a analiza
 
 Al invertir, se hace un pago —el **desembolso inicial** ($D_0$)— con la esperanza de generar unas entradas y salidas de dinero, llamados **flujos netos de caja** o *cash flows*, a lo largo de $n$ años (duración temporal). Al final de la inversión, puede que el bien aún tenga algún valor en el mercado, denominado **valor residual**.
 
-El dinero no tiene siempre el mismo valor: varía con el tiempo según la inflación. Por eso no se pueden comparar los euros actuales con los del año 2000. Al darse los flujos de caja en distintos momentos, para saber si se ganará dinero habrá que llevar todos los flujos de caja a **valores actuales**, actualizarlos para saber a cuánto dinero de hoy equivaldrían.
+El dinero disponible hoy puede invertirse y generar un rendimiento, y la inflación reduce su poder adquisitivo. Por eso, para comparar flujos de distintos momentos, se actualizan a una misma fecha con una tasa que recoge el rendimiento mínimo exigido y, cuando procede, la inflación.
 
 - Sin tener en cuenta ese dinamismo, la valoración es **estática**.
 - Al tenerlo en cuenta, la valoración es **dinámica**.
@@ -48,6 +48,8 @@ El dinero no tiene siempre el mismo valor: varía con el tiempo según la inflac
 A la hora de valorar una inversión, lo más simple es considerar que el valor del dinero es constante. Cuando no hay medios para hacer un cálculo más complejo, puede recurrirse al **criterio del plazo de recuperación o pay-back**. Este criterio estático muestra el tiempo necesario para recuperar el monto desembolsado. El foco está, por tanto, en la **liquidez** de la inversión.
 
 Para calcularlo hay que organizar una línea temporal, restando el desembolso inicial y sumando año a año los ingresos generados, hasta superar el 0. Superar el cero significará que en ese momento ($T$) se habrá recuperado el dinero desembolsado. La inversión seleccionada será aquella en la que el dinero logre recuperarse; si hay varias, se seleccionará aquella que permita recuperar la inversión antes (el menor $T$ posible).
+
+Si se supone que los flujos se generan uniformemente a lo largo del año en que se recupera la inversión, la fracción de ese año se estima dividiendo el importe pendiente entre el flujo de ese año: $PB=(t-1)+\frac{D_0-\sum_{j=1}^{t-1}FNC_j}{FNC_t}$. Para expresarla en meses, se multiplica la fracción por 12.
 
 ::: {.callout-important}
 ### El Pay-back y el VAN responden a preguntas distintas
@@ -66,15 +68,17 @@ Si se cuenta con los medios necesarios, lo ideal es tener en cuenta el momento e
 El método más simple es calcular el **Valor Actual Neto (VAN)**:
 
 $$
-VAN = -I_0 + \sum_{t=1}^{n} \frac{FNC_t}{(1+k)^t}
+VAN = -D_0 + \sum_{t=1}^{n} \frac{FNC_t}{(1+k)^t}
 $$
 
 Donde:
 
 - $FNC_t$ representa el flujo neto de caja del periodo $t$.
-- $I_0$ es el valor del desembolso inicial de la inversión.
+- $D_0$ es el valor del desembolso inicial de la inversión.
 - $n$ es el último período considerado y, por tanto, el número total de períodos.
 - $k$ es el tipo de interés (coste del capital o rentabilidad mínima exigida).
+
+Cuando el enunciado proporciona una rentabilidad mínima nominal $i$ y una inflación $g$, la tasa conjunta se calcula con Fisher: $k=i+g+(i\times g)$. Por ejemplo, con $i=2\%$ y $g=3\%$, $k=5{,}06\%$.
 
 El VAN consiste en llevar al momento actual (momento 0) todos los flujos de caja. Por la **equivalencia financiera**, los capitales son comparables cuando están todos en el mismo punto de la línea temporal.
 
@@ -103,15 +107,15 @@ Entre los proyectos con VAN nulo o positivo, **hay que seleccionar aquel que ten
 
 #### Tasa Interna de Rentabilidad (TIR)
 
-El VAN da una medida **absoluta** de la rentabilidad. Para comparar adecuadamente inversiones de distinto tamaño puede utilizarse la **Tasa Interna de Rentabilidad (TIR)**.
+El VAN mide la rentabilidad **absoluta**: expresa en euros cuánto valor actual crea o destruye el proyecto. La **Tasa Interna de Rentabilidad (TIR)** mide la rentabilidad **relativa**: expresa como porcentaje el rendimiento implícito de la inversión.
 
 La TIR es la tasa de actualización $k$ que hace que el VAN sea igual a cero:
 
 $$
-VAN = 0 = -I_0 + \frac{FNC_1}{(1+TIR)^1} + \frac{FNC_2}{(1+TIR)^2} + \frac{FNC_3}{(1+TIR)^3} + \cdots + \frac{FNC_N}{(1+TIR)^N}
+VAN = 0 = -D_0 + \frac{FNC_1}{(1+TIR)^1} + \frac{FNC_2}{(1+TIR)^2} + \frac{FNC_3}{(1+TIR)^3} + \cdots + \frac{FNC_n}{(1+TIR)^n}
 $$
 
-La TIR mide la rentabilidad **relativa** de la inversión (cuánto se obtiene por cada euro invertido), expresada en porcentaje. Permite saber si una inversión es más rentable que otra aunque tenga un VAN absoluto mayor pero también una mayor inversión inicial.
+La TIR expresa en porcentaje la tasa que iguala a cero el VAN. Para un proyecto convencional, sirve como umbral: se acepta según este criterio si supera el coste de capital. No indica cuántos euros de valor crea el proyecto; eso lo muestra el VAN. En proyectos mutuamente excluyentes, la TIR y el VAN pueden ordenarlos de forma distinta por diferencias de escala o de calendario de los flujos; para elegir el proyecto que más valor crea, se prioriza el VAN calculado con la tasa exigida.
 
 | Comparación | Interpretación |
 |:-----------|:--------------|
@@ -119,7 +123,6 @@ La TIR mide la rentabilidad **relativa** de la inversión (cuánto se obtiene po
 | $TIR < k$ | La inversión no es rentable; destruye valor. |
 | $TIR = k$ | La inversión es indiferente. |
 
-Se elige, de entre todos los proyectos con TIR positiva, el que tenga el valor más elevado.
 
 
 ```{python}
@@ -175,32 +178,9 @@ plt.show()
 Los tres métodos son complementarios: el pay-back mide la **liquidez** del proyecto; el VAN mide la **rentabilidad absoluta**; la TIR mide la **rentabilidad relativa**.
 
 
-## Período Medio de Maduración (PMM)
+## Periodo medio de maduración
 
-El **Período Medio de Maduración Financiero (PMMF)** mide el tiempo que transcurre desde que la empresa **paga** a sus proveedores por las materias primas hasta que **cobra** a sus clientes por la venta de los productos.
-
-$$
-PMMF = PMA + PMF + PMV + PMC - PMP
-$$
-
-O, de forma equivalente:
-
-$$
-PMMF = PMME - PMP
-$$
-
-Donde:
-
-- **PMA**: Período Medio de Almacenamiento de materias primas.
-- **PMF**: Período Medio de Fabricación.
-- **PMV**: Período Medio de Ventas (productos terminados en almacén).
-- **PMC**: Período Medio de Cobro a clientes.
-- **PMP**: Período Medio de Pago a proveedores (se resta porque es financiación gratuita que retrasa la necesidad de tesorería).
-- **PMME**: Período Medio de Maduración Económico (suma de los cuatro primeros).
-
-::: {.callout-note}
-Cuanto menor sea el PMMF, menor será la necesidad de financiación del ciclo de explotación (fondo de maniobra). Las empresas buscan reducirlo acortando el ciclo productivo, gestionando mejor el stock y cobrando antes a clientes.
-:::
+El cálculo del periodo medio de maduración se desarrolla en el capítulo de gestión del almacén.
 
 
 ## La función financiera de la empresa

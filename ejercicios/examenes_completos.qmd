@@ -6,7 +6,7 @@ Este apéndice recoge exámenes EHU completos sin dividir por bloques, tal como 
 
 ## Cómo usar este apéndice
 
-En la EBAU de Empresa y Diseño de Modelos de Negocio (EHU) el examen tiene una estructura fija:
+En la PAU de Empresa y Diseño de Modelos de Negocio (EHU) el examen tiene una estructura fija:
 
 - **Duración:** 90 minutos.
 - **Estructura:** varias preguntas de distinto tipo y puntuación, algunas de elección entre opciones.

@@ -25,7 +25,7 @@ La **rentabilidad económica (RE)** mide el rendimiento generado por los activos
 
 ## Ejercicios resueltos
 
-### EVAU Madrid 2024 — AQUALUNG
+### PAU Madrid 2024 — AQUALUNG
 
 > AQUALUNG es una tienda de equipamiento para submarinismo. En el ejercicio 2023 tuvo:
 >
@@ -125,6 +125,9 @@ La RF aumenta del 12,83 % al 14,86 % al incorporar deuda. El apalancamiento es p
 :::
 
 ### Andalucía 2019 — TIPA S. A.
+
+> [!warning] Dato ambiguo en el enunciado
+> Al contrastar el original de Andalucía 2019, se mantiene la ambigüedad: el enunciado atribuye los 45.000 € de BAII a la inversión adicional, pero no indica el BAII del activo inicial de 150.000 €. El solucionario disponible usa los 45.000 € como BAII total tras la inversión. Esa lectura permite reproducir sus cálculos, pero si los 45.000 € son incrementales faltan datos para calcular la rentabilidad financiera total.
 
 > TIPA S. A. tiene inicialmente un activo de 150.000 €, financiado íntegramente con fondos propios. Estudia una inversión adicional de 65.000 € que generaría un beneficio de explotación (BAII) de 45.000 €. Puede financiarla mediante una ampliación de capital o con un préstamo de 65.000 € al 8 % anual. El tipo impositivo es del 20 %.
 >

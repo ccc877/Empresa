@@ -1,0 +1,27 @@
+# Wilson: ejercicios EHU 2025
+
+## EHU 2025 Ordinaria — TXINDOKI S. A.
+
+> Una empresa consume 900 piezas al mes (mes de 30 días), pide lotes de 450 unidades, tarda 5 días en recibirlos y mantiene un stock de seguridad de 180 piezas. Calcula el punto de pedido y el stock medio. Analiza qué ocurre si un pedido se retrasa 7 días.
+
+::: {.callout-tip title="Solución comentada"}
+
+La demanda diaria es $900/30=30$ piezas. El punto de pedido es $30\times5+180=330$ piezas. El stock medio es $450/2+180=405$ piezas.
+
+En siete días de retraso se consumen $30\times7=210$ piezas, más que las 180 del stock de seguridad. Se produce una rotura de stock de $210-180=30$ piezas, por lo que la empresa no puede atender toda la demanda antes de que llegue el pedido.
+
+:::
+
+## EHU 2025 Extraordinaria — Empresa LEA
+
+> LEA consume 300 unidades al mes (mes de 30 días), mantiene un stock de seguridad de 100 unidades y tiene un plazo de aprovisionamiento de 10 días. Cada pedido equivale al consumo de dos meses. Calcula punto de pedido, stock medio e índice de rotación; analiza retrasos de 3 y 10 días.
+
+::: {.callout-tip title="Solución comentada"}
+
+Demanda diaria: $300/30=10$ unidades. Punto de pedido: $10\times10+100=200$ unidades. Cantidad de pedido: $300\times2=600$ unidades. Stock medio: $600/2+100=400$ unidades. Rotación anual: $(300\times12)/400=9$ veces.
+
+Con 3 días de retraso se consumen 30 unidades del stock de seguridad y quedan 70; no hay ruptura. Con 10 días se consumen las 100 unidades de seguridad: el pedido llega justo cuando se agota el stock, sin ruptura, pero sin margen ante otra demora.
+
+:::
+
+*UPV/EHU · Convocatorias ordinaria y extraordinaria de 2025.*

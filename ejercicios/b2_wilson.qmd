@@ -22,7 +22,7 @@
 | $IR$ | Índice de rotación | Veces que se renueva el stock medio en un año |
 | $N$ | Número de pedidos | Pedidos realizados al año ($D/Q$) |
 | $T$ | Tiempo entre pedidos | Días entre un pedido y el siguiente ($360/N$) |
-| $CT$ | Coste total de gestión | Suma del coste de pedido y el coste de almacenamiento |
+| $CG$ | Coste total de gestión | Suma del coste de pedido y el coste de almacenamiento |
 
 **Cantidad óptima de pedido y tiempos**
 
@@ -34,7 +34,7 @@ $$PP = ss + (d \times t) \qquad S_m = \frac{Q}{2} + ss \qquad IR = \frac{D}{S_m}
 
 **Coste total de gestión**
 
-$$CT = \underbrace{s \cdot N}_{\text{coste pedido}} + \underbrace{g \cdot \left(\frac{Q}{2} + ss\right)}_{\text{coste almacenamiento}}$$
+$$CG = \underbrace{s \cdot N}_{\text{coste pedido}} + \underbrace{g \cdot \left(\frac{Q}{2} + ss\right)}_{\text{coste almacenamiento}}$$
 
 **Ruptura de stock**
 
@@ -290,7 +290,7 @@ b) $N = 9.000 / 671 \approx 13{,}4$ pedidos/año; $T = 360 / 13{,}4 \approx 26{,
 
 c) $d = 9.000 / 360 = 25$ uds/día; $PP = 60 + (25 \times 8) = 260$ uds; $S_m = 671/2 + 60 = 395{,}5$ uds
 
-d) $CT = (50 \times 13{,}4) + (2 \times 395{,}5) = 670 + 791 = 1.461$ €
+d) $CG = (50 \times 13{,}4) + (2 \times 395{,}5) = 670 + 791 = 1.461$ €
 :::
 :::
 ::: {.callout-important title="Propuesto 2 — Ruptura de stock"}
