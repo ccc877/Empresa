@@ -16,7 +16,7 @@ Cada bloque sigue siempre la misma estructura:
 |:---|:---:|:---|
 | Empresa y organización | Cap. 1 | Formas de empresa, tamaño, crecimiento y marco jurídico |
 | Modelos de negocio, marketing e innovación | Caps. 3–4 | Propuestas de valor, modelos de ingresos, marketing e innovación |
-| Bloque 1 · Producción y costes | Cap. 2 | Costes, umbral de rentabilidad, producir o comprar, productividad |
+| Bloque 1 · Producción y costes | Tema 2 · Cap. 2 | Costes, umbral de rentabilidad, producir o comprar, productividad y eficiencia |
 | Bloque 2 · Gestión del almacén | Cap. 6 | Modelo de Wilson, PMM, FIFO y PMP |
 | Bloque 3 · Inversión y financiación | Cap. 5 | Pay-back, VAN, fuentes de financiación |
 | Bloque 4 · Contabilidad y ratios | Cap. 7 | Balance, cuenta de PyG, fondo de maniobra, rentabilidad y ratios |

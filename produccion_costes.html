@@ -451,7 +451,10 @@ window.Quarto = {
    
   <ul>
   <li><a href="#costes-de-producción" id="toc-costes-de-producción" class="nav-link active" data-scroll-target="#costes-de-producción"><span class="header-section-number">2.1</span> Costes de producción</a></li>
-  <li><a href="#umbral-de-rentabilidad" id="toc-umbral-de-rentabilidad" class="nav-link" data-scroll-target="#umbral-de-rentabilidad"><span class="header-section-number">2.2</span> Umbral de rentabilidad</a></li>
+  <li><a href="#umbral-de-rentabilidad" id="toc-umbral-de-rentabilidad" class="nav-link" data-scroll-target="#umbral-de-rentabilidad"><span class="header-section-number">2.2</span> Umbral de rentabilidad</a>
+  <ul class="collapse">
+  <li><a href="#ejemplo-resuelto" id="toc-ejemplo-resuelto" class="nav-link" data-scroll-target="#ejemplo-resuelto">Ejemplo resuelto</a></li>
+  </ul></li>
   <li><a href="#productividad-y-eficiencia" id="toc-productividad-y-eficiencia" class="nav-link" data-scroll-target="#productividad-y-eficiencia"><span class="header-section-number">2.3</span> Productividad y eficiencia</a></li>
   <li><a href="#producir-o-comprar" id="toc-producir-o-comprar" class="nav-link" data-scroll-target="#producir-o-comprar"><span class="header-section-number">2.4</span> Producir o comprar</a></li>
   </ul>
@@ -490,13 +493,28 @@ window.Quarto = {
 <p>El umbral de rentabilidad o punto muerto es la cantidad para la que los ingresos totales igualan a los costes totales y el beneficio es cero. Por debajo hay pérdidas; por encima, beneficios.</p>
 <p><span class="math display">\[Q^* = \frac{CF}{P-CV_u}\]</span></p>
 <p>La diferencia <span class="math inline">\(P-CV_u\)</span> es el <strong>margen de contribución unitario</strong>: cada unidad vendida contribuye a cubrir los costes fijos. La fórmula solo tiene sentido si el precio supera el coste variable unitario.</p>
+<section id="ejemplo-resuelto" class="level3">
+<h3 class="anchored" data-anchor-id="ejemplo-resuelto">Ejemplo resuelto</h3>
+<p>Una empresa tiene costes fijos de 20 € por periodo, un coste variable de 4 € por unidad y vende cada unidad a 8 €. El margen unitario es <span class="math inline">\(8-4=4\)</span> € y el punto muerto es <span class="math inline">\(20/4=5\)</span> unidades. Con cinco unidades, tanto los ingresos como los costes totales son 40 €; cada unidad adicional genera 4 € de beneficio.</p>
+<figure class="figure">
+<svg viewbox="0 0 520 330" role="img" aria-label="Gráfico del umbral de rentabilidad: ingresos y costes totales se cruzan en cinco unidades y 40 euros" style="max-width:100%;height:auto">
+<line x1="65" y1="275" x2="475" y2="275" stroke="#333" stroke-width="2"></line> <line x1="65" y1="275" x2="65" y2="28" stroke="#333" stroke-width="2"></line> <line x1="65" y1="215" x2="475" y2="95" stroke="#e15759" stroke-width="3"></line> <line x1="65" y1="275" x2="475" y2="35" stroke="#4e79a7" stroke-width="3"></line> <line x1="270" y1="155" x2="270" y2="275" stroke="#777" stroke-dasharray="5,5"></line> <line x1="65" y1="155" x2="270" y2="155" stroke="#777" stroke-dasharray="5,5"></line> <circle cx="270" cy="155" r="5" fill="#222"></circle> <text x="277" y="148" font-size="13">Punto muerto (5; 40 €)</text> <text x="380" y="51" font-size="13" fill="#4e79a7">Ingresos (IT)</text> <text x="380" y="111" font-size="13" fill="#e15759">Costes totales (CT)</text> <text x="245" y="305" font-size="13">Cantidad producida y vendida (Q)</text> <text x="12" y="35" font-size="13">Euros</text> <text x="60" y="294" font-size="11">0</text> <text x="263" y="294" font-size="11">5</text> <text x="50" y="159" font-size="11">40</text> <text x="90" y="236" font-size="11" fill="#9b2226">Pérdidas</text> <text x="340" y="122" font-size="11" fill="#27632a">Beneficios</text>
+</svg>
+<figcaption>
+En el punto muerto los ingresos igualan a los costes totales. A la izquierda hay pérdidas; a la derecha, beneficios.
+</figcaption>
+</figure>
+</section>
 </section>
 <section id="productividad-y-eficiencia" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="productividad-y-eficiencia"><span class="header-section-number">2.3</span> Productividad y eficiencia</h2>
 <p>La <strong>productividad de un factor</strong> relaciona la producción obtenida con la cantidad de ese factor empleada. Por ejemplo, la productividad del trabajo por hora es <span class="math inline">\(Q/\text{horas trabajadas}\)</span>. Para medir su variación entre dos periodos:</p>
 <p><span class="math display">\[\text{Tasa de variación} = \frac{Productividad_1-Productividad_0}{Productividad_0}\times 100\]</span></p>
 <p>Una empresa puede elevar la productividad mediante formación, tecnología, organización del trabajo, innovación, mejor mantenimiento y reducción de tiempos improductivos. Aumentar la productividad no significa necesariamente intensificar el esfuerzo: también puede consistir en producir más valor con los mismos recursos.</p>
-<p>La <strong>eficiencia técnica</strong> compara combinaciones de factores: una técnica es técnicamente eficiente si no existe otra que produzca lo mismo usando menos de algún factor sin emplear más de los demás. La <strong>eficiencia económica</strong> compara el coste de las técnicas técnicamente eficientes y elige la de menor coste para los precios de los factores vigentes. Una técnica puede ser técnicamente eficiente y dejar de ser la más barata si cambian esos precios.</p>
+<p>La <strong>productividad global (PG)</strong> compara el valor monetario de toda la producción con el coste de todos los factores empleados:</p>
+<p><span class="math display">\[PG=\frac{\sum_i Q_iP_i}{\sum_j F_jC_j}\]</span></p>
+<p>Por ejemplo, si una empresa produce 100 mesas valoradas en 50 € cada una y utiliza factores que cuestan 4.500 €, su productividad global es <span class="math inline">\(5.000/4.500=1{,}11\)</span>. Genera 1,11 € de producción valorada por cada euro gastado en factores. No es el beneficio: para calcularlo se restan los costes a los ingresos.</p>
+<p>La <strong>eficiencia productiva</strong> consiste en alcanzar el objetivo con un buen aprovechamiento de los recursos: obtener la máxima producción con unos factores dados o lograr una producción determinada usando la menor cantidad posible de factores. En su análisis se distinguen dos criterios. Una técnica es <strong>técnicamente eficiente</strong> si no hay otra que produzca lo mismo usando menos de algún factor y no más de los demás. Entre las técnicas técnicamente eficientes, la <strong>eficiencia económica</strong> elige la de menor coste según los precios de los factores. Una técnica puede ser técnicamente eficiente y dejar de ser la más barata si cambian esos precios.</p>
 </section>
 <section id="producir-o-comprar" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="producir-o-comprar"><span class="header-section-number">2.4</span> Producir o comprar</h2>
