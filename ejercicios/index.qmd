@@ -1,6 +1,6 @@
 # Presentación {.unnumbered}
 
-Este cuaderno es el complemento práctico del libro *Empresa y diseño de modelos de negocio — 2.º Bachillerato*. Su objetivo es preparar la parte cuantitativa y aplicada de la **Selectividad EHU (EBAU)**.
+Este cuaderno es el complemento práctico del libro *Empresa y diseño de modelos de negocio — 2.º Bachillerato*. Su objetivo es preparar la parte cuantitativa y aplicada de la **PAU de la EHU**.
 
 ## Cómo usar este cuaderno
 
@@ -15,12 +15,13 @@ Cada bloque sigue siempre la misma estructura:
 | Cuaderno — Bloque | Capítulos del libro | Contenido |
 |:---|:---:|:---|
 | Empresa y organización | Cap. 1 | Formas de empresa, tamaño, crecimiento y marco jurídico |
-| Modelos de negocio, marketing e innovación | Cap. 2–3 | Propuestas de valor, modelos de ingresos, marketing e innovación |
-| Bloque 1 · Producción y costes | Cap. 1 | Umbral de rentabilidad, producir o comprar, productividad |
-| Bloque 2 · Gestión del almacén | Cap. 5 | Modelo de Wilson, PMM, FIFO y PMP |
-| Bloque 3 · Inversión y financiación | Cap. 4 | Pay-back, VAN, fuentes de financiación |
-| Bloque 4 · Contabilidad y ratios | Cap. 6 | Balance, cuenta de PyG, rentabilidad económica y financiera, ratios |
-| Recursos humanos | Cap. 7 | Casos teóricos integrados en los ejercicios de modelos de negocio |
+| Modelos de negocio, marketing e innovación | Caps. 3–4 | Propuestas de valor, modelos de ingresos, marketing e innovación |
+| Bloque 1 · Producción y costes | Cap. 2 | Costes, umbral de rentabilidad, producir o comprar, productividad |
+| Bloque 2 · Gestión del almacén | Cap. 6 | Modelo de Wilson, PMM, FIFO y PMP |
+| Bloque 3 · Inversión y financiación | Cap. 5 | Pay-back, VAN, fuentes de financiación |
+| Bloque 4 · Contabilidad y ratios | Cap. 7 | Balance, cuenta de PyG, fondo de maniobra, rentabilidad y ratios |
+| Recursos humanos | Cap. 8 | Organización, dirección y gestión de personas |
+| Bloque 5 · Repaso general de teoría | Varios | Preguntas breves de varios temas y conceptos transversales |
 
 > **Nota:** El nuevo bloque de modelos de negocio, marketing e innovación incorpora preguntas teóricas de la EHU junto con casos de otras comunidades.
 
@@ -58,7 +59,7 @@ comunidades. El resto de bloques sigue el orden de los ejercicios cuantitativos.
 | 2022 | Balance y ratios (BYZAPI), inversiones (NORBERA), Wilson (PEREIRA) | Inversiones (ITSUKI), producir o comprar (camisas) |
 | 2023 | Inversiones (GAUTZO) | — |
 | 2024 | Costes (HELTZU), balance y ratios (GAI SAI), FIFO y PMP (EDIMO) | Inversiones (ELURKETA), producir o comprar (BOLLAR), FIFO y PMP (PERTUERO) |
-| 2025 | PMM | Costes (AMETS), balance y ratios (EHUNTZE) |
+| 2025 | Balance (MOZTE), inversión (ADARRA), Wilson (TXINDOKI), productividad por hora y eficiencia/productividad | Costes (AMETS), Wilson (LEA), FIFO/PMP (máquinas de cortar el pelo), PMM, balance y ratios (EHUNTZE) |
 
 ### Ejercicios de otras comunidades
 
@@ -75,13 +76,16 @@ comunidades. El resto de bloques sigue el orden de los ejercicios cuantitativos.
 | Empresa | Tema | Convocatoria | Capítulo |
 |:---|:---|:---:|:---|
 | AMETS | Costes y umbral de rentabilidad | EHU 2025 Ext. | B1 · Costes |
+| AUKERAN S. A. | Producir o comprar; costes fijos +10 % | EHU 2025 Ord. | B1 · Producir o comprar |
+| Productividad A y B | Productividad por hora y tasa de variación | EHU 2025 Ord. | B1 · Productividad |
 | HELTZU | Coste por componente electrónico | EHU 2024 Ord. | B1 · Costes |
 | ONDO JAN | Costes y umbral de rentabilidad (propuesto) | EHU 2022 Ord. | B1 · Costes |
 | Empresa anónima | Costes con datos indirectos (propuesto) | EHU 2023 Ext. | B1 · Costes |
-| PETUKA | Costes dos productos | Examen interno | B1 · Costes |
+| PETUKA | Costes dos productos | EHU 2019 Extra. | B1 · Costes |
 | Empresa camisas | Producir o comprar | EHU 2022 Ext. | B1 · Producir o comprar |
 | BOLLAR S. L. | Producir o comprar | EHU 2024 Ext. | B1 · Producir o comprar |
 | ALPHA, BETA y GAMMA | Pay-back y VAN | EHU 2021 Ext. | B3 · Inversiones |
+| ADARRA S. Coop. | VAN y pay-back con pagos fraccionados | EHU 2025 Ord. | B3 · Inversiones |
 | NORBERA | Pay-back y VAN | EHU 2022 Ord. | B3 · Inversiones |
 | ITSUKI | Pay-back y VAN | EHU 2022 Ext. | B3 · Inversiones |
 | GAUTZO | Pay-back y VAN (pagos fraccionados) | EHU 2023 Ord. | B3 · Inversiones |
@@ -95,14 +99,18 @@ comunidades. El resto de bloques sigue el orden de los ejercicios cuantitativos.
 | Empresa comercial | PMM económico y financiero comercial | EconoSublime, ejercicio 2 | B2 · PMM |
 | EDIMO | FIFO y PMP | EHU 2024 Ord. | B2 · FIFO y PMP |
 | PERTUERO S.A. | FIFO y PMP | EHU 2024 Ext. | B2 · FIFO y PMP |
+| Máquinas de cortar el pelo | FIFO y PMP (redondeo según enunciado) | EHU 2025 Ext. | B2 · FIFO y PMP |
 | GAI SAI S.A. | Balance y ratios | EHU 2024 Ord. | B4 · Balance / Ratios |
 | EHUNTZE S.A. | Balance y ratios | EHU 2025 Ext. | B4 · Balance / Ratios |
+| MOZTE S.A. | Balance y ratios | EHU 2025 Ord. | B4 · Balance / Ratios |
+| TXINDOKI S. A. | Modelo de Wilson y retraso de suministro | EHU 2025 Ord. | B2 · Wilson |
+| LEA | Modelo de Wilson y retrasos | EHU 2025 Ext. | B2 · Wilson |
 | CORTI S.A. | Balance, fondo de maniobra y ratios | EHU 2010 Ord. | B4 · Balances |
 | GARDEN & TASUNA | Balance, fondo de maniobra y ratios | EHU 2017 Ext. | B4 · Balances |
 | LEDROM S.A. | Balance, fondo de maniobra y ratios | EHU 2019 Ext. | B4 · Balances |
 | BYZAPI S.A. | Balance, fondo de maniobra y ratios | EHU 2022 Ord. | B4 · Balances |
 | ZERTIKA Cooperativa | Balance, fondo de maniobra y ratios | EHU 2020 Ord. | B4 · Balances |
-| AQUALUNG | Cuenta de PyG y rentabilidades | EVAU Madrid 2024 | B4 · PyG |
+| AQUALUNG | Cuenta de PyG y rentabilidades | PAU Madrid 2024 | B4 · PyG |
 | AVANZ, S. L. L. | Rentabilidad económica y financiera | Ejercicio facilitado | B4 · Rentabilidad |
 | UNIVERSIADA S. A. | Rentabilidad con y sin deuda | Andalucía 2018 | B4 · Rentabilidad |
 | TIPA S. A. | Rentabilidad y elección de financiación | Andalucía 2019 | B4 · Rentabilidad |

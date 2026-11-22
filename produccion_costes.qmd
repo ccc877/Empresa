@@ -1,0 +1,35 @@
+# Producción y costes
+
+La función de producción transforma factores productivos —trabajo, materias primas, energía y capital— en bienes y servicios. La empresa combina esos factores para producir con eficiencia y atender la demanda.
+
+## Costes de producción
+
+El **coste fijo (CF)** no cambia con la cantidad producida dentro de un periodo y una capacidad determinados: por ejemplo, el alquiler. El **coste variable (CV)** aumenta o disminuye con la producción, como las materias primas. El **coste total** es su suma: $CT = CF + CV$. Si el coste variable por unidad es constante, $CV = CV_u \times Q$.
+
+El **coste medio** es el coste por unidad ($CMe=CT/Q$); el **coste fijo medio** disminuye al repartir el coste fijo entre más unidades ($CFMe=CF/Q$); el **coste variable medio** es $CVMe=CV/Q$. El **coste marginal** mide cuánto aumenta el coste total al producir una unidad adicional.
+
+## Umbral de rentabilidad
+
+El umbral de rentabilidad o punto muerto es la cantidad para la que los ingresos totales igualan a los costes totales y el beneficio es cero. Por debajo hay pérdidas; por encima, beneficios.
+
+$$Q^* = \frac{CF}{P-CV_u}$$
+
+La diferencia $P-CV_u$ es el **margen de contribución unitario**: cada unidad vendida contribuye a cubrir los costes fijos. La fórmula solo tiene sentido si el precio supera el coste variable unitario.
+
+## Productividad y eficiencia
+
+La **productividad de un factor** relaciona la producción obtenida con la cantidad de ese factor empleada. Por ejemplo, la productividad del trabajo por hora es $Q/\text{horas trabajadas}$. Para medir su variación entre dos periodos:
+
+$$\text{Tasa de variación} = \frac{Productividad_1-Productividad_0}{Productividad_0}\times 100$$
+
+Una empresa puede elevar la productividad mediante formación, tecnología, organización del trabajo, innovación, mejor mantenimiento y reducción de tiempos improductivos. Aumentar la productividad no significa necesariamente intensificar el esfuerzo: también puede consistir en producir más valor con los mismos recursos.
+
+La **eficiencia técnica** compara combinaciones de factores: una técnica es técnicamente eficiente si no existe otra que produzca lo mismo usando menos de algún factor sin emplear más de los demás. La **eficiencia económica** compara el coste de las técnicas técnicamente eficientes y elige la de menor coste para los precios de los factores vigentes. Una técnica puede ser técnicamente eficiente y dejar de ser la más barata si cambian esos precios.
+
+## Producir o comprar
+
+La empresa compara el coste de fabricar dentro de la organización con el precio de adquirir el producto a un proveedor. Si fabricar cuesta $CF+CV_uQ$ y comprar cuesta $P_cQ$, conviene fabricar cuando el primer coste es menor, y comprar cuando el segundo lo es. El volumen de indiferencia es:
+
+$$Q_i=\frac{CF}{P_c-CV_u}$$
+
+La decisión también debe considerar calidad, plazos, dependencia de proveedores, confidencialidad, capacidad disponible y el uso alternativo que podría darse a los recursos. Si los costes fijos cambian al elegir una opción, hay que incorporar ese cambio al cálculo.

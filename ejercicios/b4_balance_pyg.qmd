@@ -126,6 +126,16 @@ $$FM = AC - PC = 633.800 - 670.900 = \mathbf{-37.100\ \text{€}}$$
 
 El FM es negativo: el pasivo corriente supera al activo corriente en 37.100 €. Parte del activo no corriente está financiada con deuda a corto plazo, lo que genera un desequilibrio financiero. La empresa puede tener dificultades para atender sus pagos inmediatos.
 
+Representación esquemática del fondo de maniobra:
+
+```text
+ACTIVO                                  FINANCIACIÓN
+Activo no corriente  1.018.000 €       Patrimonio neto + PNC   980.900 €
+Activo corriente       633.800 €        Pasivo corriente        670.900 €
+                                          └─ cubre 37.100 € del ANC
+FM = AC − PC = −37.100 €
+```
+
 :::
 
 ---
@@ -152,14 +162,14 @@ $$Capital = TA - Reservas - PNC - PC$$
 | ACTIVO | € | PATRIMONIO NETO Y PASIVO | € |
 |:---|---:|:---|---:|
 | **A) ACTIVO NO CORRIENTE** | **808.600** | **A) PATRIMONIO NETO** | **629.600** |
-| Inmovilizado material | 1.100.000 | Capital social *(por diferencia)* | 399.600 |
+| Inmovilizado material (neto) | 808.600 | Capital social *(por diferencia)* | 399.600 |
 | — Terrenos | 50.000 | Reservas legales | 230.000 |
 | — Construcciones | 297.300 | **B) PASIVO NO CORRIENTE** | **84.000** |
 | — Maquinaria | 660.000 | Deudas L/P entidades crédito | 84.000 |
 | — Elementos de transporte | 84.000 | **C) PASIVO CORRIENTE** | **163.000** |
 | — Equipos informáticos | 2.700 | Deudas C/P entidades crédito | 6.000 |
 | — Mobiliario | 6.000 | Proveedores | 74.000 |
-| — (Amort. acumulada) | (291.400) | Acreedores, efectos a pagar | 11.000 |
+| *(El inmovilizado material bruto suma 1.100.000 €; se resta la amortización acumulada de 291.400 €)* | | Acreedores, efectos a pagar | 11.000 |
 | **B) ACTIVO CORRIENTE** | **68.000** | Hacienda acreedora | 70.000 |
 | Existencias | 16.000 | SS acreedora | 2.000 |
 | Realizable | 26.000 | | |
@@ -178,4 +188,4 @@ $$Capital = 876.600 - 230.000 - 84.000 - 163.000 = \mathbf{399.600\ \text{€}}$
 
 ## Más ejercicios del bloque
 
-Consulta también [balances adicionales resueltos](b4_balances_adicionales.html) y la nueva sección de [cuenta de pérdidas y ganancias y rentabilidad](b4_pyg_rentabilidad.html).
+Consulta también los [balances adicionales resueltos](b4_balances_adicionales.html) y los ejercicios de [cuenta de pérdidas y ganancias y rentabilidad](b4_pyg_rentabilidad.html).

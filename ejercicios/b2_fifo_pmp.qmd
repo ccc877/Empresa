@@ -40,7 +40,7 @@ Por eso, el **IVA soportado deducible no se incluye** en el valor de las existen
 - Los **precios de venta** al cliente **no se usan en la ficha de almacén**. Solo interesan los precios de coste (precio de adquisición). Los precios de venta sirven para calcular el beneficio, no para valorar el stock.
 - En FIFO, cuando una venta requiere más unidades de las que hay en el lote más antiguo, hay que **partir la salida en dos filas**: una por cada lote del que se extrae.
 - En PMP, el recálculo se hace **solo cuando hay entradas**, nunca en las salidas. Las salidas usan el PMP ya calculado.
-- Cuidado con el **redondeo en PMP**: conserva el precio medio exacto durante los cálculos y redondea a céntimos solo para mostrarlo. Calcula los valores de las salidas y de las existencias con el precio exacto; así, el valor del inventario cuadra con el valor inicial más las entradas menos las salidas.
+- **Sigue la precisión que indique el enunciado.** Si no especifica nada, conserva el PMP exacto en los cálculos y redondea al presentar los resultados. Si pide redondear a dos decimales en todos los cálculos, usa el precio redondeado en cada operación; los totales pueden diferir ligeramente por el redondeo acumulado.
 - Comprueba siempre que: $\text{Existencias iniciales} + \text{Total entradas} - \text{Total salidas} = \text{Existencias finales}$ (en unidades).
 :::
 
@@ -48,16 +48,56 @@ Por eso, el **IVA soportado deducible no se incluye** en el valor de las existen
 
 ## Ejercicios resueltos
 
+### EHU 2025 Extraordinaria — Máquinas de cortar el pelo
+
+> Una empresa comercializa máquinas de cortar el pelo. En mayo registra estas operaciones: día 1, existencias iniciales de 500 unidades a 12 €; día 5, compra 350 unidades a 11,50 €; día 7, vende 400; día 13, compra 600 a 10,25 €; día 17, vende 500; día 24, compra 600 a 13 €; día 28, vende 400. Completa las fichas FIFO y PMP y calcula las existencias finales. Redondea a dos decimales en todos los cálculos.
+
+::: {.callout-tip title="Solución comentada — FIFO"}
+
+| Fecha | Operación | Entradas | Salidas | Existencias tras la operación |
+|:---|:---|---:|---:|:---|
+| 01/05 | Inicial | — | — | 500 × 12 = 6.000 € |
+| 05/05 | Compra | 350 × 11,50 = 4.025 € | — | 500 × 12; 350 × 11,50 |
+| 07/05 | Venta | — | 400 × 12 = 4.800 € | 100 × 12; 350 × 11,50 |
+| 13/05 | Compra | 600 × 10,25 = 6.150 € | — | 100 × 12; 350 × 11,50; 600 × 10,25 |
+| 17/05 | Venta | — | 100 × 12 + 350 × 11,50 + 50 × 10,25 = 5.737,50 € | 550 × 10,25 |
+| 24/05 | Compra | 600 × 13 = 7.800 € | — | 550 × 10,25; 600 × 13 |
+| 28/05 | Venta | — | 400 × 10,25 = 4.100 € | 150 × 10,25; 600 × 13 |
+
+Quedan **750 unidades**, valoradas en **9.337,50 €**.
+
+:::
+
+::: {.callout-tip title="Solución comentada — PMP"}
+
+Se redondea el precio medio a dos decimales en cada recálculo y se aplica ese precio a las salidas, tal como pide el enunciado.
+
+| Fecha | Operación | Entradas | Salidas | Existencias |
+|:---|:---|---:|---:|---:|
+| 01/05 | Inicial | — | — | 500 × 12 = 6.000 € |
+| 05/05 | Compra | 350 × 11,50 = 4.025 € | — | 850 × 11,79 = 10.021,50 € |
+| 07/05 | Venta | — | 400 × 11,79 = 4.716 € | 450 × 11,79 = 5.305,50 € |
+| 13/05 | Compra | 600 × 10,25 = 6.150 € | — | 1.050 × 10,91 = 11.455,50 € |
+| 17/05 | Venta | — | 500 × 10,91 = 5.455 € | 550 × 10,91 = 6.000,50 € |
+| 24/05 | Compra | 600 × 13 = 7.800 € | — | 1.150 × 12 = 13.800 € |
+| 28/05 | Venta | — | 400 × 12 = 4.800 € | 750 × 12 = 9.000 € |
+
+Quedan **750 unidades**, valoradas en **9.000 €**. Se observa que el resultado difiere del cálculo con precios medios sin redondear porque el enunciado exige redondear en cada operación.
+
+:::
+
+*UPV/EHU · Convocatoria extraordinaria de 2025.*
+
 ### EHU 2024 Ordinaria — Empresa EDIMO (gafas de lectura)
 
 > *EDIMO comercializa gafas de lectura. Operaciones de enero:*
 >
-> - 02/01: Existencias iniciales: 500 ud × 20 €
-> - 03/01: Compra EUR S.L.: 500 ud × 24 €
-> - 09/01: Compra GOR S.L.: 1.000 ud × 22 €
-> - 13/01: Venta ODI S.L.: 750 ud (precio venta: 24 €, no se usa en la ficha)
-> - 22/01: Compra EUR S.L.: 2.500 ud × 20 €
-> - 30/01: Venta ODI S.L.: 1.200 ud (precio venta: 23 €, no se usa en la ficha)
+> - 2 de enero: Existencias iniciales: 500 ud × 20 €
+> - 3 de enero: Compra EUR S.L.: 500 ud × 24 €
+> - 9 de enero: Compra GOR S.L.: 1.000 ud × 22 €
+> - 13 de enero: Venta ODI S.L.: 750 ud (precio venta: 24 €, no se usa en la ficha)
+> - 22 de enero: Compra EUR S.L.: 2.500 ud × 20 €
+> - 30 de enero: Venta ODI S.L.: 1.200 ud (precio venta: 23 €, no se usa en la ficha)
 >
 > Rellena la ficha de almacén por FIFO y PMP. Calcula las existencias finales y su valor.
 
@@ -69,19 +109,19 @@ En FIFO, el almacén mantiene los lotes separados. Las salidas consumen primero 
 
 | Fecha | Concepto | E.Cant | E.Pre | E.Val | S.Cant | S.Pre | S.Val | X.Cant | X.Pre | X.Val |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 02/01 | Exist. iniciales | | | | | | | 500 | 20 | 10.000 |
-| 03/01 | Compra EUR | 500 | 24 | 12.000 | | | | 500 / 500 | 20 / 24 | 10.000 / 12.000 |
-| 09/01 | Compra GOR | 1.000 | 22 | 22.000 | | | | 500 / 500 / 1.000 | 20 / 24 / 22 | 10.000 / 12.000 / 22.000 |
-| 13/01 | Venta ODI | | | | 500 / 250 | 20 / 24 | 10.000 / 6.000 | 250 / 1.000 | 24 / 22 | 6.000 / 22.000 |
-| 22/01 | Compra EUR | 2.500 | 20 | 50.000 | | | | 250 / 1.000 / 2.500 | 24 / 22 / 20 | 6.000 / 22.000 / 50.000 |
-| 30/01 | Venta ODI | | | | 250 / 950 | 24 / 22 | 6.000 / 20.900 | 50 / 2.500 | 22 / 20 | 1.100 / 50.000 |
+| 2 de enero | Exist. iniciales | | | | | | | 500 | 20 | 10.000 |
+| 3 de enero | Compra EUR | 500 | 24 | 12.000 | | | | 500 / 500 | 20 / 24 | 10.000 / 12.000 |
+| 9 de enero | Compra GOR | 1.000 | 22 | 22.000 | | | | 500 / 500 / 1.000 | 20 / 24 / 22 | 10.000 / 12.000 / 22.000 |
+| 13 de enero | Venta ODI | | | | 500 / 250 | 20 / 24 | 10.000 / 6.000 | 250 / 1.000 | 24 / 22 | 6.000 / 22.000 |
+| 22 de enero | Compra EUR | 2.500 | 20 | 50.000 | | | | 250 / 1.000 / 2.500 | 24 / 22 / 20 | 6.000 / 22.000 / 50.000 |
+| 30 de enero | Venta ODI | | | | 250 / 950 | 24 / 22 | 6.000 / 20.900 | 50 / 2.500 | 22 / 20 | 1.100 / 50.000 |
 
 **Existencias finales: 2.550 unidades — Valor: 51.100 €**
 
 *Razonamiento de las ventas:*
 
-- **13/01 — Venta de 750 ud:** Primero agotamos el lote más antiguo (500 ud × 20 €). Faltan 250 ud, que salen del siguiente lote (250 ud × 24 €). Quedan: 250 ud a 24 € + 1.000 ud a 22 €.
-- **30/01 — Venta de 1.200 ud:** El lote más antiguo ahora es el remanente de 250 ud a 24 € (lo agotamos). Faltan 950 ud, que salen del lote de 22 €. Quedan: 50 ud a 22 € + 2.500 ud a 20 €. Valor: 1.100 + 50.000 = **51.100 €**.
+- **13 de enero — Venta de 750 ud:** Primero agotamos el lote más antiguo (500 ud × 20 €). Faltan 250 ud, que salen del siguiente lote (250 ud × 24 €). Quedan: 250 ud a 24 € + 1.000 ud a 22 €.
+- **30 de enero — Venta de 1.200 ud:** El lote más antiguo ahora es el remanente de 250 ud a 24 € (lo agotamos). Faltan 950 ud, que salen del lote de 22 €. Quedan: 50 ud a 22 € + 2.500 ud a 20 €. Valor: 1.100 + 50.000 = **51.100 €**.
 
 :::
 
@@ -93,24 +133,24 @@ En PMP, cada entrada obliga a recalcular el precio medio. Las salidas usan el PM
 
 | Fecha | Concepto | E.Cant | E.Pre | E.Val | S.Cant | S.Pre | S.Val | X.Cant | X.Pre | X.Val |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 02/01 | Exist. iniciales | | | | | | | 500 | 20 | 10.000 |
-| 03/01 | Compra EUR | 500 | 24 | 12.000 | | | | 1.000 | **22** | 22.000 |
-| 09/01 | Compra GOR | 1.000 | 22 | 22.000 | | | | 2.000 | **22** | 44.000 |
-| 13/01 | Venta ODI | | | | 750 | 22 | 16.500 | 1.250 | 22 | 27.500 |
-| 22/01 | Compra EUR | 2.500 | 20 | 50.000 | | | | 3.750 | **20,67** | 77.500 |
-| 30/01 | Venta ODI | | | | 1.200 | 20,67 | 24.800 | 2.550 | 20,67 | 52.700 |
+| 2 de enero | Exist. iniciales | | | | | | | 500 | 20 | 10.000 |
+| 3 de enero | Compra EUR | 500 | 24 | 12.000 | | | | 1.000 | **22** | 22.000 |
+| 9 de enero | Compra GOR | 1.000 | 22 | 22.000 | | | | 2.000 | **22** | 44.000 |
+| 13 de enero | Venta ODI | | | | 750 | 22 | 16.500 | 1.250 | 22 | 27.500 |
+| 22 de enero | Compra EUR | 2.500 | 20 | 50.000 | | | | 3.750 | **20,67** | 77.500 |
+| 30 de enero | Venta ODI | | | | 1.200 | 20,67 | 24.800 | 2.550 | 20,67 | 52.700 |
 
 **Existencias finales: 2.550 unidades — Valor: 52.700 €**
 
 *Recálculo del PMP paso a paso:*
 
-- **03/01:** $(10.000 + 12.000) / (500 + 500) = 22.000 / 1.000 = \mathbf{22\ €}$
-- **09/01:** $(22.000 + 22.000) / (1.000 + 1.000) = 44.000 / 2.000 = \mathbf{22\ €}$ (igual porque el precio de entrada coincide con el PMP)
-- **22/01:** $(27.500 + 50.000) / (1.250 + 2.500) = 77.500 / 3.750 = \mathbf{20{,}67\ \text{€}}$ (periódico: $20{,}\overline{6}$)
-- **30/01 salida:** $1.200 \times (77.500/3.750) = \mathbf{24.800\ \text{€}}$ (calculado con precio exacto, sin redondear)
-- **30/01 existencias:** $77.500 - 24.800 = 52.700\ €$. Equivale a calcular $2.550 \times (77.500/3.750)$ sin redondear el PMP intermedio.
+- **3 de enero:** $(10.000 + 12.000) / (500 + 500) = 22.000 / 1.000 = \mathbf{22\ €}$
+- **9 de enero:** $(22.000 + 22.000) / (1.000 + 1.000) = 44.000 / 2.000 = \mathbf{22\ €}$ (igual porque el precio de entrada coincide con el PMP)
+- **22 de enero:** $(27.500 + 50.000) / (1.250 + 2.500) = 77.500 / 3.750 = \mathbf{20{,}67\ \text{€}}$ (periódico: $20{,}\overline{6}$)
+- **30 de enero salida:** $1.200 \times (77.500/3.750) = \mathbf{24.800\ \text{€}}$ (calculado con precio exacto, sin redondear)
+- **30 de enero existencias:** $77.500 - 24.800 = 52.700\ €$. Equivale a calcular $2.550 \times (77.500/3.750)$ sin redondear el PMP intermedio.
 
-::: {.callout-warning title="Nota sobre el redondeo en el día 30/01"}
+::: {.callout-warning title="Nota sobre el redondeo en el día 30 de enero"}
 El PMP exacto es $77.500/3.750 = 20{,}666\ldots$ €. En la ficha puede mostrarse redondeado como 20,67 €, pero los valores monetarios deben calcularse con el precio exacto: salida 24.800 € y existencias finales 52.700 €. Multiplicar 2.550 por el PMP ya redondeado daría 52.708,50 € y acumularía un error de redondeo.
 :::
 
@@ -122,13 +162,13 @@ El PMP exacto es $77.500/3.750 = 20{,}666\ldots$ €. En la ficha puede mostrars
 
 > La empresa **PERTUERO, S. A.**, dedicada a la compraventa de juguetes, ha realizado en mayo las operaciones siguientes:
 >
-> - 05/01: Existencias iniciales: 20 unidades a 10 €/unidad.
-> - 05/07: Compra a GAC: 30 unidades a 11 €/unidad.
-> - 05/10: Venta al cliente JOSTA: 30 unidades a 19,35 €/unidad.
-> - 05/15: Venta al cliente TUNIA: 20 unidades a 18,75 €/unidad.
-> - 05/23: Compra a BARA: 25 unidades a 11 €/unidad.
-> - 05/25: Compra al proveedor EIRA: 15 unidades a 12 €/unidad.
-> - 05/30: Venta al cliente SNOW: 30 unidades a 22,95 €/unidad.
+> - 1 de mayo: Existencias iniciales: 20 unidades a 10 €/unidad.
+> - 7 de mayo: Compra a GAC: 30 unidades a 11 €/unidad.
+> - 10 de mayo: Venta al cliente JOSTA: 30 unidades a 19,35 €/unidad.
+> - 15 de mayo: Venta al cliente TUNIA: 20 unidades a 18,75 €/unidad.
+> - 23 de mayo: Compra a BARA: 25 unidades a 11 €/unidad.
+> - 25 de mayo: Compra al proveedor EIRA: 15 unidades a 12 €/unidad.
+> - 30 de mayo: Venta al cliente SNOW: 30 unidades a 22,95 €/unidad.
 >
 > Teniendo en cuenta los datos anteriores, rellena la ficha de almacén del mes de mayo utilizando los métodos FIFO y precio medio ponderado (PMP), y calcula las existencias finales y su valor.
 
@@ -138,21 +178,21 @@ El PMP exacto es $77.500/3.750 = 20{,}666\ldots$ €. En la ficha puede mostrars
 
 | Fecha | Concepto | E.Cant | E.Pre | E.Val | S.Cant | S.Pre | S.Val | X.Cant | X.Pre | X.Val |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 05/01 | Exist. iniciales | | | | | | | 20 | 10 | 200 |
-| 05/07 | Compra GAC | 30 | 11 | 330 | | | | 20 / 30 | 10 / 11 | 200 / 330 |
-| 05/10 | Venta JOSTA | | | | 20 / 10 | 10 / 11 | 200 / 110 | 20 | 11 | 220 |
-| 05/15 | Venta TUNIA | | | | 20 | 11 | 220 | 0 | — | 0 |
-| 05/23 | Compra BARA | 25 | 11 | 275 | | | | 25 | 11 | 275 |
-| 05/25 | Compra EIRA | 15 | 12 | 180 | | | | 25 / 15 | 11 / 12 | 275 / 180 |
-| 05/30 | Venta SNOW | | | | 25 / 5 | 11 / 12 | 275 / 60 | 10 | 12 | 120 |
+| 1 de mayo | Exist. iniciales | | | | | | | 20 | 10 | 200 |
+| 7 de mayo | Compra GAC | 30 | 11 | 330 | | | | 20 / 30 | 10 / 11 | 200 / 330 |
+| 10 de mayo | Venta JOSTA | | | | 20 / 10 | 10 / 11 | 200 / 110 | 20 | 11 | 220 |
+| 15 de mayo | Venta TUNIA | | | | 20 | 11 | 220 | 0 | — | 0 |
+| 23 de mayo | Compra BARA | 25 | 11 | 275 | | | | 25 | 11 | 275 |
+| 25 de mayo | Compra EIRA | 15 | 12 | 180 | | | | 25 / 15 | 11 / 12 | 275 / 180 |
+| 30 de mayo | Venta SNOW | | | | 25 / 5 | 11 / 12 | 275 / 60 | 10 | 12 | 120 |
 
 **Existencias finales: 10 unidades — Valor: 120 €**
 
 *Razonamiento de las ventas:*
 
-- **05/10 — Venta de 30 ud:** Agotamos las 20 ud a 10 € y tomamos 10 ud del lote a 11 €. Quedan 20 ud a 11 €.
-- **05/15 — Venta de 20 ud:** Agotamos exactamente las 20 ud restantes a 11 €. Almacén vacío.
-- **05/30 — Venta de 30 ud:** Agotamos las 25 ud a 11 € y tomamos 5 ud del lote a 12 €. Quedan 10 ud a 12 € = 120 €.
+- **10 de mayo — Venta de 30 ud:** Agotamos las 20 ud a 10 € y tomamos 10 ud del lote a 11 €. Quedan 20 ud a 11 €.
+- **15 de mayo — Venta de 20 ud:** Agotamos exactamente las 20 ud restantes a 11 €. Almacén vacío.
+- **30 de mayo — Venta de 30 ud:** Agotamos las 25 ud a 11 € y tomamos 5 ud del lote a 12 €. Quedan 10 ud a 12 € = 120 €.
 
 :::
 
@@ -162,24 +202,24 @@ El PMP exacto es $77.500/3.750 = 20{,}666\ldots$ €. En la ficha puede mostrars
 
 | Fecha | Concepto | E.Cant | E.Pre | E.Val | S.Cant | S.Pre | S.Val | X.Cant | X.Pre | X.Val |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 05/01 | Exist. iniciales | | | | | | | 20 | 10 | 200 |
-| 05/07 | Compra GAC | 30 | 11 | 330 | | | | 50 | **10,60** | 530 |
-| 05/10 | Venta JOSTA | | | | 30 | 10,60 | 318 | 20 | 10,60 | 212 |
-| 05/15 | Venta TUNIA | | | | 20 | 10,60 | 212 | 0 | — | 0 |
-| 05/23 | Compra BARA | 25 | 11 | 275 | | | | 25 | **11** | 275 |
-| 05/25 | Compra EIRA | 15 | 12 | 180 | | | | 40 | **11,375** | 455 |
-| 05/30 | Venta SNOW | | | | 30 | 11,375 | 341,25 | 10 | 11,375 | 113,75 |
+| 1 de mayo | Exist. iniciales | | | | | | | 20 | 10 | 200 |
+| 7 de mayo | Compra GAC | 30 | 11 | 330 | | | | 50 | **10,60** | 530 |
+| 10 de mayo | Venta JOSTA | | | | 30 | 10,60 | 318 | 20 | 10,60 | 212 |
+| 15 de mayo | Venta TUNIA | | | | 20 | 10,60 | 212 | 0 | — | 0 |
+| 23 de mayo | Compra BARA | 25 | 11 | 275 | | | | 25 | **11** | 275 |
+| 25 de mayo | Compra EIRA | 15 | 12 | 180 | | | | 40 | **11,375** | 455 |
+| 30 de mayo | Venta SNOW | | | | 30 | 11,375 | 341,25 | 10 | 11,375 | 113,75 |
 
 **Existencias finales: 10 unidades — Valor: 113,75 €**
 
 *Recálculo del PMP:*
 
-- **05/07:** $(200 + 330) / (20 + 30) = 530 / 50 = \mathbf{10{,}60\ €}$
-- **05/23:** El almacén estaba a cero, así que el PMP es simplemente el precio de la nueva compra: $275 / 25 = \mathbf{11\ €}$
-- **05/25:** $(275 + 180) / (25 + 15) = 455 / 40 = \mathbf{11{,}375\ €}$
+- **7 de mayo:** $(200 + 330) / (20 + 30) = 530 / 50 = \mathbf{10{,}60\ €}$
+- **23 de mayo:** El almacén estaba a cero, así que el PMP es simplemente el precio de la nueva compra: $275 / 25 = \mathbf{11\ €}$
+- **25 de mayo:** $(275 + 180) / (25 + 15) = 455 / 40 = \mathbf{11{,}375\ €}$
 
 ::: {.callout-warning title="Almacén a cero entre operaciones"}
-Cuando el almacén llega a cero existencias (como ocurre el 05/15), el PMP se «reinicia». La siguiente entrada define el nuevo PMP por sí sola, sin arrastrar lotes anteriores.
+Cuando el almacén llega a cero existencias (como ocurre el 15 de mayo), el PMP se «reinicia». La siguiente entrada define el nuevo PMP por sí sola, sin arrastrar lotes anteriores.
 :::
 
 :::

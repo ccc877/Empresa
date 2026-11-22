@@ -221,6 +221,22 @@ c) 6.000 < 14.000 → conviene comprar. $C_{\text{comp}} = 132.000$ €; $C_{\te
 :::
 :::
 
+### EHU 2025 Ordinaria — AUKERAN S. A.
+
+> AUKERAN compra componentes a 21 € por unidad. Fabricarlos requiere costes fijos de 147.000 € y 13 € por unidad. Calcula desde qué cantidad conviene producir. Si necesita 25.000 unidades, calcula el precio máximo de compra que iguala el coste de fabricar. Repite la decisión para 20.000 unidades si los costes fijos aumentan un 10 %.
+
+::: {.callout-tip title="Solución comentada"}
+
+El margen entre el precio de compra y el coste variable de fabricar es $21-13=8$ €. La cantidad de indiferencia es $147.000/8=18.375$ unidades. Por encima de esa cantidad interesa fabricar; por debajo, comprar.
+
+Con 25.000 unidades, fabricar cuesta $147.000+13\times25.000=472.000$ €. El precio máximo de compra que iguala ese coste es $472.000/25.000=18{,}88$ €/unidad.
+
+Con costes fijos un 10 % mayores, $CF=161.700$ €. Para 20.000 unidades, fabricar cuesta $161.700+13\times20.000=421.700$ €, mientras que comprar cuesta $21\times20.000=420.000$ €. Conviene comprar; fabricar costaría 1.700 € más.
+
+:::
+
+*UPV/EHU · Convocatoria ordinaria de 2025.*
+
 ::: {.callout-important title="Propuesto 2 — EHU 2012 Ordinaria · AZKUNE S.A."}
 AZKUNE S.A. compra los componentes XX en Malasia a **11 €/unidad**. Se plantea producirlos ella misma con los siguientes costes: ampliación de instalaciones 650.000 €, adquisición de maquinaria 300.000 €, contratación de nuevos trabajadores 450.000 €, otros costes fijos 200.000 €. Los costes variables serían: materias primas 4 €/ud, electricidad 1,50 €/ud, otros 0,50 €/ud.
 

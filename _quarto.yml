@@ -14,6 +14,7 @@ book:
       - index.qmd
       - text: "1 Empresa y sistema económico"
         href: empresa.html
+      - produccion_costes.qmd
       - modelos2_no_ph.qmd
       - marketing_1_no_ph.qmd
       - inversiones_1_no_ph.qmd
@@ -29,20 +30,24 @@ book:
           - ejercicios/b1_producir_o_comprar.qmd
           - ejercicios/b1_productividad.qmd
           - ejercicios/b2_wilson.qmd
+          - ejercicios/b2_2025_wilson.qmd
           - ejercicios/b2_pmm.qmd
           - ejercicios/b2_fifo_pmp.qmd
           - ejercicios/b3_payback_van_tir.qmd
           - ejercicios/b3_fuentes_financiacion.qmd
           - ejercicios/b4_balance_pyg.qmd
+          - ejercicios/b4_mozte.qmd
           - ejercicios/b4_balances_adicionales.qmd
           - ejercicios/b4_pyg_rentabilidad.qmd
           - ejercicios/b4_ratios.qmd
           - ejercicios/formularios.qmd
           - ejercicios/plantillas_ratios.qmd
           - ejercicios/examenes_completos.qmd
+          - ejercicios/b6_repaso_general.qmd
   chapters:
     - index.qmd
-    - estructura-tema-1.qmd
+    - empresa.qmd
+    - produccion_costes.qmd
     - modelos2_no_ph.qmd
     - marketing_1_no_ph.qmd
     - inversiones_1_no_ph.qmd
@@ -67,6 +72,7 @@ book:
     - part: "Bloque 2 · Gestión del almacén"
       chapters:
         - ejercicios/b2_wilson.qmd
+        - ejercicios/b2_2025_wilson.qmd
         - ejercicios/b2_pmm.qmd
         - ejercicios/b2_fifo_pmp.qmd
     - part: "Bloque 3 · Inversión y financiación"
@@ -76,6 +82,7 @@ book:
         - ejercicios/b3_fuentes_financiacion.qmd
     - part: "Bloque 4 · Contabilidad y ratios"
       chapters:
+        - ejercicios/b4_mozte.qmd
         - ejercicios/b4_aragon_balance.qmd
         - ejercicios/b4_balance_pyg.qmd
         - ejercicios/b4_balances_adicionales.qmd
@@ -86,6 +93,9 @@ book:
         - ejercicios/formularios.qmd
         - ejercicios/plantillas_ratios.qmd
         - ejercicios/examenes_completos.qmd
+    - part: "Bloque 5 · Repaso general de teoría"
+      chapters:
+        - ejercicios/b6_repaso_general.qmd
 
 format:
   html:

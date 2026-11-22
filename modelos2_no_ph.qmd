@@ -96,7 +96,7 @@ Los nuevos modelos de negocio han surgido principalmente gracias al desarrollo d
 
 | Modelo | Descripción | Ejemplo |
 |---|---|---|
-| **Freemium** | Versión básica gratuita; ingresos por funciones avanzadas de pago | Spotify, Google Drive |
+| **Freemium** | Versión básica gratuita; ingresos por funciones avanzadas de pago | Spotify, Gmail |
 | **Publicidad** | Contenido gratuito para el usuario; ingresos por publicidad mostrada | YouTube, Facebook |
 | **Multiplataforma** | Distribución simultánea en múltiples canales (web, app, televisión…) | Netflix |
 | **Suscripción** | Tarifa periódica para acceder al servicio | Amazon Prime |
@@ -562,6 +562,8 @@ Aplicaciones como **Miro**, **Mural** o **Canva** ofrecen entornos de pizarra di
 
 
 ## Herramientas de búsqueda de nichos de mercado: *Google Trends*
+
+Un **nicho de mercado** es un segmento reducido y concreto de consumidores con necesidades o preferencias específicas que no están plenamente atendidas por las ofertas generalistas. Su tamaño limitado puede permitir a una empresa especializar su propuesta y diferenciarse; para que resulte viable debe existir demanda suficiente y la empresa debe poder llegar a esos clientes con costes sostenibles.
 
 **Google Trends** es una herramienta gratuita de Google que muestra la evolución temporal de las búsquedas de un término o tema en un período y región concretos. Es útil para:
 

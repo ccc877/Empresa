@@ -99,7 +99,7 @@ $$\text{Ratio de tesorería} = \frac{AC - Existencias}{PC}$$
 
 | Ratio | Cálculo | Valor | Ref. | Situación |
 |:---|:---|:---:|:---:|:---:|
-| Inmovilizado | $1.018.000 / (668.900 + 312.000)$ | **1,03** | < 1 | ⚠️ Desfavorable |
+| Inmovilizado | $1.018.000 / (668.900 + 312.000)$ | **1,04** | < 1 | ⚠️ Desfavorable |
 | Endeudamiento | $(312.000 + 670.900) / 668.900$ | **1,47** | 0,5–1,2 | ⚠️ Excesivo |
 | Liquidez | $633.800 / 670.900$ | **0,94** | > 1 | ⚠️ Desfavorable |
 | Garantía | $1.651.800 / (312.000 + 670.900)$ | **1,68** | > 1 | ✅ Favorable |
@@ -107,7 +107,7 @@ $$\text{Ratio de tesorería} = \frac{AC - Existencias}{PC}$$
 
 **Interpretación ratio a ratio:**
 
-**Inmovilizado (1,03):** Superior a 1, por lo que el fondo de maniobra es negativo (−37.100 €). El patrimonio neto y el pasivo no corriente no llegan a financiar el activo no corriente: parte de las inversiones a largo plazo están siendo financiadas con deuda a corto plazo. Desequilibrio financiero.
+**Inmovilizado (1,04):** Superior a 1, por lo que el fondo de maniobra es negativo (−37.100 €). El patrimonio neto y el pasivo no corriente no llegan a financiar el activo no corriente: parte de las inversiones a largo plazo están siendo financiadas con deuda a corto plazo. Desequilibrio financiero.
 
 **Endeudamiento (1,47):** Por encima del rango óptimo (0,5–1,2). La empresa depende excesivamente de financiación ajena. Por cada euro de recursos propios, debe 1,47 euros a terceros. Su capacidad de maniobra está comprometida.
 

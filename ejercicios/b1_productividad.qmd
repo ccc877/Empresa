@@ -36,6 +36,22 @@ $$TVPG = \frac{PG_1 - PG_0}{PG_0} \times 100 = (IPG - 1) \times 100$$
 
 ## Ejercicios resueltos
 
+### EHU 2025 Ordinaria — Productividad por hora y tasa de variación
+
+> Una empresa tiene 14 personas en plantilla. En la situación actual, 5 producen 350 unidades del producto A a la semana, trabajando 5 días de 8 horas; las otras 9 producen 2.520 unidades del producto B al mes, trabajando 160 horas cada una. En la propuesta, 7 personas fabricarían A y otras 7, B. La producción prevista sería de 504 unidades semanales de A y 2.016 unidades mensuales de B. La jornada total se mantiene en 40 horas semanales para A y 160 horas mensuales para B. Compara las productividades por hora y calcula la tasa de variación de cada producto. ¿Es aceptable la propuesta según este criterio?
+
+::: {.callout-tip title="Solución comentada"}
+
+Para A, la productividad actual es $350/(5\times 5\times 8)=1{,}75$ unidades por hora trabajada. Con la propuesta es $504/(7\times 40)=1{,}80$ unidades por hora.
+
+Para B, la productividad actual es $2.520/(9\times160)=1{,}75$ unidades por hora. Con la propuesta es $2.016/(7\times160)=1{,}80$ unidades por hora.
+
+En ambos productos, la tasa de variación es $((1{,}80-1{,}75)/1{,}75)\times100=2{,}86\%$. La productividad por hora aumenta en los dos procesos; según el criterio planteado, la propuesta sí la mejora. La decisión completa también debería valorar otros efectos laborales y organizativos.
+
+:::
+
+*UPV/EHU · Convocatoria ordinaria de 2025.*
+
 ### Ejercicio tipo — Empresa con dos productos y dos factores
 
 > *Una empresa produce 500 mesas a 200 € y 300 sillas a 80 €. Emplea 10 trabajadores a 1.500 €/mes y 4 máquinas a 600 €/mes.*

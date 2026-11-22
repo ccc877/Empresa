@@ -16,6 +16,7 @@
 | $i$ | Rentabilidad mínima exigida | Rendimiento mínimo que debe ofrecer la inversión para que compense |
 | $g$ | Tasa de inflación | Pérdida anual de poder adquisitivo del dinero |
 | $VAN$ | Valor Actual Neto | Valor presente de todos los flujos menos el desembolso inicial |
+| $TIR$ | Tasa Interna de Rentabilidad | Tasa porcentual que hace que el VAN sea cero |
 
 **Flujo neto de caja**
 
@@ -49,6 +50,12 @@ $$VAN = -D_0 + \sum_{t=1}^{n} \frac{FNC_t}{(1+k)^t}$$
 
 Entre varios proyectos aceptables, se elige el de **mayor VAN**.
 
+**Tasa Interna de Rentabilidad (TIR)**
+
+$$0 = -D_0 + \sum_{t=1}^{n}\frac{FNC_t}{(1+TIR)^t}$$
+
+En un proyecto convencional, se acepta si $TIR>k$. El VAN mide valor absoluto en euros; la TIR, rentabilidad relativa en porcentaje.
+
 :::
 
 ::: {.callout-warning title="Trampas de examen"}
@@ -62,6 +69,44 @@ Entre varios proyectos aceptables, se elige el de **mayor VAN**.
 ---
 
 ## Ejercicios resueltos
+
+### Ejercicio tipo — Cálculo e interpretación de la TIR
+
+> Una máquina cuesta 1.000 € hoy y generará un único flujo neto de caja de 1.100 € dentro de un año. Calcula la TIR y, si la rentabilidad mínima exigida es del 8 %, decide si conviene realizar la inversión. Calcula también el VAN al 8 %.
+
+::: {.callout-tip title="Solución comentada"}
+
+La TIR es la tasa que hace que el VAN sea cero:
+
+$$0=-1.000+\frac{1.100}{1+TIR}$$
+
+Despejando, $1+TIR=1.100/1.000=1{,}10$, por lo que **TIR = 10 %**. Como supera la rentabilidad mínima del 8 %, el proyecto se acepta según el criterio de la TIR.
+
+El VAN al 8 % es:
+
+$$VAN=-1.000+\frac{1.100}{1{,}08}=18{,}52\,€$$
+
+El **VAN de 18,52 €** expresa el valor absoluto que añade el proyecto; la **TIR del 10 %** expresa su rentabilidad relativa. Ambos criterios llevan aquí a aceptar la inversión.
+
+:::
+
+### EHU 2025 Ordinaria — ADARRA S. Coop.
+
+> Compara dos inversiones. La opción A requiere 200.000 € al inicio y otros 100.000 € al final de los años 1 y 2; sus flujos netos, incluidos pagos posteriores, son 60.000 €, 100.000 € y 110.000 € en los años 1, 2 y 3. La opción B requiere 300.000 € al inicio y genera flujos de 120.000 €, 135.000 € y 130.000 €. La rentabilidad mínima real es del 8 % y la inflación anual prevista, del 3 %. Compara ambas opciones por VAN y pay-back.
+
+::: {.callout-tip title="Solución comentada"}
+
+La tasa de actualización por Fisher es $k=0{,}08+0{,}03+(0{,}08\times0{,}03)=0{,}1124$, es decir, 11,24 %.
+
+$$VAN_A=-200.000+\frac{60.000}{1{,}1124}+\frac{100.000}{1{,}1124^2}+\frac{110.000}{1{,}1124^3}=14.661{,}42\,€$$
+
+$$VAN_B=-300.000+\frac{120.000}{1{,}1124}+\frac{135.000}{1{,}1124^2}+\frac{130.000}{1{,}1124^3}=11.412{,}58\,€$$
+
+Ambos VAN son positivos; por VAN se elige A, que crea más valor actual. Para el pay-back, A recupera los 40.000 € pendientes durante el tercer año: $40.000/110.000\times12=4{,}36$ meses; total, 2 años y 4,36 meses. B recupera los 45.000 € pendientes durante el tercer año: $45.000/130.000\times12=4{,}15$ meses; total, 2 años y 4,15 meses. El pay-back favorece B, aunque la diferencia es pequeña. Como los criterios discrepan, el VAN es más completo para elegir entre proyectos excluyentes.
+
+:::
+
+*UPV/EHU · Convocatoria ordinaria de 2025.*
 
 ### EHU 2021 Extraordinaria — Proyectos Alpha, Beta y Gamma
 
@@ -89,7 +134,7 @@ La tasa de descuento se calcula con la fórmula de Fisher:
 
 $$k = i + g + (i \times g) = 0{,}02 + 0{,}03 + (0{,}02 \times 0{,}03) = 0{,}0506$$
 
-La solución oficial redondea esta tasa al 5 % y publica los valores siguientes. Se conservan aquí sus resultados tal como aparecen en el solucionario.
+Se usa $k=5{,}06\%$ en los cálculos, sin redondear la tasa a 5 %. Así se obtienen los valores publicados en la solución oficial.
 
 **a) Plazo de recuperación (Pay-back)**
 
@@ -201,7 +246,7 @@ El VAN es más completo: actualiza los flujos para tener en cuenta el valor temp
 
 > *La empresa NORBERA evalúa dos proyectos de inversión. Inflación: 2 %. Rentabilidad mínima: 7 %.*
 >
-> **Proyecto A** — $I_0 = 75.000$ €; vida útil: 3 años.
+> **Proyecto A** — $D_0 = 75.000$ €; vida útil: 3 años.
 >
 > | Año | Ingresos | Gastos | Valor residual |
 > |:---:|---:|---:|---:|
@@ -209,7 +254,7 @@ El VAN es más completo: actualiza los flujos para tener en cuenta el valor temp
 > | 2 | 52.000 € | 15.000 € | — |
 > | 3 | 55.000 € | 25.000 € | 15.000 € |
 >
-> **Proyecto B** — $I_0 = 50.000$ €; precio unitario: 25 €; vida útil: 3 años.
+> **Proyecto B** — $D_0 = 50.000$ €; precio unitario: 25 €; vida útil: 3 años.
 >
 > | Año | Unidades vendidas | Gastos |
 > |:---:|---:|---:|

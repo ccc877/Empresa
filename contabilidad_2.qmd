@@ -230,9 +230,25 @@ Este indicador es útil para analizar la rentabilidad operativa sin la influenci
 
 ## Ratios financieros
 
+### Fondo de maniobra
+
+El **fondo de maniobra (FM)** es la parte del activo corriente financiada con recursos permanentes. Se calcula como activo corriente menos pasivo corriente, o como patrimonio neto más pasivo no corriente menos activo no corriente:
+
+$$FM = AC-PC = (PN+PNC)-ANC$$
+
+Un FM positivo indica que una parte del activo corriente se financia con recursos a largo plazo y suele aportar margen de seguridad para atender pagos próximos. Un FM negativo significa que una parte del activo no corriente se financia con deuda a corto plazo; puede generar tensiones de liquidez, aunque su valoración depende del sector y del ciclo de cobros y pagos.
+
+### Rentabilidad económica, financiera y apalancamiento
+
+La **rentabilidad económica (RE)** mide el rendimiento del activo con independencia de cómo se financie. La **rentabilidad financiera (RF)** mide el rendimiento neto obtenido por los propietarios sobre el patrimonio neto:
+
+$$RE=\frac{BAII}{Activo\ total}\times100 \qquad RF=\frac{Beneficio\ neto}{Patrimonio\ neto}\times100$$
+
+El **apalancamiento financiero** describe cómo el uso de deuda afecta a la RF. Como indicador de estructura puede expresarse mediante el multiplicador $Activo\ total/PN=1+Deuda/PN$. En términos generales, el endeudamiento puede elevar la RF cuando la rentabilidad económica supera el coste de la deuda, pero aumenta el riesgo y puede reducirla si los intereses son elevados o cae el BAII. La comparación exacta debe mantener coherencia entre impuestos y magnitudes utilizadas.
+
 Los **ratios financieros** son cocientes que relacionan magnitudes del balance o de la cuenta de pérdidas y ganancias con el fin de evaluar la situación económico-financiera de la empresa. Se agrupan en ratios de **equilibrio**, **solvencia** y **endeudamiento**.
 
-> **Nota para el examen (EBAU):** el endeudamiento es el único ratio que se expresa como un **rango óptimo**, mientras que los demás se expresan como mínimos de supervivencia. Esto es así porque los ratios de liquidez, garantía y tesorería tienen un "punto de muerte": si caen por debajo de 1, la empresa no puede pagar o quiebra. En cambio, el endeudamiento tiene dos extremos negativos (exceso de deuda o exceso de autonomía), por lo que se define un intervalo.
+> **Nota para la PAU:** el endeudamiento se suele interpretar mediante un intervalo orientativo: tanto un endeudamiento excesivo como una autonomía financiera muy alta pueden presentar inconvenientes. Los valores de referencia dependen del sector y no son límites universales de supervivencia.
 
 | Ratio | Fórmula | Criterio | Tipo | Interpretación |
 |---|---|---|---|---|

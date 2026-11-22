@@ -1,0 +1,25 @@
+# Balance y ratios: MOZTE
+
+## EHU 2025 Ordinaria — MOZTE S. A.
+
+> MOZTE S. A. fabrica camisetas de algodón. Sus elementos patrimoniales son: maquinaria de tejer, 54.750 €; efectivo, 4.500 €; facturas pendientes por compra de maquinaria a tres meses, 43.800 €; camisetas almacenadas, 19.500 €; fábrica, 288.300 € (incluye terreno de 108.000 €); deuda con Seguridad Social, 15.780 €; bancos, 36.000 €; algodón almacenado, 4.500 €; clientes, 30.750 €; letras a pagar a proveedores, 32.250 €; préstamo a tres años, 105.000 €; deuda con Hacienda por IVA, 68.550 €; reservas, 32.250 €; facturas a pagar a proveedores, 17.700 €; letras a cobrar de clientes, 37.580 €. Calcula el balance y los ratios de tesorería, liquidez, garantía, endeudamiento e inmovilizado.
+
+::: {.callout-tip title="Solución comentada"}
+
+El activo no corriente asciende a 343.050 €: terreno 108.000 €, construcciones 180.300 € y maquinaria 54.750 €. El activo corriente es 132.830 €: existencias 24.000 €, realizable 68.330 € y disponible 40.500 €. Total activo: 475.880 €.
+
+El pasivo corriente suma 178.080 € y el no corriente, 105.000 €. El patrimonio neto es 192.800 €, con 32.250 € de reservas y **160.550 € de capital social**, calculado por diferencia. El fondo de maniobra es $132.830-178.080=-45.250$ €.
+
+| Ratio | Cálculo | Resultado |
+|:---|:---|---:|
+| Tesorería | (68.330 + 40.500) / 178.080 | 0,61 |
+| Liquidez | 132.830 / 178.080 | 0,75 |
+| Garantía | 475.880 / (105.000 + 178.080) | 1,68 |
+| Endeudamiento | (105.000 + 178.080) / 192.800 | 1,47 |
+| Inmovilizado | 343.050 / (192.800 + 105.000) | 1,15 |
+
+La solvencia general es superior a uno, pero la tesorería y la liquidez son bajas y el fondo de maniobra es negativo: la empresa puede afrontar tensiones de pago a corto plazo.
+
+:::
+
+*UPV/EHU · Convocatoria ordinaria de 2025.*
