@@ -18,7 +18,7 @@ El pasivo corriente suma 178.080 € y el no corriente, 105.000 €. El patrimon
 | Endeudamiento | (105.000 + 178.080) / 192.800 | 1,47 |
 | Inmovilizado | 343.050 / (192.800 + 105.000) | 1,15 |
 
-La solvencia general es superior a uno, pero la tesorería y la liquidez son bajas y el fondo de maniobra es negativo: la empresa puede afrontar tensiones de pago a corto plazo.
+La empresa tendrá dificultades para afrontar sus pagos a corto plazo: su liquidez (0,75) y su tesorería (0,61) son inferiores a 1, y el fondo de maniobra es negativo (−45.250 €). Además, el ratio de inmovilizado (1,15) supera 1: los recursos permanentes no cubren todo el activo no corriente y parte se financia con pasivo corriente. El endeudamiento (1,47) también supera el intervalo orientativo de 0,5–1,2, por lo que el peso de la deuda es elevado respecto al patrimonio neto. Aunque el ratio de garantía (1,68) indica que el activo supera el total de las deudas, persiste un desequilibrio de liquidez y financiación a corto plazo.
 
 :::
 

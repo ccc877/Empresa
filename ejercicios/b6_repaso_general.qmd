@@ -8,7 +8,7 @@ Este bloque reúne preguntas conceptuales de distintos temas para practicar resp
 
 ::: {.callout-tip title="Solución comentada"}
 
-La **eficiencia** consiste en alcanzar un objetivo productivo aprovechando bien los recursos: producir lo máximo posible con unos factores dados o lograr una producción determinada usando la menor cantidad de factores posible. La **productividad** relaciona la producción obtenida con los factores empleados.
+La **eficiencia productiva** consiste en alcanzar el objetivo aprovechando bien los recursos: producir lo máximo posible con unos factores dados o lograr una cantidad determinada usando la menor cantidad posible de factores. Se distingue la **eficiencia técnica**, que compara cantidades de factores para obtener la misma producción, de la **eficiencia económica**, que elige la técnica técnicamente eficiente de menor coste dados los precios de los factores. La **productividad** relaciona la producción obtenida con los factores empleados.
 
 La productividad puede aumentar mediante la formación y motivación del personal, la mejora de la tecnología y de los procesos, una mejor organización y una gestión más eficaz de los recursos.
 
