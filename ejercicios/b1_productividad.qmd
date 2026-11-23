@@ -105,6 +105,44 @@ c) $\text{Valor}_1 = (1.100 \times 6) + (400 \times 1{,}5) = 6.600 + 600 = 7.200
 :::
 :::
 
-::: {.callout-important title="Propuesto 2 — EHU (año a completar)"}
-*(Introduce aquí el enunciado cuando lo tengas disponible)*
+### EHU 2019 Ordinaria — GURETZE S. A.
+
+> La empresa GURETZE, S. A., dedicada a la producción de armarios, tenía en 2015 veinte trabajadores a jornada completa, ocho horas diarias durante 215 días al año. El coste de la hora de trabajo era de 12 €. Cada armario necesitaba 2 kg de madera, a 125 €/kg. La producción anual fue de 50.000 armarios, vendidos a 300 € cada uno.
+>
+> En 2017, la empresa tenía quince trabajadores a jornada completa y dos a media jornada (cuatro horas diarias), también durante 215 días al año. El coste por hora se mantuvo. Cada armario necesitaba 1,9 kg de madera, a 130 €/kg. La producción fue de 45.000 armarios y el precio de venta siguió siendo 300 €.
+>
+> a) Calcula la productividad del factor trabajo en cada año, en armarios por hora.
+> b) Calcula la variación porcentual de la productividad del trabajo entre 2015 y 2017.
+> c) Calcula la productividad global de la empresa en cada año.
+
+::: {.callout-tip title="Solución comentada"}
+
+**a) Productividad del trabajo**
+
+En 2015 se trabajaron $20\times8\times215=34.400$ horas:
+
+$$PT_{2015}=\frac{50.000}{34.400}=1{,}453\text{ armarios por hora}$$
+
+En 2017 se trabajaron $(15\times8\times215)+(2\times4\times215)=27.520$ horas:
+
+$$PT_{2017}=\frac{45.000}{27.520}=1{,}635\text{ armarios por hora}$$
+
+**b) Variación porcentual**
+
+$$\frac{1{,}635-1{,}453}{1{,}453}\times100\approx12{,}5\%$$
+
+La productividad del trabajo aumentó aproximadamente un **12,5 %**.
+
+**c) Productividad global**
+
+En 2015, el valor de la producción fue $50.000\times300=15.000.000$ €. El coste de los factores fue $34.400\times12+2\times50.000\times125=12.912.800$ €:
+
+$$PG_{2015}=\frac{15.000.000}{12.912.800}=1{,}161$$
+
+En 2017, el valor de la producción fue $45.000\times300=13.500.000$ €. El coste de los factores fue $27.520\times12+1{,}9\times45.000\times130=11.445.240$ €:
+
+$$PG_{2017}=\frac{13.500.000}{11.445.240}=1{,}179$$
+
+En 2017 se generaron 1,179 € de valor de producción por cada euro de factores empleados, frente a 1,161 € en 2015.
+
 :::

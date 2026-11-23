@@ -134,7 +134,7 @@ La tasa de descuento se calcula con la fórmula de Fisher:
 
 $$k = i + g + (i \times g) = 0{,}02 + 0{,}03 + (0{,}02 \times 0{,}03) = 0{,}0506$$
 
-Se usa $k=5{,}06\%$ en los cálculos, sin redondear la tasa a 5 %. Así se obtienen los valores publicados en la solución oficial.
+Se usa $k=5{,}06\%$ en los cálculos, sin redondear la tasa a 5 %. Los VAN con céntimos son 6.349,43 € (Alpha), 1.966,56 € (Beta) y 4.042,53 € (Gamma); la tabla los muestra redondeados al euro más próximo, como en la solución oficial.
 
 **a) Plazo de recuperación (Pay-back)**
 
