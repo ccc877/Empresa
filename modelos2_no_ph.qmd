@@ -531,7 +531,43 @@ SCAMPER es un acrónimo que guía la innovación sobre un producto o servicio ex
   caption: [La técnica SCAMPER]
 ) <tbl-scamper>
 ```
-  
+
+SCAMPER parte de algo que ya existe —un producto, un servicio o un proceso— y lo somete a siete cambios posibles. No es necesario que cada pregunta produzca una idea útil: el objetivo es ampliar las alternativas antes de evaluarlas. Para aplicarla, se concreta primero qué se quiere mejorar; después se recorren las letras por orden y se anotan las propuestas sin descartarlas de inmediato. Al final se comparan atendiendo a la necesidad del cliente, la viabilidad técnica y el coste.
+
+Por ejemplo, una panadería que quiera vender mejor por las tardes podría reformular su oferta así:
+
+| Pregunta SCAMPER | Posible propuesta para la panadería |
+|:---|:---|
+| **Sustituir** | ¿Se puede sustituir parte del surtido de la mañana por productos pensados para la merienda? |
+| **Combinar** | ¿Se pueden ofrecer paquetes de café y piezas pequeñas de bollería? |
+| **Adaptar** | ¿Se puede adaptar el sistema de pedidos anticipados de otros comercios para recoger la merienda a una hora concreta? |
+| **Modificar** | ¿Conviene cambiar el tamaño o la presentación de algunos productos para hacerlos más cómodos de compartir? |
+| **Proponer otros usos** | ¿Se pueden transformar los productos que no se venden al final del día en picatostes o pan rallado? |
+| **Eliminar** | ¿Se puede eliminar la espera permitiendo pagar y encargar el pedido por adelantado? |
+| **Reordenar o invertir** | ¿Se puede hornear una parte de los productos después de recibir los encargos, en vez de producir todo antes de conocer la demanda? |
+
+Las propuestas son hipótesis, no decisiones automáticas. La panadería tendría que contrastar, por ejemplo, si existe demanda por la tarde y si el margen cubre los costes adicionales.
+
+### Phillips 6/6
+
+Phillips 6/6 organiza una conversación breve cuando hay muchas personas y se quiere que todas aporten ideas. Se forman grupos de seis para tratar una pregunta concreta durante seis minutos. Cada grupo nombra a una persona que modere el turno y a otra que recoja las conclusiones; al terminar, un portavoz comparte las propuestas con el conjunto. El moderador puede reservar aproximadamente un minuto para cada intervención, aunque el reparto del tiempo se adapta al grupo.
+
+La técnica sirve para recoger muchas perspectivas y priorizar temas en poco tiempo. No pretende resolver por completo un problema complejo en seis minutos: las conclusiones necesitan después contraste y desarrollo. Por ejemplo, una tienda puede plantear «¿qué cambio ayudaría a atraer más clientes los martes por la tarde?»; los grupos proponen medidas y presentan las dos que consideran más prometedoras.
+
+### Los seis sombreros para pensar, de Edward de Bono
+
+Esta técnica propone analizar una decisión desde seis modos de pensamiento. En lugar de asignar una postura fija a cada persona, el grupo cambia de «sombrero» y se centra en una perspectiva común cada vez. Así se separan la búsqueda de información, las reacciones, la evaluación y la generación de alternativas. Una persona facilita la secuencia; el sombrero azul suele servir para organizarla y cerrar el trabajo.
+
+| Sombrero | Perspectiva | Pregunta que orienta el análisis |
+|:---|:---|:---|
+| **Blanco** | Hechos e información disponible o pendiente | ¿Qué sabemos y qué dato falta? |
+| **Rojo** | Reacciones, intuiciones y sentimientos | ¿Qué impresión nos produce la propuesta? |
+| **Negro** | Riesgos, dificultades y límites | ¿Qué puede salir mal y por qué? |
+| **Amarillo** | Ventajas y oportunidades | ¿Qué beneficios podría aportar? |
+| **Verde** | Creatividad y alternativas | ¿Qué otras opciones o mejoras podemos imaginar? |
+| **Azul** | Organización del proceso y síntesis | ¿Qué cuestión analizamos ahora y qué paso acordamos? |
+
+Una empresa que valore ofrecer entregas en el mismo día podría empezar con el sombrero azul para fijar el objetivo; usar el blanco para reunir datos sobre pedidos, tiempos y costes; el rojo para escuchar las reacciones del equipo y de los clientes; el amarillo para identificar beneficios; el negro para anticipar problemas de capacidad; y el verde para proponer alternativas, como limitar la entrega a una zona o a ciertos productos. Al volver al azul, define qué opción probar y qué resultados medirá. El orden puede variar según la decisión: lo importante es que el grupo adopte una perspectiva compartida en cada ronda.
 
 ## *Visual Thinking* (pensamiento visual)
 
@@ -767,7 +803,7 @@ En el País Vasco existe un ecosistema muy potente para ayudar a las empresas a 
 - Los **patrones de modelos de negocio** (plataforma multilateral, modelo abierto, desagregación, gratuito…) son configuraciones recurrentes que sirven de inspiración para diseñar nuevas propuestas.
 - La metodología ***Lean Startup*** propone validar la idea de negocio con el mínimo gasto posible, a través de ciclos «crear MVP → medir → aprender», apoyada en el **desarrollo de clientes** para verificar si existe demanda real.
 - El **modelo *Canvas*** organiza el modelo de negocio en nueve bloques interrelacionados; el **mapa de empatía** profundiza en la perspectiva del cliente.
-- La **creatividad** sigue un proceso estructurado (Wallas: preparación, incubación, iluminación, evaluación, elaboración); técnicas como el *brainstorming*, el 4×4×4 o el SCAMPER ayudan a generar y filtrar ideas.
+- La **creatividad** sigue un proceso estructurado (Wallas: preparación, incubación, iluminación, evaluación, elaboración); el *brainstorming*, el 4×4×4 y Phillips 6/6 facilitan el trabajo grupal, mientras que SCAMPER y los seis sombreros de De Bono ofrecen pautas para explorar y analizar alternativas.
 - Herramientas como el ***Visual Thinking***, *Google Trends*, el análisis de **escenarios** y el **prototipado** permiten explorar, validar y comunicar modelos de negocio.
 - El ***storytelling*** y el ***elevator pitch*** son herramientas de comunicación esenciales para transmitir y defender una propuesta de valor.
 - La **protección de la propiedad intelectual e industrial** (patentes, marcas, derechos de autor…) es una decisión estratégica que todo emprendedor debe considerar antes de lanzar su modelo al mercado.
